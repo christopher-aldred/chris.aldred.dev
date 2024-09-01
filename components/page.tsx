@@ -3,6 +3,7 @@
 import { PageQuery } from "../tina/__generated__/types";
 import Image from "next/image";
 import { tinaField, useTina } from "tinacms/dist/react";
+import { Transition } from "@headlessui/react";
 
 export function Page(props: {
   data: PageQuery;
@@ -40,20 +41,31 @@ export function Page(props: {
         </div>
       </div>
 
-      <div
-        // @ts-ignore
-        data-tina-field={tinaField(data.page.logo, "url")}
-        className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px]"
+      <Transition
+        show={true}
+        appear={true}
+        enter="transition-all ease-in-out duration-500 delay-[200ms]"
+        enterFrom="opacity-0 translate-y-6"
+        enterTo="opacity-100 translate-y-0"
+        leave="transition-all ease-in-out duration-300"
+        leaveFrom="opacity-100"
+        leaveTo="opacity-0"
       >
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src={data.page.logo?.url || "/next.svg"}
-          alt={data.page.logo?.alt || ""}
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+        <div
+          // @ts-ignore
+          data-tina-field={tinaField(data.page.logo, "url")}
+          className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px]"
+        >
+          <Image
+            className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
+            src={data.page.logo?.url || "/next.svg"}
+            alt={data.page.logo?.alt || ""}
+            width={180}
+            height={37}
+            priority
+          />
+        </div>
+      </Transition>
 
       <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
         {data.page.links?.map((link) => {
