@@ -1,8 +1,8 @@
 ---
-header: Get Started by editing app/page/tsx
+header: Welcome to Chris's site!
 logo:
-  url: /next.svg
-  alt: NextJS
+  url: /tina.svg
+  alt: Lama
 links:
   - header: Docs
     description: Find in-depth information about Next.js features and API.
