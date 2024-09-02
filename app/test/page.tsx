@@ -18,7 +18,7 @@ const FadeIn = ({ delay, children }) => (
 );
 
 const BOX_STYLE =
-  "transition-color ease-in-out border border-gray-700 hover:border-sky-600 bg-neutral-950/80 duration-200 rounded-lg";
+  "transition-color text-gray-100 p-6 ease-in-out border border-gray-700 hover:border-sky-600 bg-neutral-950/80 duration-200 rounded-lg";
 
 export default async function Test() {
   return (
@@ -31,7 +31,8 @@ export default async function Test() {
           <Transition show={true} appear={true}>
             <div className={`h-full border-slate-100  grid grid-cols-4 grid-rows-8 gap-4 py-5 px-40`}>
               <FadeIn delay="delay-[0ms]">
-                <div className={`col-span-3 row-span-4 ${BOX_STYLE}`}>1</div>
+                <div className={`text-[16px] font-[150] col-span-3 row-span-4 ${BOX_STYLE}`}>Hi, I'm <b>Chris Aldred</b>, a software developer with strong focus on the user experience, animations and micro interactions.
+                Feel free to reach out to me if you have any projects in mind, or just to say hello.</div>
               </FadeIn>
 
               <FadeIn delay="delay-[100ms]">

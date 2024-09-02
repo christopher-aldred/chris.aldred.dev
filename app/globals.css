@@ -8,6 +8,15 @@
   --background-end-rgb: 255, 255, 255;
 }
 
+@layer base {
+  @font-face {
+    font-family: "Satoshi-Light";
+    src: url("../public/fonts/Satoshi-Light.woff2") format("woff2"),
+      url("../public/fonts/Satoshi-Light.woff") format("woff"),
+      url("../public/fonts/Satoshi-Light.ttf") format("truetype");
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
