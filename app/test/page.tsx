@@ -17,7 +17,7 @@ const FadeIn = ({ delay, children }) => (
 );
 
 const BOX_STYLE =
-  "z-20 transition-color text-gray-100 p-6 ease-in-out border border-neutral-700 hover:border-sky-600 bg-neutral-800/60 duration-200 rounded-lg";
+  "z-20 transition-color text-gray-100 p-6 ease-in-out border border-neutral-700 hover:border-sky-600 bg-zinc-900/80 duration-200 rounded-lg";
 
 export default function Test() {
   const [time, setTime] = useState("");
@@ -51,12 +51,15 @@ export default function Test() {
         <main className="flex-col justify-between">
           <Transition show={true} appear={true}>
             <div
-              className={`min-h-screen grid grid-cols-4 grid-rows-8 gap-4 py-5 px-8 xl:px-52`}
+              className={`min-h-screen grid grid-cols-4 grid-rows-8 gap-4 py-5 px-8 xl:px-44`}
             >
               <FadeIn delay="delay-[0ms]">
                 <div
                   className={`text-[16px] font-[150] col-span-3 row-span-4 ${BOX_STYLE}`}
                 >
+                  <div className="font-[150] text-sm text-slate-500">
+                    Welcome
+                  </div>
                   Hi, I'm <b>Chris Aldred</b>, a software developer with strong
                   focus on the user experience, animations and micro
                   interactions. Feel free to reach out to me if you have any
