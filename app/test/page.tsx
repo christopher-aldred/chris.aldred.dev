@@ -1,6 +1,7 @@
 "use client";
 
 import { Transition, TransitionChild } from "@headlessui/react";
+import { useEffect, useState } from "react";
 
 const FadeIn = ({ delay, children }) => (
   <TransitionChild
@@ -18,7 +19,18 @@ const FadeIn = ({ delay, children }) => (
 const BOX_STYLE =
   "z-20 transition-color text-gray-100 p-6 ease-in-out border border-neutral-700 hover:border-sky-600 bg-neutral-800/60 duration-200 rounded-lg";
 
-export default async function Test() {
+export default function Test() {
+  const [time, setTime] = useState("");
+
+  useEffect(() => {
+    setInterval(() => {
+      let date = new Date();
+      let options = { timeZone: "Europe/London" };
+      let londonTime = date.toLocaleTimeString("en-GB", options);
+      setTime(londonTime);
+    }, 1000);
+  }, []);
+
   return (
     <>
       {/* BG square elements */}
@@ -39,7 +51,7 @@ export default async function Test() {
         <main className="flex-col justify-between">
           <Transition show={true} appear={true}>
             <div
-              className={`min-h-screen grid grid-cols-4 grid-rows-8 gap-4 py-5 px-52`}
+              className={`min-h-screen grid grid-cols-4 grid-rows-8 gap-4 py-5 px-8 xl:px-52`}
             >
               <FadeIn delay="delay-[0ms]">
                 <div
@@ -62,7 +74,7 @@ export default async function Test() {
                   <br />
                   My tools of choice are:
                   <ul>
-                    <li>&#8226; JavaScript/TypeScript</li>
+                    <li>&#8226; TypeScript</li>
                     <li>&#8226; React</li>
                     <li>&#8226; NextJS</li>
                     <li>&#8226; Tailwind</li>
@@ -77,7 +89,24 @@ export default async function Test() {
               </FadeIn>
 
               <FadeIn delay="delay-[300ms]">
-                <div className={`col-start-2 row-start-5 ${BOX_STYLE}`}>3</div>
+                <div
+                  className={`font-[100] text-2xl p-0 col-start-2 row-start-5 flex items-center justify-center ${BOX_STYLE}`}
+                >
+                  <Transition
+                    enter={`transition-all ease-in-out duration-700`}
+                    enterFrom="opacity-0"
+                    enterTo="opacity-100 translate-y-0"
+                    show={time !== ""}
+                  >
+                    <center>
+                      {time}
+                      <br />
+                      <div className="font-[150] text-base text-slate-400">
+                        Time in United Kingdom
+                      </div>
+                    </center>
+                  </Transition>
+                </div>
               </FadeIn>
 
               <FadeIn delay="delay-[400ms]">
