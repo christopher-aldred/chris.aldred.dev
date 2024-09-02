@@ -6,7 +6,7 @@ logo:
 links:
   - header: Test
     description: Yo momma
-    url: 'http://google.com'
+    url: /test
   - header: Docs
     description: Find in-depth information about Next.js features and API.
     url: 'https://nextjs.org/docs?utm_source=create-next-app'
