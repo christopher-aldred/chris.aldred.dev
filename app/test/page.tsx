@@ -22,7 +22,7 @@ export default async function Test() {
   return (
     <>
       {/* BG square elements */}
-      <div className="area flex">
+      <div className="area flex overflow-scroll">
         <ul className="circles">
           <li></li>
           <li></li>
