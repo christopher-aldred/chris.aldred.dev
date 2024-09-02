@@ -16,7 +16,7 @@ const FadeIn = ({ delay, children }) => (
 );
 
 const BOX_STYLE =
-  "z-20 transition-color text-gray-100 p-6 ease-in-out border border-gray-700 hover:border-sky-600 bg-neutral-950/50 duration-200 rounded-lg";
+  "z-20 transition-color text-gray-100 p-6 ease-in-out border border-neutral-700 hover:border-sky-600 bg-neutral-800/60 duration-200 rounded-lg";
 
 export default async function Test() {
   return (
