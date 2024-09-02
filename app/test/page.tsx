@@ -1,7 +1,5 @@
 "use client";
 
-import Image from "next/image";
-import { tinaField, useTina } from "tinacms/dist/react";
 import { Transition, TransitionChild } from "@headlessui/react";
 
 const FadeIn = ({ delay, children }) => (
@@ -30,13 +28,30 @@ export default async function Test() {
         <div className="z-10 w-full h-screen items-center justify-between">
           <Transition show={true} appear={true}>
             <div className={`h-full border-slate-100  grid grid-cols-4 grid-rows-8 gap-4 py-5 px-40`}>
+
               <FadeIn delay="delay-[0ms]">
                 <div className={`text-[16px] font-[150] col-span-3 row-span-4 ${BOX_STYLE}`}>Hi, I'm <b>Chris Aldred</b>, a software developer with strong focus on the user experience, animations and micro interactions.
-                Feel free to reach out to me if you have any projects in mind, or just to say hello.</div>
+                Feel free to reach out to me if you have any projects in mind, or just to say hello.
+                </div>
               </FadeIn>
 
               <FadeIn delay="delay-[100ms]">
-                <div className={`row-span-6 col-start-4 ${BOX_STYLE}`}>2</div>
+                <div className={`text-sm font-[150] row-span-6 col-start-4 ${BOX_STYLE}`}>
+                  <h1 className="text-lg font-medium">About me</h1>
+                  Hi, I'm Chris, a full-stack software developer from the UK.
+                  <br/><br/>
+                  My tools of choice are:
+                  <ul>
+                    <li>&#8226; JavaScript/TypeScript</li>
+                    <li>&#8226; React</li>
+                    <li>&#8226; NextJS</li>
+                    <li>&#8226; Tailwind</li>
+                    <li>&#8226; Tina CMS</li>
+                  </ul>
+                  <br/>
+                  Beyond coding, I'm passionate about rock climbing, music and traveling.
+                  While I have some preferred tools, I always choose the best one for the job, even if it's not on my usual list. My goal is to find the right solution for each project.
+                </div>
               </FadeIn>
 
               <FadeIn delay="delay-[300ms]">
@@ -74,6 +89,7 @@ export default async function Test() {
               <FadeIn delay="delay-[900ms]">
                 <div className={`col-start-3 row-start-8 ${BOX_STYLE}`}>11</div>
               </FadeIn>
+
             </div>
           </Transition>
         </div>
