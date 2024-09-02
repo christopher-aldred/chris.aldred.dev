@@ -17,34 +17,34 @@ const FadeIn = ({ delay, children }) => (
   </TransitionChild>
 );
 
-const TEST = "";
+const BOX_STYLE =
+  "transition-color ease-in-out border border-gray-700 hover:border-sky-600 bg-neutral-950/80 duration-200 rounded-lg";
 
 export default async function Test() {
   return (
-    <main className="flex flex-col items-center justify-between py-8 px-32">
-      <div className=" z-10 w-full h-full items-center justify-between">
-        <Transition show={true} appear={true}>
-          <div className="grid grid-rows-3 grid-flow-col gap-4 px-4 py-4 leading-10">
-            <FadeIn delay="delay-[0ms]">
-              <div className="transition-color ease-in-out border border-gray-700 hover:border-sky-600 bg-neutral-950/50 duration-200 p-4 w-full rounded-xl row-span-3">
-                &nbsp;
-              </div>
-            </FadeIn>
-
-            <FadeIn delay="delay-[200ms]">
-              <div className="p-4 w-full transition-color ease-in-out border border-gray-700 hover:border-sky-600 bg-neutral-950/50 duration-200 rounded-xl col-span-2">
-                &nbsp;
-              </div>
-            </FadeIn>
-
-            <FadeIn delay="delay-[400ms]">
-              <div className="p-4 w-full transition-color ease-in-out border border-gray-700 hover:border-sky-600 bg-neutral-950/50 duration-200 rounded-xl row-span-2 col-span-2">
-                &nbsp;
-              </div>
-            </FadeIn>
-          </div>
-        </Transition>
-      </div>
-    </main>
+    <>
+      <div id="stars"></div>
+      <div id="stars2"></div>
+      <div id="stars3"></div>
+      <main className="flex flex-col items-stretch min-h-screen justify-between">
+        <div className="z-10 w-full h-screen items-center justify-between">
+          <Transition show={true} appear={true}>
+            <div className={`h-full border-slate-100  grid grid-cols-4 grid-rows-8 gap-4 py-5 px-40`}>
+              <div className={`col-span-3 row-span-4 ${BOX_STYLE}`}>1</div>
+              <div className={`row-span-6 col-start-4 ${BOX_STYLE}`}>2</div>
+              <div className={`col-start-2 row-start-5 ${BOX_STYLE}`}>3</div>
+              <div className={`col-start-3 row-start-5 ${BOX_STYLE}`}>4</div>
+              <div className={`row-span-4 col-start-1 row-start-5 ${BOX_STYLE}`}>5</div>
+              <div className={`row-span-2 col-start-2 row-start-6 ${BOX_STYLE}`}>6</div>
+              <div className={`row-span-2 col-start-3 row-start-6 ${BOX_STYLE}`}>7</div>
+              <div className={`col-start-4 row-start-8 ${BOX_STYLE}`}>8</div>
+              <div className={`col-start-4 row-start-7 ${BOX_STYLE}`}>9</div>
+              <div className={`col-start-2 row-start-8 ${BOX_STYLE}`}>10</div>
+              <div className={`col-start-3 row-start-8 ${BOX_STYLE}`}>11</div>
+            </div>
+          </Transition>
+        </div>
+      </main>
+    </>
   );
 }
