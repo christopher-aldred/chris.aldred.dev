@@ -37,7 +37,7 @@ export default async function Test() {
         </ul>
 
         <main className="flex-col items-stretch min-h-screen justify-between">
-          <div className="z-10 w-full items-center justify-between">
+          <div className="z-10 w-full h-full items-center justify-between">
             <Transition show={true} appear={true}>
               <div
                 className={`h-full border-slate-100  grid grid-cols-4 grid-rows-8 gap-4 py-5 px-40`}
@@ -58,7 +58,8 @@ export default async function Test() {
                     className={`text-sm font-[150] row-span-6 col-start-4 ${BOX_STYLE}`}
                   >
                     <h1 className="text-lg font-medium">About me</h1>
-                    Hi, I'm Chris, a full-stack software developer from the UK.
+                    Hi, I'm Chris, a full-stack software developer from the UK
+                    🇬🇧
                     <br />
                     <br />
                     My tools of choice are:

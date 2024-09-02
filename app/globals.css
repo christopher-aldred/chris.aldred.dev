@@ -151,7 +151,7 @@ body {
 @keyframes animate {
   0% {
     transform: translateY(0) rotate(0deg);
-    opacity: 40%;
+    opacity: 50%;
     border-radius: 0;
   }
 
