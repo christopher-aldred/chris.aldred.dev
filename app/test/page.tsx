@@ -17,7 +17,7 @@ const FadeIn = ({ delay, children }) => (
 );
 
 const BOX_STYLE =
-  "z-20 transition-color text-gray-100 p-6 ease-in-out border border-neutral-700 hover:border-sky-600 bg-zinc-900/80 duration-200 rounded-lg";
+  "z-20 transition-color text-gray-100 ease-in-out border border-neutral-700 hover:border-sky-600 bg-zinc-900/80 duration-200 rounded-lg";
 
 export default function Test() {
   const [time, setTime] = useState("");
@@ -55,24 +55,24 @@ export default function Test() {
             >
               <FadeIn delay="delay-[0ms]">
                 <div
-                  className={`text-[16px] font-[150] col-span-3 row-span-4 ${BOX_STYLE}`}
+                  className={`text-[16px] font-[150] col-span-3 row-span-4 p-6 ${BOX_STYLE}`}
                 >
                   <div className="font-[150] text-sm text-slate-500">
                     Welcome
                   </div>
-                  Hi, I'm <b>Chris Aldred</b>, a software developer with strong
-                  focus on the user experience, animations and micro
-                  interactions. Feel free to reach out to me if you have any
-                  projects in mind, or just to say hello.
+                  I'm <b>Chris Aldred</b>, a software developer with a strong
+                  focus on user experience, animations and micro interactions.
+                  Feel free to reach out to me if you have any projects in mind,
+                  or just to say hello.
                 </div>
               </FadeIn>
 
               <FadeIn delay="delay-[100ms]">
                 <div
-                  className={`text-sm font-[150] row-span-6 col-start-4 ${BOX_STYLE}`}
+                  className={`text-sm font-[150] row-span-6 col-start-4 p-6 ${BOX_STYLE}`}
                 >
                   <h1 className="text-lg font-medium">About me</h1>
-                  Hi, I'm Chris, a full-stack software developer from the UK 🇬🇧
+                  Hi, I'm Chris, a full-stack software developer from the UK.
                   <br />
                   <br />
                   My tools of choice are:
@@ -93,7 +93,7 @@ export default function Test() {
 
               <FadeIn delay="delay-[300ms]">
                 <div
-                  className={`font-[100] text-2xl p-0 col-start-2 row-start-5 flex items-center justify-center ${BOX_STYLE}`}
+                  className={`font-[100] text-2xl col-start-2 row-start-5 flex items-center justify-center ${BOX_STYLE}`}
                 >
                   <Transition
                     enter={`transition-all ease-in-out duration-700`}
@@ -113,12 +113,14 @@ export default function Test() {
               </FadeIn>
 
               <FadeIn delay="delay-[400ms]">
-                <div className={`col-start-3 row-start-5 ${BOX_STYLE}`}>4</div>
+                <div className={`col-start-3 row-start-5 p-6 ${BOX_STYLE}`}>
+                  4
+                </div>
               </FadeIn>
 
               <FadeIn delay="delay-[200ms]">
                 <div
-                  className={`row-span-4 col-start-1 row-start-5 ${BOX_STYLE}`}
+                  className={`row-span-4 col-start-1 row-start-5 p-6 ${BOX_STYLE}`}
                 >
                   5
                 </div>
@@ -126,7 +128,7 @@ export default function Test() {
 
               <FadeIn delay="delay-[500ms]">
                 <div
-                  className={`row-span-2 col-start-2 row-start-6 ${BOX_STYLE}`}
+                  className={`row-span-2 col-start-2 row-start-6 p-6 ${BOX_STYLE}`}
                 >
                   6
                 </div>
@@ -134,26 +136,34 @@ export default function Test() {
 
               <FadeIn delay="delay-[600ms]">
                 <div
-                  className={`row-span-2 col-start-3 row-start-6 ${BOX_STYLE}`}
+                  className={`row-span-2 col-start-3 row-start-6 p-6 ${BOX_STYLE}`}
                 >
                   7
                 </div>
               </FadeIn>
 
               <FadeIn delay="delay-[1000ms]">
-                <div className={`col-start-4 row-start-8 ${BOX_STYLE}`}>8</div>
+                <div className={`col-start-4 row-start-8 p-6 ${BOX_STYLE}`}>
+                  8
+                </div>
               </FadeIn>
 
               <FadeIn delay="delay-[700ms]">
-                <div className={`col-start-4 row-start-7 ${BOX_STYLE}`}>9</div>
+                <div className={`col-start-4 row-start-7 p-6 ${BOX_STYLE}`}>
+                  9
+                </div>
               </FadeIn>
 
               <FadeIn delay="delay-[800ms]">
-                <div className={`col-start-2 row-start-8 ${BOX_STYLE}`}>10</div>
+                <div className={`col-start-2 row-start-8 p-6 ${BOX_STYLE}`}>
+                  10
+                </div>
               </FadeIn>
 
               <FadeIn delay="delay-[900ms]">
-                <div className={`col-start-3 row-start-8 ${BOX_STYLE}`}>11</div>
+                <div className={`col-start-3 row-start-8 p-6 ${BOX_STYLE}`}>
+                  11
+                </div>
               </FadeIn>
             </div>
           </Transition>
