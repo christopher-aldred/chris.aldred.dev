@@ -69,7 +69,7 @@ export default function Test() {
 
               <FadeIn delay="delay-[100ms]">
                 <div
-                  className={`text-sm font-[150] col-span-2 row-span-4 sm:col-span-1 sm:row-span-6 sm:col-start-4 p-6 ${BOX_STYLE}`}
+                  className={`text-sm font-[150] col-span-4  sm:col-span-1 sm:row-span-6 sm:col-start-4 p-6 ${BOX_STYLE}`}
                 >
                   <h1 className="text-lg font-medium">About me</h1>
                   Hi, I'm Chris, a full-stack software developer from the UK.
