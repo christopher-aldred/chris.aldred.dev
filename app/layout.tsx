@@ -1,14 +1,19 @@
 import Head from "next/head";
 import "./globals.css";
 import { Inter } from "next/font/google";
+import { Viewport } from "next";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Chris Aldred",
   description: "A developer portfolio site",
-  viewport:
-    "width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover",
+};
+
+const viewport: Viewport = {
+  width: "device-width, viewport-fit=cover",
+  minimumScale: 1,
+  initialScale: 1,
 };
 
 export default function RootLayout({
