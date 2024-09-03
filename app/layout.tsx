@@ -7,7 +7,8 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "Chris Aldred",
   description: "A developer portfolio site",
-  viewportFit: "cover",
+  viewport:
+    "width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover",
 };
 
 export default function RootLayout({
@@ -17,12 +18,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <Head>
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1.0, viewport-fit=cover"
-        />
-      </Head>
       <body className={inter.className}>{children}</body>
     </html>
   );
