@@ -2,6 +2,7 @@
 
 import { Transition, TransitionChild } from "@headlessui/react";
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 const FadeIn = ({ delay, children }) => (
   <TransitionChild
@@ -51,25 +52,45 @@ export default function Test() {
         <main className="flex-col justify-between">
           <Transition show={true} appear={true}>
             <div
-              className={`min-h-svh grid grid-cols-4 sm:grid-rows-8 gap-4 py-5 px-5 xl:px-44`}
+              className={`min-h-dvh grid grid-cols-4 lg:grid-rows-8 gap-4 py-5 px-5 xl:px-44`}
             >
               <FadeIn delay="delay-[0ms]">
                 <div
-                  className={`text-[16px] font-[150] col-span-4 sm:col-span-3 row-span-4 p-6 ${BOX_STYLE}`}
+                  className={`text-[16px] font-[150] col-span-4 lg:col-span-3 row-span-4 p-6 ${BOX_STYLE}`}
                 >
-                  <div className="font-[200] text-sm text-slate-500">
-                    Welcome
+                  <div className="h-full grid grid-cols-3 grid-rows-1 gap-4">
+                    <div className="col-span-3 md:col-span-2">
+                      <div className="font-[200] text-sm text-slate-500">
+                        Welcome
+                      </div>
+                      I'm <b>Chris Aldred</b>, a software developer with a
+                      strong focus on user experience, animations and micro
+                      interactions. Feel free to reach out to me if you have any
+                      projects in mind, or just to say hello.
+                    </div>
+                    <div className="flex justify-center items-end col-span-3 col-start-3">
+                      <Image
+                        className="hidden lg:block rounded-xl "
+                        src="/avatar.png"
+                        width={300}
+                        height={600}
+                        alt="Picture of the author"
+                      />
+                      <Image
+                        className="inline lg:hidden rounded-xl "
+                        src="/avatar.png"
+                        width={150}
+                        height={150}
+                        alt="Picture of the author"
+                      />
+                    </div>
                   </div>
-                  I'm <b>Chris Aldred</b>, a software developer with a strong
-                  focus on user experience, animations and micro interactions.
-                  Feel free to reach out to me if you have any projects in mind,
-                  or just to say hello.
                 </div>
               </FadeIn>
 
               <FadeIn delay="delay-[100ms]">
                 <div
-                  className={`text-sm font-[150] col-span-4  sm:col-span-1 sm:row-span-6 sm:col-start-4 p-6 ${BOX_STYLE}`}
+                  className={`text-sm font-[150] col-span-4  lg:col-span-1 lg:row-span-6 lg:col-start-4 p-6 ${BOX_STYLE}`}
                 >
                   <h1 className="text-lg font-medium">About me</h1>
                   Hi, I'm Chris, a full-stack software developer from the UK.
@@ -93,7 +114,7 @@ export default function Test() {
 
               <FadeIn delay="delay-[300ms]">
                 <div
-                  className={`font-[100] text-2xl col-span-2 sm:col-span-1 sm:col-start-2 sm:row-start-5 flex items-center justify-center ${BOX_STYLE}`}
+                  className={`font-[100] text-2xl col-span-2 lg:col-span-1 lg:col-start-2 lg:row-start-5 flex items-center justify-center ${BOX_STYLE}`}
                 >
                   <Transition
                     enter={`transition-all ease-in-out duration-700`}
@@ -114,7 +135,7 @@ export default function Test() {
 
               <FadeIn delay="delay-[400ms]">
                 <div
-                  className={`sm:col-start-3 sm:row-start-5 col-span-2 sm:col-span-1 p-6 ${BOX_STYLE}`}
+                  className={`lg:col-start-3 lg:row-start-5 col-span-2 lg:col-span-1 p-6 ${BOX_STYLE}`}
                 >
                   4
                 </div>
@@ -122,22 +143,38 @@ export default function Test() {
 
               <FadeIn delay="delay-[200ms]">
                 <div
-                  className={`col-span-2 sm:col-span-1 sm:row-span-4 sm:col-start-1 sm:row-start-5 p-6 ${BOX_STYLE}`}
+                  className={`font-[200] col-span-2 lg:col-span-1 lg:row-span-4 lg:col-start-1 lg:row-start-5 p-6 ${BOX_STYLE}`}
                 >
-                  5
+                  <div className="text-lg">Let's start working together!</div>
+                  <br />
+                  <div className="italic font-[200] text-sm text-slate-500">
+                    Contact Details
+                  </div>
+                  <div className="italic text-sm">
+                    <a href="mailto: chris@aldred.dev">chris@aldred.dev</a>
+                  </div>
+                  <br />
+                  <div className="font-[200] text-sm text-slate-500">
+                    Socials
+                  </div>
+                  <a href="https://www.linkedin.com/in/christopher-aldred-584609163/">
+                    Linkedin
+                  </a>
+                  <br />
+                  <a href="https://github.com/christopher-aldred">Github</a>
                 </div>
               </FadeIn>
 
               <FadeIn delay="delay-[500ms]">
                 <div
-                  className={`col-span-2 sm:col-span-1 sm:row-span-2 sm:col-start-2 sm:row-start-6 p-6 ${BOX_STYLE}`}
+                  className={`col-span-2 lg:col-span-1 lg:row-span-2 lg:col-start-2 lg:row-start-6 p-6 ${BOX_STYLE}`}
                 >
                   6
                 </div>
               </FadeIn>
               <FadeIn delay="delay-[600ms]">
                 <div
-                  className={`col-span-4 sm:col-span-1 sm:row-span-2 sm:col-start-3 sm:row-start-6 p-6 ${BOX_STYLE}`}
+                  className={`col-span-4 lg:col-span-1 lg:row-span-2 lg:col-start-3 lg:row-start-6 p-6 ${BOX_STYLE}`}
                 >
                   7
                 </div>
@@ -145,7 +182,7 @@ export default function Test() {
 
               <FadeIn delay="delay-[1000ms]">
                 <div
-                  className={`col-span-4 sm:col-span-1 sm:col-start-4 sm:row-start-8 p-6 ${BOX_STYLE}`}
+                  className={`col-span-4 lg:col-span-1 lg:col-start-4 lg:row-start-8 p-6 ${BOX_STYLE}`}
                 >
                   8
                 </div>
@@ -153,7 +190,7 @@ export default function Test() {
 
               <FadeIn delay="delay-[700ms]">
                 <div
-                  className={`col-span-4 sm:col-span-1 sm:col-start-4 sm:row-start-7 p-6 ${BOX_STYLE}`}
+                  className={`col-span-4 lg:col-span-1 lg:col-start-4 lg:row-start-7 p-6 ${BOX_STYLE}`}
                 >
                   9
                 </div>
@@ -161,7 +198,7 @@ export default function Test() {
 
               <FadeIn delay="delay-[800ms]">
                 <div
-                  className={`col-span-4 sm:col-span-1 sm:col-start-2 sm:row-start-8 p-6 ${BOX_STYLE}`}
+                  className={`col-span-4 lg:col-span-1 lg:col-start-2 lg:row-start-8 p-6 ${BOX_STYLE}`}
                 >
                   10
                 </div>
@@ -169,7 +206,7 @@ export default function Test() {
 
               <FadeIn delay="delay-[900ms]">
                 <div
-                  className={`col-span-4 sm:col-span-1 sm:col-start-3 sm:row-start-8 p-6 ${BOX_STYLE}`}
+                  className={`col-span-4 lg:col-span-1 lg:col-start-3 lg:row-start-8 p-6 ${BOX_STYLE}`}
                 >
                   11
                 </div>
