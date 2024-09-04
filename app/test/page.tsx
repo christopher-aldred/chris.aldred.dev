@@ -68,16 +68,16 @@ export default function Test() {
                       interactions. Feel free to reach out to me if you have any
                       projects in mind, or just to say hello.
                     </div>
-                    <div className="flex justify-center items-end col-span-3 col-start-3">
+                    <div className="flex justify-end items-end col-span-3 col-start-3">
                       <Image
-                        className="hidden lg:block rounded-xl "
+                        className="hidden lg:block rounded-lg"
                         src="/avatar.png"
                         width={300}
                         height={600}
                         alt="Picture of the author"
                       />
                       <Image
-                        className="inline lg:hidden rounded-xl "
+                        className="inline lg:hidden rounded-lg"
                         src="/avatar.png"
                         width={150}
                         height={150}
