@@ -2098,41 +2098,12 @@
     yup "^0.32.9"
     zod "^3.14.3"
 
-"@tinacms/datalayer@^1.3.1":
-  version "1.3.1"
-  resolved "https://registry.yarnpkg.com/@tinacms/datalayer/-/datalayer-1.3.1.tgz#6f621894d70996f04a0c3dc8a9526655341e144e"
-  integrity sha512-mKe3rNelomFu5NRlpwLr1ql21vC3eU4cUsA7j9hFCmSNuxcpmVFKjbMklBXBrYMsprrezqdwPhWM0Kye5Gbu6A==
+"@tinacms/datalayer@^1.3.2":
+  version "1.3.2"
+  resolved "https://registry.yarnpkg.com/@tinacms/datalayer/-/datalayer-1.3.2.tgz#2f9de9b4ab07a012b5d604ff5c4c1b13c6858684"
+  integrity sha512-sDSDLL3yuhmDeyVctG62gfgyZuZKdHwBku5PoCW9w6sB+U33rk819nJptyMk3NzP2+IpAv/Fkc3fjG9JIE67xg==
   dependencies:
-    "@tinacms/graphql" "1.5.1"
-
-"@tinacms/graphql@1.5.1":
-  version "1.5.1"
-  resolved "https://registry.yarnpkg.com/@tinacms/graphql/-/graphql-1.5.1.tgz#26c09871db79854f76df86ba3983b42fb2ed109b"
-  integrity sha512-2mYDl6C4XKBW1J4JpyqNyCMadLxPqI+6NOUUZ85J9wFWokMmQALhbZ9v18z+TcNloe4Scg2qk3B4Sp0sDwX1+g==
-  dependencies:
-    "@iarna/toml" "^2.2.5"
-    "@tinacms/mdx" "1.4.1"
-    "@tinacms/schema-tools" "1.6.1"
-    abstract-level "^1.0.4"
-    date-fns "^2.30.0"
-    fast-glob "^3.3.2"
-    fs-extra "^9.1.0"
-    glob-parent "^6.0.2"
-    graphql "15.8.0"
-    gray-matter "^4.0.3"
-    isomorphic-git "^1.27.1"
-    js-sha1 "^0.6.0"
-    js-yaml "^3.14.1"
-    jsonpath-plus "^6.0.1"
-    lodash.clonedeep "^4.5.0"
-    lodash.set "^4.3.2"
-    lodash.uniqby "^4.7.0"
-    many-level "^2.0.0"
-    micromatch "4.0.5"
-    normalize-path "^3.0.0"
-    readable-stream "^4.5.2"
-    scmp "^2.1.0"
-    yup "^0.32.11"
+    "@tinacms/graphql" "1.5.2"
 
 "@tinacms/graphql@1.5.2":
   version "1.5.2"
@@ -2162,42 +2133,6 @@
     readable-stream "^4.5.2"
     scmp "^2.1.0"
     yup "^0.32.11"
-
-"@tinacms/mdx@1.4.1":
-  version "1.4.1"
-  resolved "https://registry.yarnpkg.com/@tinacms/mdx/-/mdx-1.4.1.tgz#c252b1f02183f357c854fdb7ee0fb5e070a5a8d2"
-  integrity sha512-4lOgVFEmoVyqPNBZAb68NZ4ans4QQSEbAOEFqXcK4TL+/Xvmang0BasNaW7rMAeXvx1JcS9xqbZZ/+u+ODjIWg==
-  dependencies:
-    "@tinacms/schema-tools" "1.6.1"
-    acorn "8.8.2"
-    ccount "2.0.1"
-    estree-util-is-identifier-name "2.1.0"
-    lodash.flatten "4.4.0"
-    mdast-util-compact "4.1.1"
-    mdast-util-directive "2.2.4"
-    mdast-util-from-markdown "1.3.0"
-    mdast-util-gfm "2.0.2"
-    mdast-util-mdx-jsx "2.1.2"
-    mdast-util-to-markdown "1.5.0"
-    micromark-extension-gfm "2.0.3"
-    micromark-factory-mdx-expression "1.0.7"
-    micromark-factory-space "1.0.0"
-    micromark-factory-whitespace "1.0.0"
-    micromark-util-character "1.1.0"
-    micromark-util-symbol "1.0.1"
-    micromark-util-types "1.0.2"
-    parse-entities "4.0.1"
-    prettier "^2.7.1"
-    remark "14.0.2"
-    remark-gfm "^2.0.0"
-    remark-mdx "2.3.0"
-    stringify-entities "4.0.3"
-    typedoc "^0.26.3"
-    unist-util-source "4.0.2"
-    unist-util-stringify-position "3.0.3"
-    unist-util-visit "4.1.2"
-    uvu "0.5.6"
-    vfile-message "3.1.4"
 
 "@tinacms/mdx@1.4.2":
   version "1.4.2"
@@ -8746,10 +8681,10 @@ tinacms-authjs@^5.0.1:
   dependencies:
     "@tinacms/schema-tools" "1.6.1"
 
-tinacms-gitprovider-github@^2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/tinacms-gitprovider-github/-/tinacms-gitprovider-github-2.0.1.tgz#b094a161274d613140949b585d890511188ae70c"
-  integrity sha512-U964SanrW4p4z61CsRKcGFNfIYd3le0hAi8UYxCxPd1Q1jOk8HZ5mEIabEGjxdO4ijMhsEmztZX5Eo0dxAo9rQ==
+tinacms-gitprovider-github@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/tinacms-gitprovider-github/-/tinacms-gitprovider-github-2.0.2.tgz#657ff6b1ed0806b4612d68a5eece555d390919fd"
+  integrity sha512-SN8hyM3YM5zIqm1QwNu0PmAUVkT0Lj5NRKHsR/pYyvFBk/UzfX9QZCpX3/uITIEujX0O1AUvL2O/3UJNEaC9kQ==
   dependencies:
     "@octokit/rest" "^19.0.7"
     js-base64 "^3.7.4"
