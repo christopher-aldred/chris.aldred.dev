@@ -35,7 +35,7 @@ export default function Test() {
   return (
     <>
       {/* BG square elements */}
-      <div className="z-10 area flex overflow-scroll">
+      <div className="z-10 area flex">
         <ul className="circles">
           <li></li>
           <li></li>
@@ -49,7 +49,7 @@ export default function Test() {
           <li></li>
         </ul>
 
-        <main className="flex-col justify-between">
+        <main className="flex-col justify-between overflow-scroll">
           <Transition show={true} appear={true}>
             <div
               className={`min-h-dvh grid grid-cols-4 lg:grid-rows-8 gap-4 py-5 px-5 xl:px-44`}
