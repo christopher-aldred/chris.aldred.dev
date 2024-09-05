@@ -90,10 +90,12 @@ export default function Test() {
 
               <FadeIn delay="delay-[100ms]">
                 <div
-                  className={`text-sm font-[150] col-span-4  lg:col-span-1 lg:row-span-6 lg:col-start-4 p-6 ${BOX_STYLE}`}
+                  className={`text-sm font-[200] col-span-4  lg:col-span-1 lg:row-span-6 lg:col-start-4 p-6 ${BOX_STYLE}`}
                 >
                   <h1 className="text-lg font-medium">About me</h1>
-                  Hi, I'm Chris, a full-stack software developer from the UK.
+                  I'm a full-stack software developer from the UK. My expertise
+                  spans both front-end and back-end development, allowing me to
+                  create comprehensive web applications from start to finish.
                   <br />
                   <br />
                   My tools of choice are:
