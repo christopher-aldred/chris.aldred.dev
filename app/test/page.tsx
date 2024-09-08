@@ -240,10 +240,10 @@ export default function Test() {
           </div>
         </ul>
 
-        <main className="flex-col justify-between overflow-scroll">
+        <main className="flex-col justify-between overflow-auto">
           <Transition show={true} appear={true}>
             <div
-              className={`min-h-full grid grid-cols-4 lg:grid-rows-8 gap-4 py-5 px-5 xl:px-44`}
+              className={`min-h-full grid grid-cols-4 lg:grid-rows-8 gap-4 py-5 px-5 lg:px-36 2xl:px-80`}
             >
               <FadeIn delay="delay-[0ms]">
                 <div
