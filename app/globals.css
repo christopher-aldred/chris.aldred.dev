@@ -68,7 +68,7 @@ body {
   list-style: none;
   width: 20px;
   height: 20px;
-  background: rgb(0, 136, 255);
+  background: rgba(255, 255, 255, 0.5);
   animation: animate 25s linear infinite;
   bottom: -150px;
 }
