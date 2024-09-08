@@ -128,7 +128,7 @@ export default function Test() {
                       {time}
                       <br />
                       <div className="font-[150] text-base text-slate-400">
-                        Time in United Kingdom
+                        UK Time
                       </div>
                     </center>
                   </Transition>
