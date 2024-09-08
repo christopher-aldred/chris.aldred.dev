@@ -55,7 +55,7 @@ export default function Test() {
                 >
                   <animate
                     attributeName="fx"
-                    dur="68s"
+                    dur="140s"
                     values="0%;3%;0%"
                     repeatCount="indefinite"
                   ></animate>
@@ -72,7 +72,7 @@ export default function Test() {
                 >
                   <animate
                     attributeName="fx"
-                    dur="46s"
+                    dur="100s"
                     values="0%;3%;0%"
                     repeatCount="indefinite"
                   ></animate>
@@ -89,7 +89,7 @@ export default function Test() {
                 >
                   <animate
                     attributeName="fx"
-                    dur="44s"
+                    dur="88s"
                     values="0%;3%;0%"
                     repeatCount="indefinite"
                   ></animate>
@@ -106,7 +106,7 @@ export default function Test() {
                 >
                   <animate
                     attributeName="fx"
-                    dur="46s"
+                    dur="90s"
                     values="0%;5%;0%"
                     repeatCount="indefinite"
                   ></animate>
@@ -123,7 +123,7 @@ export default function Test() {
                 >
                   <animate
                     attributeName="fx"
-                    dur="50s"
+                    dur="100s"
                     values="0%;5%;0%"
                     repeatCount="indefinite"
                   ></animate>
@@ -140,7 +140,7 @@ export default function Test() {
                 >
                   <animate
                     attributeName="fx"
-                    dur="52s"
+                    dur="104s"
                     values="0%;5%;0%"
                     repeatCount="indefinite"
                   ></animate>
@@ -159,13 +159,13 @@ export default function Test() {
               >
                 <animate
                   attributeName="x"
-                  dur="40s"
+                  dur="80s"
                   values="25%;0%;25%"
                   repeatCount="indefinite"
                 ></animate>
                 <animate
                   attributeName="y"
-                  dur="42s"
+                  dur="84s"
                   values="0%;25%;0%"
                   repeatCount="indefinite"
                 ></animate>
@@ -174,7 +174,7 @@ export default function Test() {
                   type="rotate"
                   from="0 50 50"
                   to="360 50 50"
-                  dur="14s"
+                  dur="28s"
                   repeatCount="indefinite"
                 ></animateTransform>
               </rect>
@@ -188,13 +188,13 @@ export default function Test() {
               >
                 <animate
                   attributeName="x"
-                  dur="46s"
+                  dur="92s"
                   values="-25%;0%;-25%"
                   repeatCount="indefinite"
                 ></animate>
                 <animate
                   attributeName="y"
-                  dur="48s"
+                  dur="100s"
                   values="0%;50%;0%"
                   repeatCount="indefinite"
                 ></animate>
@@ -203,7 +203,7 @@ export default function Test() {
                   type="rotate"
                   from="0 50 50"
                   to="360 50 50"
-                  dur="24s"
+                  dur="48s"
                   repeatCount="indefinite"
                 ></animateTransform>
               </rect>
@@ -217,13 +217,13 @@ export default function Test() {
               >
                 <animate
                   attributeName="x"
-                  dur="50s"
+                  dur="100s"
                   values="0%;25%;0%"
                   repeatCount="indefinite"
                 ></animate>
                 <animate
                   attributeName="y"
-                  dur="24s"
+                  dur="48s"
                   values="0%;25%;0%"
                   repeatCount="indefinite"
                 ></animate>
@@ -232,7 +232,7 @@ export default function Test() {
                   type="rotate"
                   from="360 50 50"
                   to="0 50 50"
-                  dur="18s"
+                  dur="36s"
                   repeatCount="indefinite"
                 ></animateTransform>
               </rect>
