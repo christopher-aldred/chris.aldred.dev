@@ -287,39 +287,39 @@ export default function Test() {
                 <div
                   className={`text-[16px] font-[150] col-span-4 lg:col-span-3 row-span-4 p-6 ${BOX_STYLE}`}
                 >
-                  <div className="h-full grid grid-cols-3 grid-rows-1 gap-4">
-                    <div className="col-span-3 md:col-span-2 flex flex-col items-start justify-center h-full">
-                      <div className="flex-1">
-                        <div className="font-[200] text-sm text-slate-500">
-                          Welcome
-                        </div>
-                        I'm <b>Chris Aldred</b>, a software developer with a
-                        strong focus on user experience, animations and micro
-                        interactions. Feel free to reach out to me if you have
-                        any projects in mind, or just to say hello.
-                        <br />
-                        <br />
+                  <div className="h-full w-full grid grid-cols-3 grid-rows-2 gap-4">
+                    <div className="col-span-3 lg:col-span-2 row-start-1">
+                      <div className="font-[200] text-sm text-slate-500">
+                        Welcome
                       </div>
+                      I'm <b>Chris Aldred</b>, a software developer with a
+                      strong focus on user experience, animations and micro
+                      interactions. Feel free to reach out to me if you have any
+                      projects in mind, or just to say hello.
+                      <br />
+                      <br />
+                    </div>
+                    <div className="col-span-2 col-start-1 row-start-2 flex items-end">
                       <a className="relative" href="#">
                         <span className="absolute top-0 left-0 mt-1 ml-1 h-14 w-36 rounded-lg bg-black"></span>
-                        <span className="text-lg flex flex-col justify-center items-center fold-bold relative h-14 w-36 rounded-lg border-2 border-black bg-white px-3 py-1 text-base font-bold text-black transition duration-100 hover:bg-yellow-400 hover:text-gray-900">
+                        <span className="text-lg flex flex-col justify-center items-center fold-bold relative h-14 w-36 rounded-lg border-2 border-black bg-white px-3 py-1 font-bold text-black transition duration-100 hover:bg-yellow-400 hover:text-gray-900">
                           Book a call
                         </span>
                       </a>
                     </div>
-                    <div className="flex justify-end items-end col-span-3 col-start-3">
+                    <div className="relative row-span-1 lg:row-span-2 col-start-3 row-start-2 lg:row-start-1">
                       <Image
-                        className="hidden lg:block rounded-lg"
+                        className="hidden lg:inline rounded-lg absolute bottom-0 right-0"
                         src="/avatar.png"
-                        width={300}
-                        height={600}
+                        width={200}
+                        height={200}
                         alt="Picture of the author"
                       />
                       <Image
-                        className="inline lg:hidden rounded-lg"
+                        className="inline lg:hidden rounded-lg absolute bottom-0 right-0"
                         src="/avatar.png"
-                        width={150}
-                        height={150}
+                        width={120}
+                        height={120}
                         alt="Picture of the author"
                       />
                     </div>
