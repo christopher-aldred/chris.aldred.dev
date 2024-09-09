@@ -288,14 +288,24 @@ export default function Test() {
                   className={`text-[16px] font-[150] col-span-4 lg:col-span-3 row-span-4 p-6 ${BOX_STYLE}`}
                 >
                   <div className="h-full grid grid-cols-3 grid-rows-1 gap-4">
-                    <div className="col-span-3 md:col-span-2">
-                      <div className="font-[200] text-sm text-slate-500">
-                        Welcome
+                    <div className="col-span-3 md:col-span-2 flex flex-col items-start justify-center h-full">
+                      <div className="flex-1">
+                        <div className="font-[200] text-sm text-slate-500">
+                          Welcome
+                        </div>
+                        I'm <b>Chris Aldred</b>, a software developer with a
+                        strong focus on user experience, animations and micro
+                        interactions. Feel free to reach out to me if you have
+                        any projects in mind, or just to say hello.
+                        <br />
+                        <br />
                       </div>
-                      I'm <b>Chris Aldred</b>, a software developer with a
-                      strong focus on user experience, animations and micro
-                      interactions. Feel free to reach out to me if you have any
-                      projects in mind, or just to say hello.
+                      <a className="relative" href="#">
+                        <span className="absolute top-0 left-0 mt-1 ml-1 h-14 w-36 rounded-lg bg-black"></span>
+                        <span className="text-lg flex flex-col justify-center items-center fold-bold relative h-14 w-36 rounded-lg border-2 border-black bg-white px-3 py-1 text-base font-bold text-black transition duration-100 hover:bg-yellow-400 hover:text-gray-900">
+                          Book a call
+                        </span>
+                      </a>
                     </div>
                     <div className="flex justify-end items-end col-span-3 col-start-3">
                       <Image
