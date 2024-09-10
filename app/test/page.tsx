@@ -282,7 +282,7 @@ export default function Test() {
         <main className="flex-col justify-between overflow-auto">
           <Transition show={true} appear={true}>
             <div
-              className={`min-h-full grid grid-cols-4 lg:grid-rows-7 gap-4 lg:gap-4 py-6 px-6 lg:px-36 2xl:px-72`}
+              className={`min-h-full grid grid-cols-4 lg:grid-rows-7 gap-2 lg:gap-4 lg:gap-4 p-2 lg:p-6 lg:px-36 2xl:px-72`}
             >
               <FadeAndSlide delay="delay-[0ms]">
                 <div
