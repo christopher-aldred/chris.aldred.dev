@@ -282,13 +282,13 @@ export default function Test() {
         <main className="flex-col justify-between overflow-auto">
           <Transition show={true} appear={true}>
             <div
-              className={`min-h-full grid grid-cols-4 lg:grid-rows-7 gap-2 lg:gap-4 lg:gap-4 p-2 lg:p-6 lg:px-36 2xl:px-72`}
+              className={`min-h-full grid grid-cols-4 lg:grid-rows-7 gap-2 md:gap-4 p-2 md:p-6 lg:px-36 2xl:px-72`}
             >
               <FadeAndSlide delay="delay-[0ms]">
                 <div
                   className={`text-[16px] font-[150] col-span-4 lg:col-span-3 row-span-3 p-6 ${BOX_STYLE}`}
                 >
-                  <div className="h-full w-full grid grid-cols-3 grid-rows-2 gap-4">
+                  <div className="h-full w-full grid grid-cols-3 grid-rows-2 gap-0">
                     <div className="col-span-3 lg:col-span-2 row-start-1 min-h-28">
                       <div className="font-[200] text-sm text-slate-500">
                         Welcome
@@ -381,8 +381,8 @@ export default function Test() {
                       <Image
                         className="inline lg:hidden rounded-lg absolute bottom-0 right-0"
                         src="/avatar.png"
-                        width={140}
-                        height={140}
+                        width={130}
+                        height={130}
                         alt="Picture of the author"
                       />
                     </div>
