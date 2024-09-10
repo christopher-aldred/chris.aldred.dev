@@ -282,11 +282,11 @@ export default function Test() {
         <main className="flex-col justify-between overflow-auto">
           <Transition show={true} appear={true}>
             <div
-              className={`min-h-full grid grid-cols-4 lg:grid-rows-8 gap-4 py-5 px-5 lg:px-36 xl:px-56 2xl:px-80`}
+              className={`min-h-full grid grid-cols-4 lg:grid-rows-8 gap-2 lg:gap-8 py-2 px-2 lg:px-36 xl:px-56 2xl:px-80`}
             >
               <FadeAndSlide delay="delay-[0ms]">
                 <div
-                  className={`text-[16px] font-[150] col-span-4 lg:col-span-3 row-span-4 p-6 ${BOX_STYLE}`}
+                  className={`text-[16px] font-[150] col-span-4 lg:col-span-3 row-span-3 p-6 ${BOX_STYLE}`}
                 >
                   <div className="h-full w-full grid grid-cols-3 grid-rows-2 gap-4">
                     <div className="col-span-3 lg:col-span-2 row-start-1">
@@ -297,10 +297,8 @@ export default function Test() {
                       strong focus on user experience, animations and micro
                       interactions. Feel free to reach out to me if you have any
                       projects in mind, or just to say hello.
-                      <br />
-                      <br />
                     </div>
-                    <div className="col-span-2 col-start-1 row-start-2 flex items-end space-x-4">
+                    <div className="col-span-2 col-start-1 row-start-2 flex items-end">
                       <a className="relative" href="#">
                         <span className="h-10 w-28 lg:h-12 lg:w-36 absolute top-0 left-0 mt-1 ml-1  rounded-lg bg-black"></span>
                         <span className="h-10 w-28 lg:h-12 lg:w-36 text-md lg:text-lg flex flex-col justify-center items-center fold-bold relative  rounded-lg border-2 border-black bg-white px-3 py-1 font-bold text-black transition duration-100 hover:bg-yellow-400 hover:text-gray-900">
@@ -388,7 +386,7 @@ export default function Test() {
 
               <FadeAndSlide delay="delay-[300ms]">
                 <div
-                  className={`font-[100] text-2xl col-span-2 lg:col-span-1 lg:col-start-2 lg:row-start-5 flex items-center justify-center ${BOX_STYLE}`}
+                  className={`font-[100] text-2xl col-span-2 lg:col-span-1 lg:col-start-2 lg:row-start-4 flex items-center justify-center ${BOX_STYLE}`}
                 >
                   <Transition
                     enter={`transition-all ease-in-out duration-700`}
@@ -409,7 +407,7 @@ export default function Test() {
 
               <FadeAndSlide delay="delay-[400ms]">
                 <div
-                  className={`lg:col-start-3 lg:row-start-5 col-span-2 lg:col-span-1 p-6 ${BOX_STYLE}`}
+                  className={`lg:col-start-3 lg:row-start-4 col-span-2 lg:col-span-1 p-6 ${BOX_STYLE}`}
                 >
                   4
                 </div>
@@ -417,7 +415,7 @@ export default function Test() {
 
               <FadeAndSlide delay="delay-[200ms]">
                 <div
-                  className={`font-[200] col-span-2 lg:col-span-1 lg:row-span-4 lg:col-start-1 lg:row-start-5 p-6 ${BOX_STYLE}`}
+                  className={`font-[200] col-span-2 lg:col-span-1 lg:row-span-4 lg:col-start-1 lg:row-start-4 p-6 ${BOX_STYLE}`}
                 >
                   <div className="text-lg">Let's start working together!</div>
                   <br />
@@ -441,14 +439,14 @@ export default function Test() {
 
               <FadeAndSlide delay="delay-[500ms]">
                 <div
-                  className={`col-span-2 lg:col-span-1 lg:row-span-2 lg:col-start-2 lg:row-start-6 p-6 ${BOX_STYLE}`}
+                  className={`col-span-2 lg:col-span-1 lg:row-span-2 lg:col-start-2 lg:row-start-5 p-6 ${BOX_STYLE}`}
                 >
                   6
                 </div>
               </FadeAndSlide>
               <FadeAndSlide delay="delay-[600ms]">
                 <div
-                  className={`col-span-4 lg:col-span-1 lg:row-span-2 lg:col-start-3 lg:row-start-6 p-6 ${BOX_STYLE}`}
+                  className={`col-span-4 lg:col-span-1 lg:row-span-2 lg:col-start-3 lg:row-start-5 p-6 ${BOX_STYLE}`}
                 >
                   7
                 </div>
@@ -456,23 +454,15 @@ export default function Test() {
 
               <FadeAndSlide delay="delay-[1000ms]">
                 <div
-                  className={`col-span-4 lg:col-span-1 lg:col-start-4 lg:row-start-8 p-6 ${BOX_STYLE}`}
+                  className={`col-span-4 lg:col-span-1 lg:col-start-4 lg:row-start-7 p-6 ${BOX_STYLE}`}
                 >
                   8
                 </div>
               </FadeAndSlide>
 
-              <FadeAndSlide delay="delay-[700ms]">
-                <div
-                  className={`col-span-4 lg:col-span-1 lg:col-start-4 lg:row-start-7 p-6 ${BOX_STYLE}`}
-                >
-                  9
-                </div>
-              </FadeAndSlide>
-
               <FadeAndSlide delay="delay-[800ms]">
                 <div
-                  className={`col-span-4 lg:col-span-1 lg:col-start-2 lg:row-start-8 p-6 ${BOX_STYLE}`}
+                  className={`col-span-4 lg:col-span-1 lg:col-start-2 lg:row-start-7 p-6 ${BOX_STYLE}`}
                 >
                   10
                 </div>
@@ -480,7 +470,7 @@ export default function Test() {
 
               <FadeAndSlide delay="delay-[900ms]">
                 <div
-                  className={`col-span-4 lg:col-span-1 lg:col-start-3 lg:row-start-8 p-6 ${BOX_STYLE}`}
+                  className={`col-span-4 lg:col-span-1 lg:col-start-3 lg:row-start-7 p-6 ${BOX_STYLE}`}
                 >
                   11
                 </div>
