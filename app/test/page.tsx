@@ -298,15 +298,15 @@ export default function Test() {
                       interactions. Feel free to reach out to me if you have any
                       projects in mind, or just to say hello.
                     </div>
-                    <div className="col-span-2 col-start-1 row-start-2 flex items-end">
-                      <a className="relative" href="#">
+                    <div className="col-span-2 col-start-1 row-start-2 flex items-end flex-wrap">
+                      <a className="relative mr-2" href="#">
                         <span className="h-10 w-28 lg:h-12 lg:w-36 absolute top-0 left-0 mt-1 ml-1  rounded-lg bg-black"></span>
                         <span className="h-10 w-28 lg:h-12 lg:w-36 text-md lg:text-lg flex flex-col justify-center items-center fold-bold relative  rounded-lg border-2 border-black bg-white px-3 py-1 font-bold text-black transition duration-100 hover:bg-yellow-400 hover:text-gray-900">
                           Book a call
                         </span>
                       </a>
                       <a
-                        className="relative"
+                        className="relative mr-2"
                         href="https://github.com/christopher-aldred"
                       >
                         <span className="h-10 w-12 lg:h-12 lg:w-20 absolute top-0 left-0 mt-1 ml-1  rounded-lg bg-black"></span>
