@@ -288,7 +288,7 @@ export default function Test() {
                 <div
                   className={`text-[16px] font-[150] col-span-4 lg:col-span-3 row-span-3 p-6 ${BOX_STYLE}`}
                 >
-                  <div className="h-full w-full grid grid-cols-3 grid-rows-2 gap-0">
+                  <div className="h-full w-full grid grid-cols-3 lg:grid-rows-2 gap-0">
                     <div className="col-span-3 lg:col-span-2 row-start-1 min-h-28">
                       <div className="font-[200] text-sm text-slate-500">
                         Welcome
@@ -298,7 +298,7 @@ export default function Test() {
                       interactions. Feel free to reach out to me if you have any
                       projects in mind, or just to say hello.
                     </div>
-                    <div className="col-span-2 col-start-1 row-start-2 flex items-end flex-wrap">
+                    <div className="col-span-2 col-start-1 row-start-2 flex items-end flex-wrap h-28">
                       <a className="relative mr-4" href="#">
                         <span className="h-10 w-28 lg:h-12 lg:w-32 absolute top-0 left-0 mt-1 ml-1  rounded-lg bg-black"></span>
                         <span className="h-10 w-28 lg:h-12 lg:w-32 text-md lg:text-lg flex flex-col justify-center items-center fold-bold relative  rounded-lg border-2 border-black bg-white px-3 py-1 font-bold text-black transition duration-100 hover:bg-yellow-400 hover:text-gray-900">
@@ -370,7 +370,7 @@ export default function Test() {
                         </span>
                       </a>
                     </div>
-                    <div className="relative row-span-1 lg:row-span-2 col-start-3 row-start-2 lg:row-start-1">
+                    <div className="relative row-span-1 lg:row-span-2 col-start-3 row-start-2 lg:row-start-1 h-30">
                       <Image
                         className="hidden lg:inline rounded-lg absolute bottom-0 right-0"
                         src="/avatar.png"
