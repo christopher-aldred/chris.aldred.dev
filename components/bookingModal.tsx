@@ -10,10 +10,16 @@ export default function BookingModal() {
           <div className="flex flex-col justify-center">
             {/* Navigates back to the base URL - closing the modal */}
             <iframe
-              className="rounded-md"
+              className="rounded-md inline-block lg:hidden"
               src="https://koalendar.com/e/meet-with-chris-aldred?embed=true"
               width="325px"
-              height="600px"
+              height="525px"
+            ></iframe>
+            <iframe
+              className="rounded-md lg:inline-block hidden"
+              src="https://koalendar.com/e/meet-with-chris-aldred?embed=true"
+              width="400px"
+              height="650px"
             ></iframe>
             <Link
               href="/test"
