@@ -3,6 +3,12 @@
 import { Transition, TransitionChild } from "@headlessui/react";
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
+import BookingModal from "../../components/bookingModal";
+
+type SearchParamProps = {
+  searchParams: Record<string, string> | null | undefined;
+};
 
 const FadeAndSlide = ({ delay, children }) => (
   <TransitionChild
@@ -33,8 +39,9 @@ const FadeIn = ({ delay, children }) => (
 const BOX_STYLE =
   "z-20 transition-color text-gray-100 ease-in-out border border-neutral-700 hover:border-slate-100 bg-zinc-900/80 duration-200 rounded-lg";
 
-export default function Test() {
+export default function Portfolio({ searchParams }: SearchParamProps) {
   const [time, setTime] = useState("");
+  const booking = searchParams?.booking;
 
   // Set clock time
   useEffect(() => {
@@ -48,6 +55,7 @@ export default function Test() {
 
   return (
     <>
+      {booking && <BookingModal />}
       {/* BG square elements */}
       <div className="z-10 area flex">
         <Transition as="div" show={true} appear={true}>
@@ -75,13 +83,10 @@ export default function Test() {
                         values="0%;3%;0%"
                         repeatCount="indefinite"
                       ></animate>
-                      <stop
-                        offset="0%"
-                        stop-color="rgba(255, 0, 255, 1)"
-                      ></stop>
+                      <stop offset="0%" stopColor="rgba(255, 0, 255, 1)"></stop>
                       <stop
                         offset="100%"
-                        stop-color="rgba(255, 0, 255, 0)"
+                        stopColor="rgba(255, 0, 255, 0)"
                       ></stop>
                     </radialGradient>
                     <radialGradient
@@ -98,13 +103,10 @@ export default function Test() {
                         values="0%;3%;0%"
                         repeatCount="indefinite"
                       ></animate>
-                      <stop
-                        offset="0%"
-                        stop-color="rgba(255, 255, 0, 1)"
-                      ></stop>
+                      <stop offset="0%" stopColor="rgba(255, 255, 0, 1)"></stop>
                       <stop
                         offset="100%"
-                        stop-color="rgba(255, 255, 0, 0)"
+                        stopColor="rgba(255, 255, 0, 0)"
                       ></stop>
                     </radialGradient>
                     <radialGradient
@@ -121,13 +123,10 @@ export default function Test() {
                         values="0%;3%;0%"
                         repeatCount="indefinite"
                       ></animate>
-                      <stop
-                        offset="0%"
-                        stop-color="rgba(0, 255, 255, 1)"
-                      ></stop>
+                      <stop offset="0%" stopColor="rgba(0, 255, 255, 1)"></stop>
                       <stop
                         offset="100%"
-                        stop-color="rgba(0, 255, 255, 0)"
+                        stopColor="rgba(0, 255, 255, 0)"
                       ></stop>
                     </radialGradient>
                     <radialGradient
@@ -144,11 +143,8 @@ export default function Test() {
                         values="0%;5%;0%"
                         repeatCount="indefinite"
                       ></animate>
-                      <stop offset="0%" stop-color="rgba(0, 255, 0, 1)"></stop>
-                      <stop
-                        offset="100%"
-                        stop-color="rgba(0, 255, 0, 0)"
-                      ></stop>
+                      <stop offset="0%" stopColor="rgba(0, 255, 0, 1)"></stop>
+                      <stop offset="100%" stopColor="rgba(0, 255, 0, 0)"></stop>
                     </radialGradient>
                     <radialGradient
                       id="Gradient5"
@@ -164,8 +160,8 @@ export default function Test() {
                         values="0%;5%;0%"
                         repeatCount="indefinite"
                       ></animate>
-                      <stop offset="0%" stop-color="rgba(0,0,255, 1)"></stop>
-                      <stop offset="100%" stop-color="rgba(0,0,255, 0)"></stop>
+                      <stop offset="0%" stopColor="rgba(0,0,255, 1)"></stop>
+                      <stop offset="100%" stopColor="rgba(0,0,255, 0)"></stop>
                     </radialGradient>
                     <radialGradient
                       id="Gradient6"
@@ -181,8 +177,8 @@ export default function Test() {
                         values="0%;5%;0%"
                         repeatCount="indefinite"
                       ></animate>
-                      <stop offset="0%" stop-color="rgba(255,0,0, 1)"></stop>
-                      <stop offset="100%" stop-color="rgba(255,0,0, 0)"></stop>
+                      <stop offset="0%" stopColor="rgba(255,0,0, 1)"></stop>
+                      <stop offset="100%" stopColor="rgba(255,0,0, 0)"></stop>
                     </radialGradient>
                   </defs>
 
@@ -299,12 +295,12 @@ export default function Test() {
                       projects in mind, or just to say hello.
                     </div>
                     <div className="col-span-2 col-start-1 row-start-2 flex items-end flex-wrap h-auto">
-                      <a className="relative mr-4" href="#">
+                      <Link className="relative mr-4" href="?booking=true">
                         <span className="h-10 w-28 lg:h-12 lg:w-32 absolute top-0 left-0 mt-1 ml-1  rounded-lg bg-black"></span>
                         <span className="h-10 w-28 lg:h-12 lg:w-32 text-md lg:text-lg flex flex-col justify-center items-center fold-bold relative  rounded-lg border-2 border-black bg-white px-3 py-1 font-bold text-black transition duration-100 hover:bg-yellow-400 hover:text-gray-900">
                           Book a call
                         </span>
-                      </a>
+                      </Link>
                       <a
                         className="relative mr-4"
                         href="mailto: chris@aldred.dev"
@@ -476,6 +472,7 @@ export default function Test() {
                   6
                 </div>
               </FadeAndSlide>
+
               <FadeAndSlide delay="delay-[600ms]">
                 <div
                   className={`col-span-4 lg:col-span-1 lg:row-span-2 lg:col-start-3 lg:row-start-5 p-6 ${BOX_STYLE}`}
