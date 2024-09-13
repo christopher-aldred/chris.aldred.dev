@@ -27,7 +27,7 @@ export const FadeIn = ({ children }) => (
 );
 
 export const BgAnimated = () => (
-  <FadeIn delay="delay-[0ms]">
+  <FadeIn>
     <div className="circles">
       <div id="bg-wrap">
         <svg
