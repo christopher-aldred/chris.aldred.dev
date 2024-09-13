@@ -441,38 +441,6 @@ export default function Portfolio({ searchParams }: SearchParamProps) {
                 </div>
               </FadeAndSlide>
 
-              <FadeAndSlide delay="delay-[200ms]">
-                <div
-                  className={`font-[200] col-span-2 lg:col-span-1 lg:row-span-4 lg:col-start-1 lg:row-start-4 p-6 ${BOX_STYLE}`}
-                >
-                  <div className="text-lg">Let's start working together!</div>
-                  <br />
-                  <div className="italic font-[200] text-sm text-slate-500">
-                    Contact Details
-                  </div>
-                  <div className="italic text-sm">
-                    <a href="mailto: chris@aldred.dev">chris@aldred.dev</a>
-                  </div>
-                  <br />
-                  <div className="font-[200] text-sm text-slate-500">
-                    Socials
-                  </div>
-                  <a href="https://www.linkedin.com/in/christopher-aldred-584609163/">
-                    Linkedin
-                  </a>
-                  <br />
-                  <a href="https://github.com/christopher-aldred">Github</a>
-                </div>
-              </FadeAndSlide>
-
-              <FadeAndSlide delay="delay-[500ms]">
-                <div
-                  className={`col-span-2 lg:col-span-1 lg:row-span-2 lg:col-start-2 lg:row-start-5 p-6 ${BOX_STYLE}`}
-                >
-                  6
-                </div>
-              </FadeAndSlide>
-
               <FadeAndSlide delay="delay-[600ms]">
                 <div
                   className={`col-span-4 lg:col-span-1 lg:row-span-3 lg:col-start-3 lg:row-start-5 py-4 px-8 lg:px-2 xl:px-4 ${BOX_STYLE}`}
@@ -523,19 +491,55 @@ export default function Portfolio({ searchParams }: SearchParamProps) {
                 </div>
               </FadeAndSlide>
 
-              <FadeAndSlide delay="delay-[1000ms]">
-                <div
-                  className={`col-span-4 lg:col-span-1 lg:col-start-4 lg:row-start-7 p-6 ${BOX_STYLE}`}
-                >
-                  8
-                </div>
-              </FadeAndSlide>
-
               <FadeAndSlide delay="delay-[800ms]">
                 <div
                   className={`col-span-4 lg:col-span-1 lg:col-start-2 lg:row-start-7 p-6 ${BOX_STYLE}`}
                 >
                   10
+                </div>
+              </FadeAndSlide>
+
+              <FadeAndSlide delay="delay-[200ms]">
+                <div
+                  className={`font-[200] col-span-2 lg:col-span-1 lg:row-span-4 lg:col-start-1 lg:row-start-4 p-6 ${BOX_STYLE}`}
+                >
+                  <div className="text-lg">Let's start working together!</div>
+                  <br />
+                  <div className="italic font-[200] text-sm text-slate-500">
+                    Contact Details
+                  </div>
+                  <div className="italic text-sm">
+                    <a href="mailto: chris@aldred.dev">chris@aldred.dev</a>
+                  </div>
+                  <br />
+                  <div className="font-[200] text-sm text-slate-500">
+                    Socials
+                  </div>
+                  <a href="https://www.linkedin.com/in/christopher-aldred-584609163/">
+                    Linkedin
+                  </a>
+                  <br />
+                  <a href="https://github.com/christopher-aldred">Github</a>
+                  <br />
+                  <a href="https://wa.me/+447504924583">WhatsApp</a>
+                </div>
+              </FadeAndSlide>
+
+              <FadeAndSlide delay="delay-[500ms]">
+                <div
+                  className={`col-span-2 lg:col-span-1 lg:row-span-2 lg:col-start-2 lg:row-start-5 p-6 ${BOX_STYLE}`}
+                >
+                  6
+                </div>
+              </FadeAndSlide>
+
+              <FadeAndSlide delay="delay-[1000ms]">
+                <div
+                  className={`flex col-span-4 lg:col-span-1 lg:col-start-4 lg:row-start-7 p-6 text-xs font-[200] ${BOX_STYLE}`}
+                >
+                  <div className="m-auto">
+                    © 2024 · Crafted with ♥️ by Chris.
+                  </div>
                 </div>
               </FadeAndSlide>
             </div>
