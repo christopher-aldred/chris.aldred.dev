@@ -491,7 +491,7 @@ export default function Portfolio({ searchParams }: SearchParamProps) {
                 </div>
               </FadeAndSlide>
 
-              <FadeAndSlide delay="delay-[800ms]">
+              <FadeAndSlide delay="delay-[700ms]">
                 <div
                   className={`col-span-4 lg:col-span-1 lg:col-start-2 lg:row-start-7 p-6 ${BOX_STYLE}`}
                 >
@@ -533,7 +533,7 @@ export default function Portfolio({ searchParams }: SearchParamProps) {
                 </div>
               </FadeAndSlide>
 
-              <FadeAndSlide delay="delay-[1000ms]">
+              <FadeAndSlide delay="delay-[800ms]">
                 <div
                   className={`flex col-span-4 lg:col-span-1 lg:col-start-4 lg:row-start-7 p-6 text-xs font-[200] ${BOX_STYLE}`}
                 >
