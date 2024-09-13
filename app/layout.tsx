@@ -2,6 +2,7 @@ import Head from "next/head";
 import "./globals.css";
 import { Inter } from "next/font/google";
 import type { Viewport } from "next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -37,6 +38,7 @@ export default function RootLayout({
         type="image/png"
       />
       <body className={inter.className}>{children}</body>
+      <SpeedInsights />
     </html>
   );
 }
