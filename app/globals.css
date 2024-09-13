@@ -17,6 +17,12 @@
   }
 }
 
+@layer components {
+  .custom-box-style {
+    @apply z-20 text-gray-100 ease-in-out border border-neutral-700 hover:border-slate-100 bg-zinc-900/80 duration-200 rounded-lg;
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
