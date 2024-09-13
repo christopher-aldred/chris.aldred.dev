@@ -37,8 +37,10 @@ export default function RootLayout({
         href="/favicon/apple-touch-icon.png"
         type="image/png"
       />
-      <body className={inter.className}>{children}</body>
-      <SpeedInsights />
+      <body className={inter.className}>
+        {children}
+        <SpeedInsights />
+      </body>
     </html>
   );
 }
