@@ -1,5 +1,4 @@
 import { TransitionChild } from "@headlessui/react";
-import { forwardRef } from "react";
 
 export const FadeAndSlide = ({ delay, children }) => (
   <TransitionChild
@@ -14,9 +13,9 @@ export const FadeAndSlide = ({ delay, children }) => (
   </TransitionChild>
 );
 
-export const FadeIn = ({ delay, children }) => (
+export const FadeIn = ({ children }) => (
   <TransitionChild
-    enter={`transition-all ease-in-out duration-1000 ${delay}`}
+    enter={`transition-all ease-in-out duration-300`}
     enterFrom="opacity-0 translate-y-0"
     enterTo="opacity-100 translate-y-0"
     leave="transition-all ease-in-out duration-300"
