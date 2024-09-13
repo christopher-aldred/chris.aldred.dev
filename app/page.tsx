@@ -2,7 +2,7 @@
 
 import { Transition } from "@headlessui/react";
 import BookingModal from "../components/bookingModal";
-import { BgAnimated, FadeAndSlide } from "../utils/animations";
+import { BgAnimated, FadeAndSlide, FadeIn } from "../utils/animations";
 import MainComponent from "../components/mainComponent";
 import AboutMe from "../components/aboutMe";
 import Clock from "../components/clock";

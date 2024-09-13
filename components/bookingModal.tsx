@@ -2,12 +2,36 @@
 
 import { Transition, TransitionChild } from "@headlessui/react";
 import Link from "next/link";
-import { FadeAndSlide, FadeIn } from "../utils/animations";
+
+const FadeIn = ({ delay, children }) => (
+  <TransitionChild
+    enter={`transition-all ease-in-out duration-200 ${delay}`}
+    enterFrom="opacity-0 translate-y-0"
+    enterTo="opacity-100 translate-y-0"
+    leave="transition-all ease-in-out duration-300"
+    leaveFrom="opacity-100"
+    leaveTo="opacity-0"
+  >
+    {children}
+  </TransitionChild>
+);
+const FadeAndSlide = ({ delay, children }) => (
+  <TransitionChild
+    enter={`transition-all ease-in-out duration-700 ${delay}`}
+    enterFrom="opacity-0 translate-y-48"
+    enterTo="opacity-100 translate-y-0"
+    leave="transition-all ease-in-out duration-300"
+    leaveFrom="opacity-100"
+    leaveTo="opacity-0"
+  >
+    {children}
+  </TransitionChild>
+);
 
 export default function BookingModal() {
   return (
     <Transition as="div" show={true} appear={true}>
-      <FadeIn>
+      <FadeIn delay="delay-[0ms]">
         <div className="z-50 fixed inset-0 bg-gray-900 bg-opacity-90 overflow-y-auto h-full w-full flex items-center justify-center">
           <FadeAndSlide delay="delay-[200ms]">
             <div className="p-4 border w-auto h-auto shadow-lg rounded-md bg-white">
