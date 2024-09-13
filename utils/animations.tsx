@@ -15,7 +15,7 @@ export const FadeAndSlide = ({ delay, children }) => (
 
 export const FadeIn = ({ children }) => (
   <TransitionChild
-    enter={`transition-all ease-in-out duration-300`}
+    enter={`transition-all ease-in-out duration-700`}
     enterFrom="opacity-0 translate-y-0"
     enterTo="opacity-100 translate-y-0"
     leave="transition-all ease-in-out duration-300"
