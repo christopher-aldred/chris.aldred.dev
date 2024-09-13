@@ -278,7 +278,7 @@ export default function Portfolio({ searchParams }: SearchParamProps) {
         <main className="flex-col justify-between overflow-auto">
           <Transition show={true} appear={true}>
             <div
-              className={`min-h-full grid grid-cols-4 lg:grid-rows-7 gap-4 p-4 md:p-6 lg:px-36 2xl:px-72`}
+              className={`min-h-full grid grid-cols-4 lg:grid-rows-7 gap-4 p-4 xl:px-36`}
             >
               <FadeAndSlide delay="delay-[0ms]">
                 <div
@@ -475,9 +475,43 @@ export default function Portfolio({ searchParams }: SearchParamProps) {
 
               <FadeAndSlide delay="delay-[600ms]">
                 <div
-                  className={`col-span-4 lg:col-span-1 lg:row-span-2 lg:col-start-3 lg:row-start-5 p-6 ${BOX_STYLE}`}
+                  className={`col-span-4 lg:col-span-1 lg:row-span-3 lg:col-start-3 lg:row-start-5 py-4 px-8 lg:px-2 xl:px-4 ${BOX_STYLE}`}
                 >
-                  7
+                  <div className="grid h-full grid-cols-2 grid-rows-2 divide-dashed divide-y-2 divide-x-2 divide-slate-400/25 [clip-path:inset(theme(divideWidth.2)_0_0_theme(divideWidth.2))]">
+                    <div className="p-6 flex flex-col justify-between text-center">
+                      <div className="text-5xl">7+</div>
+                      <div className="text-xs font-[200] text-slate-400">
+                        Years
+                      </div>
+                      <div className="text-xs font-[200] text-slate-400">
+                        experience
+                      </div>
+                    </div>
+                    <div className="p-6 flex flex-col justify-between text-center">
+                      <div className="text-5xl">5</div>
+                      <div className="text-xs font-[200] text-slate-400">
+                        Programming
+                      </div>
+                      <div className="text-xs font-[200] text-slate-400">
+                        languages
+                      </div>
+                    </div>
+                    <div className="p-6 flex flex-col justify-between text-center">
+                      <div className="text-5xl">2</div>
+                      <div className="text-xs font-[200] text-slate-400">
+                        Certifications
+                      </div>
+                    </div>
+                    <div className="p-6 flex flex-col justify-between text-center">
+                      <div className="text-5xl">1</div>
+                      <div className="text-xs font-[200] text-slate-400">
+                        Bachelors
+                      </div>
+                      <div className="text-xs font-[200] text-slate-400">
+                        degree
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </FadeAndSlide>
 
@@ -494,14 +528,6 @@ export default function Portfolio({ searchParams }: SearchParamProps) {
                   className={`col-span-4 lg:col-span-1 lg:col-start-2 lg:row-start-7 p-6 ${BOX_STYLE}`}
                 >
                   10
-                </div>
-              </FadeAndSlide>
-
-              <FadeAndSlide delay="delay-[900ms]">
-                <div
-                  className={`col-span-4 lg:col-span-1 lg:col-start-3 lg:row-start-7 p-6 ${BOX_STYLE}`}
-                >
-                  11
                 </div>
               </FadeAndSlide>
             </div>
