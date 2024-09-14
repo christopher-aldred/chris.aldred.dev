@@ -1,5 +1,4 @@
 import { TransitionChild } from "@headlessui/react";
-import { forwardRef } from "react";
 
 export const FadeAndSlide = ({ delay, children }) => (
   <TransitionChild

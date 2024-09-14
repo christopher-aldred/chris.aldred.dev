@@ -8,6 +8,7 @@ import AboutMe from "../components/aboutMe";
 import Clock from "../components/clock";
 import Experience from "../components/experience";
 import Contact from "../components/contact";
+import BlogButton from "../components/blogButton";
 
 type SearchParamProps = {
   searchParams: Record<string, string> | null | undefined;
@@ -36,13 +37,7 @@ export default function Portfolio({ searchParams }: SearchParamProps) {
 
               <Clock />
 
-              <FadeAndSlide delay="delay-[400ms]">
-                <div
-                  className={`lg:col-start-3 lg:row-start-4 col-span-2 lg:col-span-1 p-6 custom-box-style flex`}
-                >
-                  <div className="m-auto text-slate-500 font-[150]">WIP #1</div>
-                </div>
-              </FadeAndSlide>
+              <BlogButton />
 
               <Experience />
 
