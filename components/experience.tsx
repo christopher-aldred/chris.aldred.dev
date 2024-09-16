@@ -1,7 +1,7 @@
 import { FadeAndSlide } from "../utils/animations";
 
 export default function Experience() {
-    return ( <FadeAndSlide delay="delay-[600ms]">
+    return ( <FadeAndSlide delay="delay-[800ms]">
         <div
           className={`col-span-4 lg:col-span-1 lg:row-span-3 lg:col-start-3 lg:row-start-5 py-4 px-8 lg:px-2 xl:px-4 custom-box-style`}
         >

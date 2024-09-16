@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function BlogButton() {
   return (
-    <FadeAndSlide delay="delay-[400ms]">
+    <FadeAndSlide delay="delay-[500ms]">
       <div className="flex flex-col col-span-2 lg:col-span-1  items-center justify-center custom-box-style relative">
         <Image
           className="opacity-10 rounded-lg object-cover"

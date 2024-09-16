@@ -5,20 +5,23 @@ import Image from "next/image";
 
 export default function MainComponent() {
   return (
-    <FadeAndSlide delay="delay-[0ms]">
+    <FadeAndSlide delay="delay-[100ms]">
       <div
         className={`text-[16px] font-[150] col-span-4 lg:col-span-3 row-span-3 p-6 custom-box-style`}
       >
         <div className="h-full w-full grid grid-cols-3 lg:grid-rows-2 gap-0">
           <div className="col-span-3 lg:col-span-2 row-start-1 min-h-28">
-            <div className="font-[200] text-sm text-slate-500">Welcome</div>
+            <div className="font-[200] text-lg text-slate-500">Welcome</div>
             I'm <b>Chris Aldred</b>, a software developer with a strong focus on
             user experience, animations and micro interactions. Feel free to
             reach out to me if you have any projects in mind, or just to say
             hello.
           </div>
           <div className="col-span-2 col-start-1 row-start-2 flex items-end flex-wrap h-auto">
-            <Link className="relative mr-4" href="?booking=true">
+            <Link
+              className="relative mr-4"
+              href="https://koalendar.com/e/meet-with-chris-aldred"
+            >
               <span className="h-10 w-28 lg:h-12 lg:w-32 absolute top-0 left-0 mt-1 ml-1  rounded-lg bg-black"></span>
               <span className="h-10 w-28 lg:h-12 lg:w-32 text-md lg:text-lg flex flex-col justify-center items-center fold-bold relative  rounded-lg border-2 border-black bg-white px-3 py-1 font-bold text-black transition duration-100 hover:bg-yellow-400 hover:text-gray-900">
                 Book a call

@@ -15,9 +15,9 @@ export default function clock() {
   }, []);
 
   return (
-    <FadeAndSlide delay="delay-[300ms]">
+    <FadeAndSlide delay="delay-[400ms]">
       <div
-        className={`font-[100] p-4  text-2xl col-span-2 lg:col-span-1 lg:col-start-2 lg:row-start-4 flex items-center justify-center custom-box-style`}
+        className={`text-xl lg:text-2xl font-[100] p-4  col-span-2 lg:col-span-1 lg:col-start-2 lg:row-start-4 flex items-center justify-center custom-box-style`}
       >
         <Transition
           enter={`transition-all ease-in-out duration-700`}

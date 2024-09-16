@@ -31,9 +31,9 @@ const FadeAndSlide = ({ delay, children }) => (
 export default function BookingModal() {
   return (
     <Transition as="div" show={true} appear={true}>
-      <FadeIn delay="delay-[0ms]">
+      <FadeIn delay="delay-[100ms]">
         <div className="z-50 fixed inset-0 bg-gray-900 bg-opacity-90 overflow-y-auto h-full w-full flex items-center justify-center">
-          <FadeAndSlide delay="delay-[200ms]">
+          <FadeAndSlide delay="delay-[300ms]">
             <div className="p-4 border w-auto h-auto shadow-lg rounded-md bg-white">
               <div className="text-center">
                 <div className="flex flex-col justify-center">
