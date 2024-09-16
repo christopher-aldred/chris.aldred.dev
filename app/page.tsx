@@ -27,7 +27,7 @@ export default function Portfolio({ searchParams }: SearchParamProps) {
         <main className="flex-col justify-between overflow-auto">
           <Transition show={true} appear={true}>
             <FadeAndSlide delay="delay-[0ms]">
-              <h1 className="p-2 mt-1 lg:mt-3 lg:gap-4 lg:p-4 xl:px-36 font-[200] text-2xl lg:text-4xl drop-shadow-[5px_5px_10px_rgba(0,0,0,0.99)] text-transparent bg-clip-text bg-white">
+              <h1 className="p-2 mt-1 lg:mt-3 lg:gap-4 lg:p-4 xl:px-36 font-[200] text-2xl lg:text-4xl drop-shadow-[5px_5px_7px_rgba(0,0,0,0.99)] lg:drop-shadow-[5px_5px_10px_rgba(0,0,0,0.99)] text-transparent bg-clip-text bg-white">
                 Chris Aldred
                 <br />
                 Development & Freelancing
