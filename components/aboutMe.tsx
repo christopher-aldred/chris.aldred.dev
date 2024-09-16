@@ -4,7 +4,7 @@ export default function AboutMe() {
   return (
     <FadeAndSlide delay="delay-[200ms]">
       <div
-        className={`text-sm font-[200] col-span-4  lg:col-span-1 lg:row-span-6 lg:col-start-4 p-6 custom-box-style`}
+        className={`text-sm font-[200] col-span-4  lg:col-span-1 lg:row-span-6 lg:col-start-4 p-4 lg:p-6 custom-box-style`}
       >
         <h1 className="text-lg font-medium">About me</h1>
         I'm a full-stack software developer from the UK. My expertise spans both

@@ -11,6 +11,7 @@ export default function BlogButton() {
           layout="fill"
           objectFit="cover"
           alt="Picture of the author"
+          priority
         />
         <div className="text-xl lg:text-2xl font-[100] absolute inset-y-0 left-0 z-30 w-full rounded-lg bg-gradient-to-tl from-transparent to-neutral-900/95 flex">
           <div className="m-auto flex justify-center items-center">

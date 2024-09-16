@@ -7,7 +7,7 @@ export default function MainComponent() {
   return (
     <FadeAndSlide delay="delay-[100ms]">
       <div
-        className={`text-[16px] font-[150] col-span-4 lg:col-span-3 row-span-3 p-6 custom-box-style`}
+        className={`text-[16px] font-[150] col-span-4 lg:col-span-3 row-span-3 p-4 lg:p-6 custom-box-style`}
       >
         <div className="h-full w-full grid grid-cols-3 lg:grid-rows-2 gap-0">
           <div className="col-span-3 lg:col-span-2 row-start-1 min-h-28">
@@ -22,14 +22,14 @@ export default function MainComponent() {
               className="relative mr-4"
               href="https://koalendar.com/e/meet-with-chris-aldred"
             >
-              <span className="h-10 w-28 lg:h-12 lg:w-32 absolute top-0 left-0 mt-1 ml-1  rounded-lg bg-black"></span>
-              <span className="h-10 w-28 lg:h-12 lg:w-32 text-md lg:text-lg flex flex-col justify-center items-center fold-bold relative  rounded-lg border-2 border-black bg-white px-3 py-1 font-bold text-black transition duration-100 hover:bg-yellow-400 hover:text-gray-900">
+              <span className="h-10 w-28 lg:h-12 lg:w-32 absolute top-0 left-0 mt-1 ml-1  rounded-lg bg-white"></span>
+              <span className="h-10 w-28 lg:h-12 lg:w-32 text-md lg:text-lg flex flex-col justify-center items-center fold-bold relative  rounded-lg border border-white bg-neutral-900 px-3 py-1 font-[200] text-white transition duration-100 hover:bg-yellow-400 hover:text-gray-900 hover:border-yellow-400 hover:mt-1 hover:ml-1 hover:-mr-1 hover hover:-mb-1 hover:font-[500]">
                 Book a call
               </span>
             </Link>
             <a className="relative mr-4" href="mailto: chris@aldred.dev">
-              <span className="h-10 w-12 lg:h-12 lg:w-14 absolute top-0 left-0 mt-1 ml-1  rounded-lg bg-black"></span>
-              <span className="h-10 w-12 lg:h-12 lg:w-14 text-md lg:text-lg flex flex-col justify-center items-center fold-bold relative  rounded-lg border-2 border-black bg-white px-3 py-1 font-bold text-black transition duration-100 hover:bg-yellow-400 hover:text-gray-900">
+              <span className="h-10 w-12 lg:h-12 lg:w-14 absolute top-0 left-0 mt-1 ml-1  rounded-lg bg-white"></span>
+              <span className="h-10 w-12 lg:h-12 lg:w-14 text-md lg:text-lg flex flex-col justify-center items-center fold-bold relative  rounded-lg border border-white bg-neutral-900 px-3 py-1 font-bold text-whit transition duration-100 hover:bg-yellow-400 hover:text-gray-900 hover:border-yellow-400 hover:mt-1 hover:ml-1 hover:-mr-1 hover hover:-mb-1">
                 <svg
                   className="h-4 w-4 lg:h-6 lg:w-6"
                   xmlns="http://www.w3.org/2000/svg"
@@ -44,8 +44,8 @@ export default function MainComponent() {
               className="relative mr-4"
               href="https://github.com/christopher-aldred"
             >
-              <span className="h-10 w-12 lg:h-12 lg:w-14 absolute top-0 left-0 mt-1 ml-1  rounded-lg bg-black"></span>
-              <span className="h-10 w-12 lg:h-12 lg:w-14 text-md lg:text-lg flex flex-col justify-center items-center fold-bold relative  rounded-lg border-2 border-black bg-white px-3 py-1 font-bold text-black transition duration-100 hover:bg-yellow-400 hover:text-gray-900">
+              <span className="h-10 w-12 lg:h-12 lg:w-14 absolute top-0 left-0 mt-1 ml-1  rounded-lg bg-white"></span>
+              <span className="h-10 w-12 lg:h-12 lg:w-14 text-md lg:text-lg flex flex-col justify-center items-center fold-bold relative  rounded-lg border border-white bg-black px-3 py-1 font-bold text-white transition duration-100 hover:bg-yellow-400 hover:text-gray-900 hover:border-yellow-400 hover:mt-1 hover:ml-1 hover:-mr-1 hover hover:-mb-1">
                 <svg
                   className="h-4 w-4 lg:h-6 lg:w-6"
                   xmlns="http://www.w3.org/2000/svg"
@@ -60,8 +60,8 @@ export default function MainComponent() {
               className="relative mr-4"
               href="https://www.linkedin.com/in/christopher-aldred-584609163/"
             >
-              <span className="h-10 w-12 lg:h-12 lg:w-14 absolute top-0 left-0 mt-1 ml-1  rounded-lg bg-black"></span>
-              <span className="h-10 w-12 lg:h-12 lg:w-14 text-md lg:text-lg flex flex-col justify-center items-center fold-bold relative  rounded-lg border-2 border-black bg-white px-3 py-1 font-bold text-black transition duration-100 hover:bg-yellow-400 hover:text-gray-900">
+              <span className="h-10 w-12 lg:h-12 lg:w-14 absolute top-0 left-0 mt-1 ml-1  rounded-lg bg-white"></span>
+              <span className="h-10 w-12 lg:h-12 lg:w-14 text-md lg:text-lg flex flex-col justify-center items-center fold-bold relative rounded-lg border border-white bg-black px-3 py-1 font-bold text-white transition duration-100 hover:bg-yellow-400 hover:text-gray-900 hover:border-yellow-400 hover:mt-1 hover:ml-1 hover:-mr-1 hover hover:-mb-1">
                 <svg
                   className="h-4 w-4 lg:h-6 lg:w-6"
                   xmlns="http://www.w3.org/2000/svg"
@@ -73,8 +73,8 @@ export default function MainComponent() {
               </span>
             </a>
             <a className="relative" href="https://wa.me/+447504924583">
-              <span className="h-10 w-12 lg:h-12 lg:w-14 absolute top-0 left-0 mt-1 ml-1  rounded-lg bg-black"></span>
-              <span className="h-10 w-12 lg:h-12 lg:w-14 text-md lg:text-lg flex flex-col justify-center items-center fold-bold relative  rounded-lg border-2 border-black bg-white px-3 py-1 font-bold text-black transition duration-100 hover:bg-yellow-400 hover:text-gray-900">
+              <span className="h-10 w-12 lg:h-12 lg:w-14 absolute top-0 left-0 mt-1 ml-1  rounded-lg bg-white"></span>
+              <span className="h-10 w-12 lg:h-12 lg:w-14 text-md lg:text-lg flex flex-col justify-center items-center fold-bold relative  rounded-lg border border-white bg-black px-3 py-1 font-bold text-white transition duration-100 hover:bg-yellow-400 hover:text-gray-900 hover:border-yellow-400 hover:mt-1 hover:ml-1 hover:-mr-1 hover hover:-mb-1">
                 <svg
                   className="h-4 w-4 lg:h-6 lg:w-6"
                   xmlns="http://www.w3.org/2000/svg"
@@ -93,6 +93,7 @@ export default function MainComponent() {
               width={200}
               height={200}
               alt="Picture of the author"
+              priority
             />
             <Image
               className="inline lg:hidden rounded-lg absolute bottom-0 right-0"
@@ -100,6 +101,7 @@ export default function MainComponent() {
               width={130}
               height={130}
               alt="Picture of the author"
+              priority
             />
           </div>
         </div>
