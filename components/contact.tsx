@@ -10,27 +10,27 @@ export default function Contact() {
         <br />
         <div className="font-[200] text-sm text-slate-500">Contact Details</div>
         <div className="text-sm">
-          <a className="hover:text-yellow-400" href="mailto: chris@aldred.dev">
+          <a className="hover:text-[#fede59]" href="mailto: chris@aldred.dev">
             chris@aldred.dev
           </a>
         </div>
         <br />
         <div className="font-[200] text-sm text-slate-500">Socials</div>
         <a
-          className="hover:text-yellow-400"
+          className="hover:text-[#fede59]"
           href="https://www.linkedin.com/in/christopher-aldred-584609163/"
         >
           Linkedin
         </a>
         <br />
         <a
-          className="hover:text-yellow-400"
+          className="hover:text-[#fede59]"
           href="https://github.com/christopher-aldred"
         >
           Github
         </a>
         <br />
-        <a className="hover:text-yellow-400" href="https://wa.me/+447504924583">
+        <a className="hover:text-[#fede59]" href="https://wa.me/+447504924583">
           WhatsApp
         </a>
       </div>
