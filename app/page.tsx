@@ -25,7 +25,7 @@ export default function Portfolio({ searchParams }: SearchParamProps) {
       </Transition>
 
       <div className="z-10 area flex">
-        <main className="justify-between overflow-scroll lg:overflow-hidden">
+        <main className="justify-between overflow-auto">
           <Transition show={true} appear={true}>
             <FadeAndSlide delay="delay-[0ms]">
               <header className="flex-shrink-0">
