@@ -4,7 +4,7 @@ export default function Experience() {
   return (
     <FadeAndSlide delay="delay-[800ms]">
       <div
-        className={`col-span-4 lg:col-span-1 lg:row-span-3 lg:col-start-3 lg:row-start-5 py-4 px-8 lg:px-2 xl:px-4 custom-box-style`}
+        className={`col-span-4 lg:col-span-1 lg:row-span-3 lg:col-start-3 lg:row-start-5 py-4 lg:py-12 px-8 lg:px-2 xl:px-4 custom-box-style`}
       >
         <div className="grid h-full grid-cols-2 grid-rows-2 divide-dashed divide-y-2 divide-x-2 divide-slate-400/25 [clip-path:inset(theme(divideWidth.2)_0_0_theme(divideWidth.2))]">
           <div className="group p-6 flex flex-col justify-between text-center">

@@ -6,7 +6,8 @@ export default function AboutMe() {
       <div
         className={`text-sm font-[200] col-span-4  lg:col-span-1 lg:row-span-6 lg:col-start-4 p-4 lg:p-6 custom-box-style`}
       >
-        <h1 className="text-lg font-medium">About me</h1>
+        <h1 className="text-xl lg:text-2xl font-[100]">About me</h1>
+        <br />
         I'm a full-stack software developer from the UK. My expertise spans both
         front-end and back-end development, allowing me to create comprehensive
         web applications from start to finish.
