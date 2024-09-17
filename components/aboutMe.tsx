@@ -19,13 +19,11 @@ export default function AboutMe() {
           <li>&#8226; React</li>
           <li>&#8226; NextJS</li>
           <li>&#8226; Tailwind</li>
-          <li>&#8226; Tina CMS</li>
         </ul>
         <br />
         Beyond coding, I'm passionate about rock climbing, music and traveling.
         While I have some preferred tools, I always choose the best one for the
-        job, even if it's not on my usual list. My goal is to find the right
-        solution for each project.
+        job. My goal is to find the right solution for each project.
       </div>
     </FadeAndSlide>
   );
