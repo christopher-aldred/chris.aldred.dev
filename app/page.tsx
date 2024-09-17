@@ -24,8 +24,8 @@ export default function Portfolio({ searchParams }: SearchParamProps) {
         <BgAnimated />
       </Transition>
 
-      <div className="z-10 area flex">
-        <main className="justify-between overflow-auto">
+      <div className="z-10 area flex flex-col min-h-screen">
+        <main className="flex-1 flex flex-col justify-between overflow-auto">
           <Transition show={true} appear={true}>
             <FadeAndSlide delay="delay-[0ms]">
               <header className="flex-shrink-0">
@@ -36,7 +36,7 @@ export default function Portfolio({ searchParams }: SearchParamProps) {
               </header>
             </FadeAndSlide>
             <div
-              className={`h-[650px] grid grid-cols-4 lg:grid-rows-7 gap-2 p-2 lg:gap-4 lg:p-4 xl:px-36`}
+              className={`flex-1 grid grid-cols-4 lg:grid-rows-7 gap-2 p-2 lg:gap-4 lg:p-4 xl:px-36`}
             >
               <MainComponent />
 
