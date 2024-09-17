@@ -4,12 +4,11 @@ export default function Collaboration() {
   return (
     <FadeAndSlide delay="delay-[300ms]">
       <div
-        className={`text-sm font-[200] col-span-2 lg:col-span-1 lg:row-span-2 lg:col-start-2 lg:row-start-5 p-4 custom-box-style flex flex-col justify-center items-center`}
+        className={`text-sm font-[200] col-span-2 lg:col-span-1 lg:row-span-2 lg:col-start-2 lg:row-start-5 p-4 custom-box-style`}
       >
         <div className="text-xl lg:text-2xl font-[100] text-center">
           Past collaboration
         </div>
-        <br />
         <div className="flex justify-center">
           <div className="grid grid-cols-1 gap-6 lg:gap-1 mt-4 lg:mt-2">
             <div className="flex items-center justify-center overflow-hidden hover:scale-105 transition-transform duration-300">
