@@ -28,7 +28,7 @@ export default function Portfolio() {
               </header>
             </FadeAndSlide>
             <div
-              className={`h-[650px] grid grid-cols-4 lg:grid-rows-7 gap-2 p-2 lg:gap-4 lg:p-4 xl:px-28`}
+              className={`h-[700px] grid grid-cols-4 lg:grid-rows-7 gap-2 p-2 lg:gap-4 lg:p-4 xl:px-28`}
             >
               <MainComponent />
 
