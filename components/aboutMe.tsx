@@ -21,7 +21,7 @@ export default function AboutMe() {
           <li>&#8226; Tailwind</li>
         </ul>
         <br />
-        Beyond coding, I'm passionate about rock climbing, music and traveling.
+        Beyond coding, I'm passionate about rock climbing, music and travelling.
         While I have some preferred tools, I always choose the best one for the
         job. My goal is to find the right solution for each project.
       </div>
