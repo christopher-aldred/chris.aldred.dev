@@ -21,6 +21,17 @@
   .custom-box-style {
     @apply z-20 text-gray-100 ease-in-out border border-neutral-700 hover:border-slate-100 bg-zinc-900/80 duration-200 rounded-lg;
   }
+
+  .custom-box-style .hover-bold-text:hover {
+    @apply ease-in-out font-[200];
+    cursor: pointer;
+  }
+
+  .prevent-select {
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+  }
 }
 
 @media (prefers-color-scheme: dark) {
