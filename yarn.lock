@@ -2021,10 +2021,10 @@
   resolved "https://registry.yarnpkg.com/@tanstack/virtual-core/-/virtual-core-3.10.6.tgz#babe3989b2344a5f12fc64129f9bbed5d3402999"
   integrity sha512-1giLc4dzgEKLMx5pgKjL6HlG5fjZMgCjzlKAlpr7yoUtetVPELgER1NtephAI910nMwfPTHNyWKSFmJdHkz2Cw==
 
-"@tinacms/app@2.1.2":
-  version "2.1.2"
-  resolved "https://registry.yarnpkg.com/@tinacms/app/-/app-2.1.2.tgz#a7361d12182e2a101c7812f4425d393092d86ac0"
-  integrity sha512-/kEMCRQno3I4XvIjlr7SCb4zcWW4yJP9U8Be7oGy4L6sTjyIu5k+ahKfFxBPq/1PaiVXl/zNUgod8SpoBO7KAg==
+"@tinacms/app@2.1.3":
+  version "2.1.3"
+  resolved "https://registry.yarnpkg.com/@tinacms/app/-/app-2.1.3.tgz#3b34c11ae3d5f39b668bb776e819f42fda1ad5a1"
+  integrity sha512-A+eQkEa4mDsW7Dh4xgaKITGdrvSe07chckHEItktOE/0Iqju1Zb1V9vRH7KtvOrlL4Iw6nvg1H0KHpyPznrqTg==
   dependencies:
     "@graphiql/toolkit" "0.8.4"
     "@headlessui/react" "1.6.6"
@@ -2038,14 +2038,14 @@
     react "^18.3.1"
     react-dom "^18.3.1"
     react-router-dom "6.3.0"
-    tinacms "2.2.2"
+    tinacms "2.2.3"
     typescript "^5.5.4"
     zod "^3.14.3"
 
-"@tinacms/cli@^1.6.2":
-  version "1.6.2"
-  resolved "https://registry.yarnpkg.com/@tinacms/cli/-/cli-1.6.2.tgz#1a4582eb104f7ff2e37cb618c23b86f0f3ac42f1"
-  integrity sha512-qx0oGClYRpJ/bIpG4wzc0qUKltV8Ph31uctXa3SwK1rwvjqU/8yIEp21oJShauOR772DEzlXwIHUXWfhzRwT0w==
+"@tinacms/cli@^1.6.3":
+  version "1.6.3"
+  resolved "https://registry.yarnpkg.com/@tinacms/cli/-/cli-1.6.3.tgz#8f36add3574dfebf6810085574d926e7b4a5753b"
+  integrity sha512-RCG6Q4OdDphZjmn2OSDR3OjOl9x9aKQX7adaTdPL1g9j0RK/N0MeY/WPxABvl/UyyKe6PzWM4p/DpihJjn8a0Q==
   dependencies:
     "@graphql-codegen/core" "^2.1.0"
     "@graphql-codegen/plugin-helpers" latest
@@ -2059,7 +2059,7 @@
     "@svgr/core" "8.1.0"
     "@tailwindcss/aspect-ratio" "^0.4.2"
     "@tailwindcss/typography" "^0.5.13"
-    "@tinacms/app" "2.1.2"
+    "@tinacms/app" "2.1.3"
     "@tinacms/graphql" "1.5.2"
     "@tinacms/metrics" "1.0.5"
     "@tinacms/schema-tools" "1.6.2"
@@ -2091,7 +2091,7 @@
     prompts "^2.4.1"
     readable-stream "^4.3.0"
     tailwindcss "^3.4.4"
-    tinacms "2.2.2"
+    tinacms "2.2.3"
     typanion "3.13.0"
     typescript "^5.5.4"
     vite "^4.3.9"
@@ -8707,10 +8707,10 @@ tinacms-gitprovider-github@^2.0.2:
     js-base64 "^3.7.4"
     typescript "4.7.4"
 
-tinacms@2.2.2, tinacms@^2.2.1:
-  version "2.2.2"
-  resolved "https://registry.yarnpkg.com/tinacms/-/tinacms-2.2.2.tgz#cb1680d342668a96e76a03e35e3103d0aefdc821"
-  integrity sha512-LBbfM99WimjDo3Kys0q33QN52Yy9CO9ipg+2+nFqKpPmB4KA3Q6beKZczVe8qMGxeNfzNytrzf+aR3eMs90HzA==
+tinacms@2.2.3, tinacms@^2.2.1:
+  version "2.2.3"
+  resolved "https://registry.yarnpkg.com/tinacms/-/tinacms-2.2.3.tgz#63aef4d564921719120d2f13fa2abaf2520bc03a"
+  integrity sha512-OoLsArGvgGY5beFkfOtpefjGCuJKn3O8nrIUuzTJT2q1IHAotJlWyOOxuQv3aNo/8I7iuY6ySXky06qk/2T/pg==
   dependencies:
     "@ariakit/react" "^0.4.7"
     "@floating-ui/dom" "^1.6.9"
