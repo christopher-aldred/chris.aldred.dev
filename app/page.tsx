@@ -1,7 +1,6 @@
 "use client";
 
 import { Transition } from "@headlessui/react";
-import BookingModal from "../components/bookingModal";
 import { BgAnimated, FadeAndSlide, FadeIn } from "../utils/animations";
 import MainComponent from "../components/mainComponent";
 import AboutMe from "../components/aboutMe";
@@ -10,14 +9,7 @@ import Experience from "../components/experience";
 import Contact from "../components/contact";
 import BlogButton from "../components/blogButton";
 import Collaboration from "../components/collaboration";
-
-type SearchParamProps = {
-  searchParams: Record<string, string> | null | undefined;
-};
-
-export default function Portfolio({ searchParams }: SearchParamProps) {
-  const booking = searchParams?.booking;
-
+export default function Portfolio() {
   return (
     <>
       <Transition as="div" show={true} appear={true}>
@@ -29,8 +21,8 @@ export default function Portfolio({ searchParams }: SearchParamProps) {
           <Transition show={true} appear={true}>
             <FadeAndSlide delay="delay-[0ms]">
               <header className="flex-shrink-0">
-                <h1 className="p-2 mt-2 lg:mt-4 lg:gap-4 lg:p-4 xl:px-36 font-[100] text-2xl lg:text-4xl drop-shadow-[5px_5px_7px_rgba(0,0,0,0.99)] lg:drop-shadow-[5px_5px_10px_rgba(0,0,0,0.99)] text-transparent bg-clip-text bg-white">
-                  <div className="font-[250]">Chris Aldred</div>
+                <h1 className="p-2 mt-2 lg:mt-4 lg:gap-4 lg:p-4 xl:px-36 font-[150] lg:font-[100] text-2xl lg:text-4xl drop-shadow-[5px_5px_7px_rgba(0,0,0,0.99)] lg:drop-shadow-[5px_5px_10px_rgba(0,0,0,0.99)] text-transparent bg-clip-text bg-white">
+                  <div className="font-[300] lg:font-[250]">Chris Aldred</div>
                   Development & Freelancing
                 </h1>
               </header>

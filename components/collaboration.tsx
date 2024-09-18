@@ -2,7 +2,7 @@ import { FadeAndSlide } from "../utils/animations";
 
 export default function Collaboration() {
   return (
-    <FadeAndSlide delay="delay-[300ms]">
+    <FadeAndSlide delay="delay-[600ms]">
       <div
         className={`text-sm font-[200] col-span-2 lg:col-span-1 lg:row-span-2 lg:col-start-2 lg:row-start-5 p-4 custom-box-style`}
       >

@@ -29,6 +29,7 @@ export const FadeIn = ({ delay, children }) => (
 export const BgAnimated = () => (
   <FadeIn delay="delay-[0ms]">
     <div className="circles">
+      <div className="gradient-overlay" />
       <div id="bg-wrap">
         <svg
           height="100vh"
