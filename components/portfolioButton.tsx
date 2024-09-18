@@ -6,7 +6,7 @@ export default function PorfolioButton() {
     <FadeAndSlide delay="delay-[400ms]">
       <div className="min-h-20 group flex flex-col col-span-2 lg:col-span-1 lg:col-start-2 lg:row-start-4 items-center justify-center custom-box-style relative">
         <Image
-          className="opacity-10 ease-in-out group-hover:opacity-20 rounded-lg object-cover bg-gradient-to-tl from-transparent to-neutral-900"
+          className="opacity-20 ease-in-out group-hover:opacity-30 rounded-lg object-cover bg-gradient-to-tl from-transparent to-neutral-900"
           src="/images/desk2.avif"
           layout="fill"
           objectFit="cover"
