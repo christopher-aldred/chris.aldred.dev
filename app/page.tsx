@@ -9,6 +9,7 @@ import Experience from "../components/experience";
 import Contact from "../components/contact";
 import BlogButton from "../components/blogButton";
 import Collaboration from "../components/collaboration";
+import PorfolioButton from "../components/portfolioButton";
 
 export default function Portfolio() {
   return (
@@ -38,23 +39,17 @@ export default function Portfolio() {
 
               <AboutMe />
 
-              <Clock />
+              <PorfolioButton />
 
               <BlogButton />
 
               <Experience />
 
-              <FadeAndSlide delay="delay-[700ms]">
-                <div
-                  className={`col-span-4 lg:col-span-1 lg:col-start-2 lg:row-start-7 p-4 lg:p-6 custom-box-style flex`}
-                >
-                  <div className="m-auto text-slate-500 font-[150]">WIP</div>
-                </div>
-              </FadeAndSlide>
-
               <Contact />
 
               <Collaboration />
+
+              <Clock />
 
               <FadeAndSlide delay="delay-[900ms]">
                 <div
