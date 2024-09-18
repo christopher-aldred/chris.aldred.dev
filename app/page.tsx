@@ -19,7 +19,7 @@ export default function Portfolio() {
         </Transition>
       </div>
 
-      <div className="z-10 flex items-center justify-center h-svh">
+      <div className="z-10 flex items-center justify-center h-dvh">
         <main className="justify-between overflow-auto w-full">
           <Transition show={true} appear={true}>
             <FadeAndSlide delay="delay-[0ms]">
@@ -32,7 +32,7 @@ export default function Portfolio() {
             </FadeAndSlide>
 
             <div
-              className={`h-[700px] grid grid-cols-4 lg:grid-rows-7 gap-2 p-2 lg:gap-4 lg:p-4 xl:px-28`}
+              className={`min-h-full grid grid-cols-4 lg:grid-rows-7 gap-2 p-2 lg:gap-4 lg:p-4 xl:px-28`}
             >
               <MainComponent />
 
@@ -58,7 +58,7 @@ export default function Portfolio() {
 
               <FadeAndSlide delay="delay-[900ms]">
                 <div
-                  className={`flex col-span-4 lg:col-span-1 lg:col-start-4 lg:row-start-7  p-4 lg:p-6 text-xs font-[200] custom-box-style`}
+                  className={`flex col-span-4 lg:col-span-1 lg:col-start-4 lg:row-start-7 p-4 lg:p-6 text-xs font-[200] custom-box-style`}
                 >
                   <div className="m-auto">
                     © 2024 · Crafted with ♥️ by Chris.
