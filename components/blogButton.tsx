@@ -12,9 +12,15 @@ export default function BlogButton() {
           objectFit="cover"
           alt="Picture of the author"
           priority
+          style={{
+            maskImage:
+              "linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1))",
+            WebkitMaskImage:
+              "linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1))",
+          }}
         />
         <div className="text-xl lg:text-2xl font-[100] absolute inset-y-0 left-0 z-30 w-full rounded-lg flex hover-bold-text">
-          <div className="m-auto flex justify-center items-center">
+          <div className="m-auto flex justify-center items-center drop-shadow-[1px_1px_1px_rgba(0,0,0,0.99)]">
             Blog&nbsp;
             <svg
               xmlns="http://www.w3.org/2000/svg"
