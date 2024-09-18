@@ -61,7 +61,6 @@ export default function Portfolio() {
                 </div>
               </FadeAndSlide>
 
-              <div className="h-1"></div>
             </div>
           </Transition>
         </main>
