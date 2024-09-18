@@ -65,7 +65,7 @@ body {
   height: 25%; /* Changed from 100% to 50% */
   background: linear-gradient(
     180deg,
-    rgba(0, 0, 0, 0.75) 0%,
+    rgba(19, 19, 19, 1) 0%,
     rgba(0, 0, 0, 0) 100%
   );
   z-index: 0;
