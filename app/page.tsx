@@ -19,7 +19,7 @@ export default function Portfolio() {
         </Transition>
       </div>
 
-      <div className="z-10 flex items-center justify-center min-h-dvh">
+      <div className="z-10 flex items-center justify-center min-h-svh">
         <main className="justify-between overflow-auto w-full">
           <Transition show={true} appear={true}>
             <FadeAndSlide delay="delay-[0ms]">
