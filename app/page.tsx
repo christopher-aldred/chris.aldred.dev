@@ -17,7 +17,7 @@ export default function Portfolio() {
       </Transition>
 
       <div className="z-10 area flex">
-        <main className="justify-between overflow-auto">
+        <main className="justify-between overflow-auto mb-2 lg:mb-0">
           <Transition show={true} appear={true}>
             <FadeAndSlide delay="delay-[0ms]">
               <header className="flex-shrink-0">
