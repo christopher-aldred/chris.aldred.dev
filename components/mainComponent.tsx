@@ -7,7 +7,7 @@ export default function MainComponent() {
   return (
     <FadeAndSlide delay="delay-[100ms]">
       <div
-        className={`text-[16px] font-[150] col-span-4 lg:col-span-3 row-span-3 p-4 lg:p-6 custom-box-style`}
+        className={`text-[16px] font-[150] col-span-4 lg:col-span-3 row-span-3 p-4 lg:p-6 custom-box-style min-h-80`}
       >
         <div className="h-full w-full grid grid-cols-3 lg:grid-rows-2 gap-0">
           <div className="col-span-3 lg:col-span-2 row-start-1 min-h-28">
