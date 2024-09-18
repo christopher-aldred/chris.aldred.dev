@@ -4,9 +4,9 @@ import Image from "next/image";
 export default function BlogButton() {
   return (
     <FadeAndSlide delay="delay-[500ms]">
-      <div className="flex flex-col col-span-2 lg:col-span-1 items-center justify-center custom-box-style relative">
+      <div className="group flex flex-col col-span-2 lg:col-span-1 items-center justify-center custom-box-style relative">
         <Image
-          className="opacity-10 rounded-lg object-cover bg-gradient-to-tl from-transparent to-neutral-900"
+          className="opacity-10 ease-in-out group-hover:opacity-20 rounded-lg object-cover bg-gradient-to-tl from-transparent to-neutral-900"
           src="/blogging.jpg"
           layout="fill"
           objectFit="cover"
