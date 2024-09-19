@@ -85,7 +85,7 @@ export default function MainComponent() {
               </span>
             </a>
           </div>
-          <div className="relative row-span-1 lg:row-span-2 col-start-3 row-start-2 lg:row-start-1 h-28 h-auto">
+          <div className="relative row-span-1 lg:row-span-2 col-start-3 row-start-2 lg:row-start-1 h-auto">
             <Image
               className="hidden lg:inline rounded-lg absolute bottom-0 right-0"
               src="/avatar.png"
