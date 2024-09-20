@@ -33,7 +33,7 @@ export default function Portfolio() {
             </FadeAndSlide>
 
             <div
-              className={`min-h-full grid grid-cols-4 lg:grid-rows-7 gap-2 p-2 lg:gap-4 lg:p-4 xl:px-28 `}
+              className={`min-h-full grid grid-cols-4 lg:grid-rows-7 gap-2 p-2 lg:gap-4 lg:p-4 xl:px-28`}
             >
               <MainComponent />
 
