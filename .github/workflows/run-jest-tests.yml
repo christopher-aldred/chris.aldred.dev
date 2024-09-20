@@ -16,8 +16,11 @@ jobs:
           ref: ${{ github.event.pull_request.head.sha }}
           repository: ${{github.event.pull_request.head.repo.full_name}}
 
-      - name: Install modules
-        run: yarn install
-
       - name: Run tests
-        run: yarn test
+        run: |
+          npx jest --coverage --coverageReporters json-summary
+
+      - name: Jest Coverage Comment
+        uses: MishaKav/jest-coverage-comment@main
+        # with:
+        #   junitxml-path: ./junit.xml
