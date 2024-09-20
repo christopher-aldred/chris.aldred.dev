@@ -16,6 +16,9 @@ jobs:
           ref: ${{ github.event.pull_request.head.sha }}
           repository: ${{github.event.pull_request.head.repo.full_name}}
 
+      - name: Install dependencies
+        run: npm ci
+
       - name: Run tests
         run: |
           npx jest --coverage --coverageReporters json-summary
