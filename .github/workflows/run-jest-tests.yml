@@ -20,9 +20,9 @@ jobs:
         run: yarn install
 
       - name: Run tests
-        uses: ospfranco/gh-jester@v1.0.13
+        run: npx jest --ci --reporters=default --reporters=jest-junit
+
+      - uses: IgnusG/jest-report-action@v2.3.3
+        if: always()
         with:
-          post-comment: true
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GITHUB_CONTEXT: ${{ toJson(github) }}
+          access-token: ${{ secrets.GITHUB_TOKEN }}
