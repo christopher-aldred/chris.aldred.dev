@@ -55,7 +55,7 @@ jobs:
         uses: flameddd/screenshots-ci-action@master
         with:
           url: http://localhost:3000
-          devices: iPhone 6,iPhone 6 landscape,Nexus 7,Pad Pro,Galaxy S III landscape,iPad Pro landscape
+          devices: iPhone 6,iPhone 6 landscape,Nexus 7,Galaxy S III landscape,iPad Pro,iPad Pro landscape
           waitUntil: networkidle0
           noCommitHashFileName: true
           releaseId: 176094310
