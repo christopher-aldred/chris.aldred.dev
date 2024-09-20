@@ -37,7 +37,7 @@ jobs:
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
 
       - name: Start server
-        run: ${{ steps.detect-package-manager.outputs.manager }} dev &
+        run: ${{ steps.detect-package-manager.outputs.manager }} dev & sleep 10
 
       - name: Test Code
         uses: mujo-code/puppeteer-headful@18.9.0
@@ -53,7 +53,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-    #   - uses: actions/upload-artifact@v4 # Uplaod screenshots to Actions Artifacts via actions/upload-artifact@v2
-    #     with:
-    #       path: screenshots
-    #       name: Download-screenshots
+      - uses: actions/upload-artifact@v4 # Uplaod screenshots to Actions Artifacts via actions/upload-artifact@v2
+        with:
+          path: screenshots
+          name: Download-screenshots
