@@ -1,15 +1,9 @@
 name: Generate screenshots
-on:
-  pull_request:
-    types: [opened, synchronize, reopened]
-
-permissions:
-  contents: write
-  issues: write
-  id-token: write
+"on": pull_request_target
 
 jobs:
   generate_screenshots:
+    permissions: write-all
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
