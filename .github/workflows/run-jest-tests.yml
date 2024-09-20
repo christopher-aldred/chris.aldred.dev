@@ -20,4 +20,5 @@ jobs:
         run: yarn install
 
       - name: Run tests
-        run: npx jest --watchAll
+        run: |
+          npx jest --watchAll --coverage --coverageReporters json-summary
