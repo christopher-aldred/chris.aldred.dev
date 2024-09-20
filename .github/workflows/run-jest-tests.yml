@@ -1,0 +1,23 @@
+name: Run jest tests
+"on": pull_request_target
+
+jobs:
+  run_jest_tests:
+    permissions: read-all
+    if: "${{ github.event.pull_request.head.repo.full_name == github.repository }}"
+    runs-on: ubuntu-latest
+
+    # checkout current PR code
+    steps:
+      - name: Checking out PR code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: ${{ github.event.pull_request.head.sha }}
+          repository: ${{github.event.pull_request.head.repo.full_name}}
+
+      - name: Install modules
+        run: yarn install
+
+      - name: Run tests
+        run: yarn test
