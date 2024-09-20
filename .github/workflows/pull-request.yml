@@ -42,7 +42,7 @@ jobs:
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
 
       - name: Start server
-        run: ${{ steps.detect-package-manager.outputs.manager }} dev & sleep 5 && curl http://localhost:3000 -I
+        run: ${{ steps.detect-package-manager.outputs.manager }} dev & sleep 15 && curl http://localhost:3000 -I
 
       - name: Test Code
         uses: mujo-code/puppeteer-headful@18.9.0
