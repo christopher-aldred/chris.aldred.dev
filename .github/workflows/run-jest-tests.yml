@@ -19,10 +19,10 @@ jobs:
       - name: Install dependencies
         run: yarn install
 
-      - name: Run tests
-        run: npx jest --ci --reporters=default --reporters=jest-junit
-
-      - uses: IgnusG/jest-report-action@v2.3.3
-        if: always()
+      - name:
+        uses: mattallty/jest-github-action@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          access-token: ${{ secrets.GITHUB_TOKEN }}
+          # this is just an example, this could be any command that will trigger jest
+          test-command: "yarn test"
