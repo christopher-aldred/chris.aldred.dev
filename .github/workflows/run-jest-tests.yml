@@ -21,9 +21,4 @@ jobs:
 
       - name: Run tests
         run: |
-          npx jest --coverage --config='{ "coverageReporters": ["json-summary"] }'
-
-      - name: Jest Coverage Comment
-        uses: MishaKav/jest-coverage-comment@main
-        with:
-          junitxml-path: ./junit.xml
+          npx jest --coverage --coverageReporters json-summary
