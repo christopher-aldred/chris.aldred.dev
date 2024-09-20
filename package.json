@@ -8,7 +8,8 @@
     "build": "tinacms build --partial-reindex && next build",
     "start": "next start",
     "lint": "next lint",
-    "test": "jest --watchAll"
+    "test": "jest --watchAll",
+    "test:ci": "jest --testLocationInResults --ci --outputFile=test_results.json --json"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^6.5.0",

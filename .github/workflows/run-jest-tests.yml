@@ -3,7 +3,7 @@ name: Run jest tests
 
 jobs:
   run_jest_tests:
-    permissions: read-all
+    permissions: write-all
     if: "${{ github.event.pull_request.head.repo.full_name == github.repository }}"
     runs-on: ubuntu-latest
 
@@ -17,13 +17,12 @@ jobs:
           repository: ${{github.event.pull_request.head.repo.full_name}}
 
       - name: Install dependencies
-        run: npm ci
+        run: yarn install
 
       - name: Run tests
-        run: |
-          npx jest --coverage --coverageReporters json-summary
-
-      - name: Jest Coverage Comment
-        uses: MishaKav/jest-coverage-comment@main
-        # with:
-        #   junitxml-path: ./junit.xml
+        uses: ospfranco/gh-jester@v1.0.13
+        with:
+          post-comment: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_CONTEXT: ${{ toJson(github) }}
