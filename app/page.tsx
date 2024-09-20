@@ -60,7 +60,6 @@ export default function Portfolio() {
                   </div>
                 </div>
               </FadeAndSlide>
-
             </div>
           </Transition>
         </main>
