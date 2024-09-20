@@ -2,23 +2,20 @@ name: Run jest tests
 "on": pull_request_target
 
 jobs:
-  run_jest_tests:
-    permissions: write-all
-    if: "${{ github.event.pull_request.head.repo.full_name == github.repository }}"
+  test:
     runs-on: ubuntu-latest
 
-    # checkout current PR code
     steps:
-      - name: Checking out PR code
+      - name: Checkout repository
         uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
         with:
-          fetch-depth: 0
-          ref: ${{ github.event.pull_request.head.sha }}
-          repository: ${{github.event.pull_request.head.repo.full_name}}
+          node-version: "20"
 
       - name: Install dependencies
         run: yarn install
 
-      - name: Run tests
-        run: |
-          npx jest --watchAll --coverage --coverageReporters json-summary
+      - name: Run Jest tests
+        run: yarn test:ci
