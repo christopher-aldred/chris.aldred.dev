@@ -12,9 +12,11 @@ export default function MainComponent() {
         <div className="h-full w-full grid grid-cols-3 lg:grid-rows-2 gap-0">
           <div className="col-span-3 lg:col-span-2 row-start-1 min-h-28">
             <div className="font-[200] text-lg text-slate-500">Welcome</div>
-            I'm <b>Chris</b>, a software developer with a strong focus on user
-            experience, animations and micro interactions. Feel free to reach
-            out to me if you have any projects in mind, or just to say hello.
+            I'm <b>Chris</b>, a dedicated web developer with a passion for
+            creating dynamic and user-friendly websites. With expertise in
+            crafting responsive designs and optimizing performance, I am
+            currently open to new opportunities. If you need a developer let’s
+            connect, book a call or get in touch below.
           </div>
           <div className="col-span-2 col-start-1 row-start-2 flex items-end flex-wrap h-auto">
             <Link

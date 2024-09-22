@@ -294,7 +294,7 @@ exports[`renders correctly 1`] = `
               <b>
                 Chris
               </b>
-              , a software developer with a strong focus on user experience, animations and micro interactions. Feel free to reach out to me if you have any projects in mind, or just to say hello.
+              , a dedicated web developer with a passion for creating dynamic and user-friendly websites. With expertise in crafting responsive designs and optimizing performance, I am currently open to new opportunities. If you need a developer let’s connect, book a call or get in touch below.
             </div>
             <div
               className="col-span-2 col-start-1 row-start-2 flex items-end flex-wrap h-auto"
