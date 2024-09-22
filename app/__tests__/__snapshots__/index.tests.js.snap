@@ -294,10 +294,10 @@ exports[`renders correctly 1`] = `
               <b>
                 Chris
               </b>
-              , a software developer with a strong focus on user experience, animations and micro interactions. Feel free to reach out to me if you have any projects in mind, or just to say hello.
+              , a dedicated web developer with a passion for creating dynamic and user-friendly websites. With expertise in crafting responsive designs & optimizing performance, I am currently open to new opportunities. If you need a developer let’s connect, book a call or get in touch below.
             </div>
             <div
-              className="col-span-2 col-start-1 row-start-2 flex items-end flex-wrap h-auto"
+              className="col-span-2 col-start-1 row-start-2 flex items-end flex-wrap h-auto mt-4"
             >
               <a
                 className="relative mr-4"
@@ -317,7 +317,7 @@ exports[`renders correctly 1`] = `
               </a>
               <a
                 className="relative mr-4"
-                href="mailto: chris@aldred.dev"
+                href="mailto: chris@aldred.dev mt-4"
               >
                 <span
                   className="h-10 w-12 lg:h-12 lg:w-14 absolute top-0 left-0 mt-1 ml-1  rounded-lg bg-white"
@@ -338,7 +338,7 @@ exports[`renders correctly 1`] = `
                 </span>
               </a>
               <a
-                className="relative mr-4"
+                className="relative mr-4 mt-4"
                 href="https://github.com/christopher-aldred"
               >
                 <span
@@ -360,7 +360,7 @@ exports[`renders correctly 1`] = `
                 </span>
               </a>
               <a
-                className="relative mr-4"
+                className="relative mr-4 mt-4"
                 href="https://www.linkedin.com/in/christopher-aldred-584609163/"
               >
                 <span
@@ -382,7 +382,7 @@ exports[`renders correctly 1`] = `
                 </span>
               </a>
               <a
-                className="relative"
+                className="relative mt-4"
                 href="https://wa.me/+447504924583"
               >
                 <span
