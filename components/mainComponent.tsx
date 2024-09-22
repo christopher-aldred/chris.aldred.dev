@@ -14,11 +14,11 @@ export default function MainComponent() {
             <div className="font-[200] text-lg text-slate-500">Welcome</div>
             I'm <b>Chris</b>, a dedicated web developer with a passion for
             creating dynamic and user-friendly websites. With expertise in
-            crafting responsive designs & optimizing performance, I am
-            currently open to new opportunities. If you need a dev let’s
-            connect, book a call or get in touch below.
+            crafting responsive designs & optimizing performance, I am currently
+            open to new opportunities. If you need a dev let’s connect, book a
+            call or get in touch below.
           </div>
-          <div className="col-span-2 col-start-1 row-start-2 flex items-end flex-wrap h-auto">
+          <div className="col-span-2 col-start-1 row-start-2 flex items-end flex-wrap h-auto mt-4">
             <Link
               className="relative mr-4"
               href="https://koalendar.com/e/meet-with-chris-aldred"
@@ -28,7 +28,7 @@ export default function MainComponent() {
                 Book a call
               </span>
             </Link>
-            <a className="relative mr-4" href="mailto: chris@aldred.dev">
+            <a className="relative mr-4" href="mailto: chris@aldred.dev mt-4">
               <span className="h-10 w-12 lg:h-12 lg:w-14 absolute top-0 left-0 mt-1 ml-1  rounded-lg bg-white"></span>
               <span className="h-10 w-12 lg:h-12 lg:w-14 text-md lg:text-lg flex flex-col justify-center items-center fold-bold relative  rounded-lg border border-white bg-neutral-900 px-3 py-1 font-bold text-whit transition duration-100 hover:bg-[#fede59] hover:text-gray-900 hover:border-[#fede59] hover:mt-1 hover:ml-1 hover:-mr-1 hover hover:-mb-1">
                 <svg
@@ -42,7 +42,7 @@ export default function MainComponent() {
               </span>
             </a>
             <a
-              className="relative mr-4"
+              className="relative mr-4 mt-4"
               href="https://github.com/christopher-aldred"
             >
               <span className="h-10 w-12 lg:h-12 lg:w-14 absolute top-0 left-0 mt-1 ml-1  rounded-lg bg-white"></span>
@@ -58,7 +58,7 @@ export default function MainComponent() {
               </span>
             </a>
             <a
-              className="relative mr-4"
+              className="relative mr-4 mt-4"
               href="https://www.linkedin.com/in/christopher-aldred-584609163/"
             >
               <span className="h-10 w-12 lg:h-12 lg:w-14 absolute top-0 left-0 mt-1 ml-1  rounded-lg bg-white"></span>
@@ -73,7 +73,7 @@ export default function MainComponent() {
                 </svg>
               </span>
             </a>
-            <a className="relative" href="https://wa.me/+447504924583">
+            <a className="relative mt-4" href="https://wa.me/+447504924583">
               <span className="h-10 w-12 lg:h-12 lg:w-14 absolute top-0 left-0 mt-1 ml-1  rounded-lg bg-white"></span>
               <span className="h-10 w-12 lg:h-12 lg:w-14 text-md lg:text-lg flex flex-col justify-center items-center fold-bold relative  rounded-lg border border-white bg-black px-3 py-1 font-bold text-white transition duration-100 hover:bg-[#fede59] hover:text-gray-900 hover:border-[#fede59] hover:mt-1 hover:ml-1 hover:-mr-1 hover hover:-mb-1">
                 <svg
