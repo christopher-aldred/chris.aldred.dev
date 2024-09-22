@@ -14,8 +14,8 @@ export default function MainComponent() {
             <div className="font-[200] text-lg text-slate-500">Welcome</div>
             I'm <b>Chris</b>, a dedicated web developer with a passion for
             creating dynamic and user-friendly websites. With expertise in
-            crafting responsive designs and optimizing performance, I am
-            currently open to new opportunities. If you need a developer let’s
+            crafting responsive designs & optimizing performance, I am
+            currently open to new opportunities. If you need a dev let’s
             connect, book a call or get in touch below.
           </div>
           <div className="col-span-2 col-start-1 row-start-2 flex items-end flex-wrap h-auto">
