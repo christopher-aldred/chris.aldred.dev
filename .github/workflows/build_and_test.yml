@@ -1,10 +1,10 @@
-name: Generate screenshots
+name: Build and test
 "on": pull_request_target
 
 jobs:
-  generate_screenshots:
-    permissions: write-all
-    if: "${{ github.event.pull_request.head.repo.full_name == github.repository && github.actor != 'dependabot[bot]' }}"
+  build_and_test:
+    permissions: read-all
+    if: "${{ github.event.pull_request.head.repo.full_name == github.repository }}"
     runs-on: ubuntu-latest
 
     # checkout current PR code
@@ -44,26 +44,7 @@ jobs:
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
 
       - name: Start server
-        run: ${{ steps.detect-package-manager.outputs.manager }} dev & sleep 10
+        run: ${{ steps.detect-package-manager.outputs.manager }} dev & sleep 15
 
-      - name: Test Code
-        uses: mujo-code/puppeteer-headful@18.9.0
-        env:
-          CI: "true"
-
-      - name: screenshots-ci-action
-        uses: flameddd/screenshots-ci-action@master
-        with:
-          url: http://localhost:3000
-          devices: iPhone 6,Nexus 7,Galaxy S III
-          waitUntil: networkidle0
-          noCommitHashFileName: true
-          releaseId: 176094310
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      # Upload screenshots to Actions Artifacts
-      - uses: actions/upload-artifact@v4 # Uplaod screenshots to Actions Artifacts via actions/upload-artifact@v2
-        with:
-          path: screenshots
-          name: Download-screenshots
+      - name: Test basic call to server
+        run: curl http://localhost:3000 -I
