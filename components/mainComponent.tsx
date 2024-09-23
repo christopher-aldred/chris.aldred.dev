@@ -23,8 +23,8 @@ export default function MainComponent() {
               className="relative mr-4"
               href="https://koalendar.com/e/meet-with-chris-aldred"
             >
-              <span className="h-10 w-28 lg:h-12 lg:w-32 absolute top-0 left-0 mt-1 ml-2  rounded-lg bg-white"></span>
-              <span className="h-10 w-28 lg:h-12 lg:w-32 text-md lg:text-lg flex flex-col justify-center items-center fold-bold relative  rounded-lg border border-white bg-neutral-900 px-3 py-1 font-[200] text-white transition duration-100 hover:bg-[#fede59] hover:text-gray-900 hover:border-[#fede59] hover:font-[500] ml-1 mb-1">
+              <span className="h-10 w-[115px] lg:h-12 lg:w-32 absolute top-0 left-0 mt-1 ml-2  rounded-lg bg-white"></span>
+              <span className="h-10 w-[115px] lg:h-12 lg:w-32 text-md lg:text-lg flex flex-col justify-center items-center fold-bold relative  rounded-lg border border-white bg-neutral-900 px-3 py-1 font-[200] text-white transition duration-100 hover:bg-[#fede59] hover:text-gray-900 hover:border-[#fede59] hover:font-[500] ml-1 mb-1">
                 Book a call
               </span>
             </Link>
