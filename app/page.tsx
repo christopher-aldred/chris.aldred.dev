@@ -10,8 +10,15 @@ import Contact from "../components/contact";
 import BlogButton from "../components/blogButton";
 import Collaboration from "../components/collaboration";
 import PorfolioButton from "../components/portfolioButton";
+import FullScreenModal from "../components/fullScreenModal";
 
-export default function Portfolio() {
+type SearchParamProps = {
+  searchParams: Record<string, string> | null | undefined;
+};
+
+export default function Portfolio({ searchParams }: SearchParamProps) {
+  const show = searchParams?.show;
+
   return (
     <>
       <div className="fixed inset-0 -z-10">
@@ -21,7 +28,7 @@ export default function Portfolio() {
       </div>
 
       <div className="z-10 flex items-center justify-center min-h-screen">
-        <main className="justify-between overflow-auto w-full">
+        <main className="justify-between overflow-hidden w-full">
           <Transition show={true} appear={true}>
             <FadeAndSlide delay="delay-[0ms]">
               <header className="flex-shrink-0">
@@ -63,6 +70,8 @@ export default function Portfolio() {
             </div>
           </Transition>
         </main>
+
+        {show && <FullScreenModal />}
       </div>
     </>
   );
