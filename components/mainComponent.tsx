@@ -28,10 +28,7 @@ export default function MainComponent() {
                 Book a call
               </span>
             </Link>
-            <a
-              className="group relative mr-4"
-              href="mailto: chris@aldred.dev mt-4"
-            >
+            <a className="group relative mr-4" href="mailto: chris@aldred.dev">
               <span className="h-10 w-12 lg:h-12 lg:w-14 absolute top-0 left-0 mt-1 ml-2  rounded-lg bg-white"></span>
               <span className="h-10 w-12 lg:h-12 lg:w-14 text-md lg:text-lg flex flex-col justify-center items-center fold-bold relative  rounded-lg border border-white bg-neutral-900 px-3 py-1 font-bold text-whit transition duration-100 group-hover:bg-[#fede59] group-hover:text-gray-900 group-hover:border-[#fede59] ml-1 mb-1">
                 <svg

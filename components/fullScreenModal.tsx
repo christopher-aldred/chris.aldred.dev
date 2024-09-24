@@ -33,97 +33,131 @@ export default function FullScreenModal() {
   return (
     <Transition as="div" show={true} appear={true}>
       <FadeIn delay="delay-[100ms]">
-        <div className="z-50 fixed inset-0 bg-neutral-950/80 overflow-y-auto h-full w-full flex items-center justify-center">
+        <div className="z-50 fixed inset-0 bg-slate-950/80 overflow-y-auto h-full w-full flex items-center justify-center">
           <FadeAndSlide delay="delay-[300ms]">
-            <div className="p-4 border border-neutral-700 shadow-lg rounded-lg bg-neutral-900 flex flex-col max-h-[90vh] w-[90vw] lg:w-[40vw]">
+            <div className="p-4 border border-neutral-700 shadow-lg rounded-lg bg-slate-100 flex flex-col max-h-[90vh] w-[90vw] lg:w-[50vw]">
               <div className="flex flex-col">
-                <div className="text-center text-white text-xl lg:text-2xl font-[100] mb-4">
+                <div className="text-center text-neutral-700 font-[150] text-2xl lg:text-4xl mb-4">
                   Portfolio
                 </div>
               </div>
 
-              <div className="h-full overflow-scroll">
-                <a href="https://leaderboard.aldred.dev/" className="group">
-                  <div className="border group-hover:border-slate-100 min-h-28 border-neutral-700 bg-neutral-900 rounded-lg p-4 text-lg  text-white text-center font-[100] mb-4 flex flex-col items-center justify-center relative">
-                    <Image
-                      className="opacity-10 ease-in-out group-hover:opacity-30 rounded-lg object-cover bg-gradient-to-tl from-transparent to-neutral-900"
-                      src="/images/trophy.png"
-                      layout="fill"
-                      objectFit="cover"
-                      alt="leaderboard image"
-                      priority
-                      style={{
-                        maskImage:
-                          "linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1))",
-                        WebkitMaskImage:
-                          "linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1))",
-                      }}
-                    />
-                    <div className="relative z-10 group-hover:font-[200]">
-                      leaderboard.aldred.dev
-                      <div className="text-sm text-neutral-400">
-                        Typescript + React + Antd + Firebase
-                      </div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pb-4">
+                <div className="block rounded-xl bg-neutral-700 p-4">
+                  <span className="inline-block rounded-lg pb-3">
+                    <div className="inline-flex align-middle justify-center items-center select-none text-white">
+                      <svg
+                        className="w-[32px] h-[32px] fill-green-500"
+                        viewBox="0 0 448 512"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path d="M210.6 5.9L62 169.4c-3.9 4.2-6 9.8-6 15.5C56 197.7 66.3 208 79.1 208H104L30.6 281.4c-4.2 4.2-6.6 10-6.6 16C24 309.9 34.1 320 46.6 320H80L5.4 409.5C1.9 413.7 0 419 0 424.5c0 13 10.5 23.5 23.5 23.5H192v32c0 17.7 14.3 32 32 32s32-14.3 32-32V448H424.5c13 0 23.5-10.5 23.5-23.5c0-5.5-1.9-10.8-5.4-15L368 320h33.4c12.5 0 22.6-10.1 22.6-22.6c0-6-2.4-11.8-6.6-16L344 208h24.9c12.7 0 23.1-10.3 23.1-23.1c0-5.7-2.1-11.3-6-15.5L237.4 5.9C234 2.1 229.1 0 224 0s-10 2.1-13.4 5.9z"></path>
+                      </svg>
                     </div>
-                  </div>
-                </a>
+                  </span>
 
-                <a
-                  href="https://atherton-arboriculture.co.uk/"
-                  className="group"
-                >
-                  <div className="border group-hover:border-slate-100 min-h-28 border-neutral-700 bg-neutral-900 rounded-lg p-4 text-lg  text-white text-center font-[100] mb-4 flex flex-col items-center justify-center relative">
-                    <Image
-                      className="opacity-10 ease-in-out group-hover:opacity-30 rounded-lg object-cover bg-gradient-to-tl from-transparent to-neutral-900"
-                      src="/images/trees.png"
-                      layout="fill"
-                      objectFit="cover"
-                      alt="leaderboard image"
-                      priority
-                      style={{
-                        maskImage:
-                          "linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1))",
-                        WebkitMaskImage:
-                          "linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1))",
-                      }}
-                    />
-                    <div className="relative z-10 group-hover:font-[200]">
-                      atherton-arboriculture.co.uk
-                      <div className="text-sm text-neutral-400">
-                        Static mobile responsive website
-                      </div>
-                    </div>
-                  </div>
-                </a>
+                  <h2 className="mt-2 font-[150] text-xl text-neutral-100">
+                    atherton-arboriculture.co.uk
+                  </h2>
+                  <p className="sm:mt-1 block font-[200] text-sm text-neutral-100">
+                    A static mobile responsive site for a small arboriculture
+                    business.
+                  </p>
+                </div>
 
-                <div className="cursor-not-allowed border min-h-28 border-neutral-700 bg-neutral-900 rounded-lg p-4 text-lg  text-white text-center font-[100] mb-4 flex flex-col items-center justify-center relative">
-                  <Image
-                    className="opacity-10 ease-in-out group-hover:opacity-20 rounded-lg object-cover bg-gradient-to-tl from-transparent to-neutral-900"
-                    src="/images/pencils.png"
-                    layout="fill"
-                    objectFit="cover"
-                    alt="leaderboard image"
-                    priority
-                    style={{
-                      maskImage:
-                        "linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1))",
-                      WebkitMaskImage:
-                        "linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1))",
-                    }}
-                  />
-                  <div className="relative z-10">
-                    todo.aldred.dev
-                    <div className="text-sm text-neutral-400">
-                      Typescript + React + Antd + Firebase
+                <div className="block rounded-xl bg-neutral-700 p-4">
+                  <span className="inline-block rounded-lg pb-3">
+                    <div className="inline-flex align-middle justify-center items-center select-none text-white">
+                      <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="32"
+                        width="32"
+                      >
+                        <path
+                          d="M7.55556 4.22222C7.55556 2.99492 8.55048 2 9.77778 2C11.0051 2 12 2.99492 12 4.22222V5.44444C12 5.99673 12.4477 6.44444 13 6.44444H16.5556C17.1078 6.44444 17.5556 6.89216 17.5556 7.44444V11C17.5556 11.5523 18.0033 12 18.5556 12H19.7778C21.0051 12 22 12.9949 22 14.2222C22 15.4496 21.0051 16.4444 19.7778 16.4444H18.5556C18.0033 16.4444 17.5556 16.8922 17.5556 17.4444V21C17.5556 21.5523 17.1078 22 16.5556 22H13C12.4477 22 12 21.5523 12 21V19.7778C12 18.5504 11.0051 17.5556 9.77778 17.5556C8.55048 17.5556 7.55556 18.5504 7.55556 19.7778V21C7.55556 21.5523 7.10784 22 6.55556 22H3C2.44772 22 2 21.5523 2 21V17.4444C2 16.8922 2.44772 16.4444 3 16.4444H4.22222C5.44952 16.4444 6.44444 15.4496 6.44444 14.2222C6.44444 12.9949 5.44952 12 4.22222 12H3C2.44772 12 2 11.5523 2 11V7.44444C2 6.89216 2.44772 6.44444 3 6.44444H6.55556C7.10784 6.44444 7.55556 5.99673 7.55556 5.44444V4.22222Z"
+                          stroke="currentColor"
+                          stroke-width="1.5"
+                          stroke-linecap="square"
+                        ></path>
+                      </svg>
                     </div>
-                  </div>
+                  </span>
+                  <h2 className="mt-2 font-semibold text-base sm:text-lg text-white">
+                    Content creators
+                  </h2>
+                  <p className="sm:mt-1 block text-sm sm:text-base text-gray-300">
+                    Deliver high-quality, engaging blogs, articles, and video
+                    tutorials to your audience.
+                  </p>
+                </div>
+
+                <div className="block rounded-xl bg-neutral-700 p-4">
+                  <span className="inline-block rounded-lg pb-3">
+                    <div className="inline-flex align-middle justify-center items-center select-none text-white">
+                      <svg
+                        viewBox="0 0 25 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="32"
+                        width="32"
+                      >
+                        <path
+                          d="M12.6586 11.62C12.6286 11.62 12.6086 11.62 12.5786 11.62C12.5286 11.61 12.4586 11.61 12.3986 11.62C9.49859 11.53 7.30859 9.25 7.30859 6.44C7.30859 3.58 9.63859 1.25 12.4986 1.25C15.3586 1.25 17.6886 3.58 17.6886 6.44C17.6786 9.25 15.4786 11.53 12.6886 11.62C12.6786 11.62 12.6686 11.62 12.6586 11.62ZM12.4986 2.75C10.4686 2.75 8.80859 4.41 8.80859 6.44C8.80859 8.44 10.3686 10.05 12.3586 10.12C12.4086 10.11 12.5486 10.11 12.6786 10.12C14.6386 10.03 16.1786 8.42 16.1886 6.44C16.1886 4.41 14.5286 2.75 12.4986 2.75Z"
+                          fill="currentColor"
+                        ></path>
+                        <path
+                          d="M12.6716 22.55C10.7116 22.55 8.74156 22.05 7.25156 21.05C5.86156 20.13 5.10156 18.87 5.10156 17.5C5.10156 16.13 5.86156 14.86 7.25156 13.93C10.2516 11.94 15.1116 11.94 18.0916 13.93C19.4716 14.85 20.2416 16.11 20.2416 17.48C20.2416 18.85 19.4816 20.12 18.0916 21.05C16.5916 22.05 14.6316 22.55 12.6716 22.55ZM8.08156 15.19C7.12156 15.83 6.60156 16.65 6.60156 17.51C6.60156 18.36 7.13156 19.18 8.08156 19.81C10.5716 21.48 14.7716 21.48 17.2616 19.81C18.2216 19.17 18.7416 18.35 18.7416 17.49C18.7416 16.64 18.2116 15.82 17.2616 15.19C14.7716 13.53 10.5716 13.53 8.08156 15.19Z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                    </div>
+                  </span>
+
+                  <h2 className="mt-2 font-semibold text-base sm:text-lg text-white">
+                    Educators teaching PHP
+                  </h2>
+                  <p className="sm:mt-1 block text-sm sm:text-base text-gray-300">
+                    Easily create and share coding assignments and projects with
+                    your students
+                  </p>
+                </div>
+
+                <div className="block rounded-xl border bg-neutral-700 p-4">
+                  <span className="inline-block rounded-lg pb-3">
+                    <div className="inline-flex align-middle justify-center items-center select-none text-white">
+                      <svg
+                        viewBox="0 0 25 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="32"
+                        width="32"
+                      >
+                        <path
+                          d="M15.2013 6.29998C15.0181 6.48691 14.9155 6.73823 14.9155 6.99998C14.9155 7.26173 15.0181 7.51305 15.2013 7.69998L16.8013 9.29998C16.9882 9.48321 17.2396 9.58584 17.5013 9.58584C17.7631 9.58584 18.0144 9.48321 18.2013 9.29998L21.4602 6.04107C21.7073 5.79397 22.1242 5.87146 22.229 6.20485C22.52 7.13078 22.583 8.11721 22.4078 9.07913C22.1892 10.279 21.61 11.3838 20.7476 12.2463C19.8852 13.1087 18.7804 13.6878 17.5805 13.9064C16.4942 14.1044 15.3767 13.9983 14.3504 13.6034C14.1561 13.5287 13.9339 13.5674 13.7867 13.7146L7.12132 20.38C6.7235 20.7778 6.18393 21.0013 5.62132 21.0013C5.05871 21.0013 4.51914 20.7778 4.12132 20.38C3.7235 19.9822 3.5 19.4426 3.5 18.88C3.5 18.3174 3.7235 17.7778 4.12132 17.38L10.7867 10.7146C10.9339 10.5674 10.9726 10.3452 10.8979 10.1509C10.503 9.12458 10.3969 8.00708 10.5949 6.92083C10.8135 5.72092 11.3926 4.61614 12.255 3.7537C13.1175 2.89127 14.2223 2.31215 15.4222 2.09352C16.3841 1.91826 17.3705 1.98134 18.2965 2.27232C18.6298 2.37708 18.7073 2.79397 18.4602 3.04107L15.2113 6.28998L15.2013 6.29998Z"
+                          stroke="currentColor"
+                          stroke-width="1.2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                      </svg>
+                    </div>
+                  </span>
+                  <h2 className="mt-2 font-semibold text-base sm:text-lg text-white">
+                    Open source maintainers{" "}
+                  </h2>
+                  <p className="sm:mt-1 block text-sm sm:text-base text-gray-300">
+                    For issue reproduction while letting your users try your
+                    work without installing it
+                  </p>
                 </div>
               </div>
 
               <Link
                 href="/"
                 scroll={false}
-                className="mt-auto w-full p-2 bg-[#39b4ff] text-center font-medium rounded-md shadow-sm hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-300"
+                className="mt-auto w-full p-2 bg-[#39b4ff] text-white text-center font-medium rounded-md shadow-sm hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-300"
               >
                 Close
               </Link>
