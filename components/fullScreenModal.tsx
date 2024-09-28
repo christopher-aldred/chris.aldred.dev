@@ -81,7 +81,7 @@ export default function FullScreenModal() {
 
                 <div className="group block rounded-xl bg-neutral-700 hover:bg-[#fede59] p-4 cursor-pointer">
                   <a
-                    href="https://leaderboard.aldred.dev"
+                    href="https://leaderboard.aldred.dev/view/310OmMvkUeH7Yp7W27kl"
                     className="block text-inherit no-underline hover:no-underline"
                   >
                     <span className="inline-block rounded-lg pb-3">
