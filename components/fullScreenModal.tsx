@@ -33,97 +33,162 @@ export default function FullScreenModal() {
   return (
     <Transition as="div" show={true} appear={true}>
       <FadeIn delay="delay-[100ms]">
-        <div className="z-50 fixed inset-0 bg-neutral-950/80 overflow-y-auto h-full w-full flex items-center justify-center">
+        <div className="z-50 fixed inset-0 bg-slate-950/80 h-full w-full flex items-center justify-center">
           <FadeAndSlide delay="delay-[300ms]">
-            <div className="p-4 border border-neutral-700 shadow-lg rounded-lg bg-neutral-900 flex flex-col max-h-[90vh] w-[90vw] lg:w-[40vw]">
+            <div className="p-4 border border-neutral-700 shadow-lg rounded-lg bg-slate-100 flex flex-col max-h-[90vh] w-[90vw] lg:w-[50vw]">
               <div className="flex flex-col">
-                <div className="text-center text-white text-xl lg:text-2xl font-[100] mb-4">
+                <div className="text-center text-neutral-700 font-[150] text-2xl lg:text-4xl mb-4">
                   Portfolio
                 </div>
               </div>
 
-              <div className="h-full overflow-scroll">
-                <a href="https://leaderboard.aldred.dev/" className="group">
-                  <div className="border group-hover:border-slate-100 min-h-28 border-neutral-700 bg-neutral-900 rounded-lg p-4 text-lg  text-white text-center font-[100] mb-4 flex flex-col items-center justify-center relative">
-                    <Image
-                      className="opacity-10 ease-in-out group-hover:opacity-30 rounded-lg object-cover bg-gradient-to-tl from-transparent to-neutral-900"
-                      src="/images/trophy.png"
-                      layout="fill"
-                      objectFit="cover"
-                      alt="leaderboard image"
-                      priority
-                      style={{
-                        maskImage:
-                          "linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1))",
-                        WebkitMaskImage:
-                          "linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1))",
-                      }}
-                    />
-                    <div className="relative z-10 group-hover:font-[200]">
-                      leaderboard.aldred.dev
-                      <div className="text-sm text-neutral-400">
-                        Typescript + React + Antd + Firebase
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pb-4 overflow-y-auto rounded-lg">
+                <div className="group block rounded-xl bg-neutral-700 hover:bg-[#fede59] p-4 cursor-pointer">
+                  <a
+                    href="http://atherton-arboriculture.co.uk"
+                    className="block text-inherit no-underline hover:no-underline"
+                  >
+                    <span className="inline-block rounded-lg pb-3">
+                      <div className="inline-flex align-middle justify-center items-center select-none text-white">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="1em"
+                          height="1em"
+                          viewBox="0 0 24 24"
+                          className="w-[32px] h-[32px] group-hover:text-slate-950"
+                        >
+                          <path
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            strokeWidth="1.5"
+                            d="M12 17h7l-4.5-6.5h3L12 3l-5.5 7.5h3L5 17zm0 0v4"
+                          />
+                        </svg>
                       </div>
-                    </div>
-                  </div>
-                </a>
+                    </span>
 
-                <a
-                  href="https://atherton-arboriculture.co.uk/"
-                  className="group"
-                >
-                  <div className="border group-hover:border-slate-100 min-h-28 border-neutral-700 bg-neutral-900 rounded-lg p-4 text-lg  text-white text-center font-[100] mb-4 flex flex-col items-center justify-center relative">
-                    <Image
-                      className="opacity-10 ease-in-out group-hover:opacity-30 rounded-lg object-cover bg-gradient-to-tl from-transparent to-neutral-900"
-                      src="/images/trees.png"
-                      layout="fill"
-                      objectFit="cover"
-                      alt="leaderboard image"
-                      priority
-                      style={{
-                        maskImage:
-                          "linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1))",
-                        WebkitMaskImage:
-                          "linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1))",
-                      }}
-                    />
-                    <div className="relative z-10 group-hover:font-[200]">
+                    <h2 className="mt-2 font-[300] text-xl text-neutral-100 group-hover:text-neutral-950">
                       atherton-arboriculture.co.uk
-                      <div className="text-sm text-neutral-400">
-                        Static mobile responsive website
-                      </div>
-                    </div>
-                  </div>
-                </a>
+                    </h2>
+                    <p className="sm:mt-1 block font-[200] text-sm text-neutral-200 group-hover:text-neutral-950">
+                      A static mobile responsive site for a small arboriculture
+                      business.
+                    </p>
+                  </a>
+                </div>
 
-                <div className="cursor-not-allowed border min-h-28 border-neutral-700 bg-neutral-900 rounded-lg p-4 text-lg  text-white text-center font-[100] mb-4 flex flex-col items-center justify-center relative">
-                  <Image
-                    className="opacity-10 ease-in-out group-hover:opacity-20 rounded-lg object-cover bg-gradient-to-tl from-transparent to-neutral-900"
-                    src="/images/pencils.png"
-                    layout="fill"
-                    objectFit="cover"
-                    alt="leaderboard image"
-                    priority
-                    style={{
-                      maskImage:
-                        "linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1))",
-                      WebkitMaskImage:
-                        "linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1))",
-                    }}
-                  />
-                  <div className="relative z-10">
-                    todo.aldred.dev
-                    <div className="text-sm text-neutral-400">
-                      Typescript + React + Antd + Firebase
+                <div className="group block rounded-xl bg-neutral-700 hover:bg-[#fede59] p-4 cursor-pointer">
+                  <a
+                    href="https://leaderboard.aldred.dev/view/310OmMvkUeH7Yp7W27kl"
+                    className="block text-inherit no-underline hover:no-underline"
+                  >
+                    <span className="inline-block rounded-lg pb-3">
+                      <div className="inline-flex align-middle justify-center items-center select-none text-white">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="1em"
+                          height="1em"
+                          viewBox="0 0 32 32"
+                          className="w-[32px] h-[32px] group-hover:text-slate-950"
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M26 7h-2V6a2 2 0 0 0-2-2H10a2 2 0 0 0-2 2v1H6a2 2 0 0 0-2 2v3a4.005 4.005 0 0 0 4 4h.322A8.17 8.17 0 0 0 15 21.934V26h-5v2h12v-2h-5v-4.069A7.97 7.97 0 0 0 23.74 16H24a4.005 4.005 0 0 0 4-4V9a2 2 0 0 0-2-2M8 14a2 2 0 0 1-2-2V9h2Zm14 0a6 6 0 0 1-6.185 5.997A6.2 6.2 0 0 1 10 13.707V6h12Zm4-2a2 2 0 0 1-2 2V9h2Z"
+                          />
+                        </svg>
+                      </div>
+                    </span>
+
+                    <h2 className="mt-2 font-[300] text-xl text-neutral-100 group-hover:text-neutral-950">
+                      leaderboard.aldred.dev
+                    </h2>
+                    <p className="sm:mt-1 block font-[200] text-sm text-neutral-200 group-hover:text-neutral-950">
+                      A public leaderboard web app written using Typescript,
+                      React & Firebase backend.
+                    </p>
+                  </a>
+                </div>
+
+                <div className="group block rounded-xl bg-neutral-700 hover:bg-[#fede59] p-4 cursor-pointer">
+                  <a
+                    href="#"
+                    className="block text-inherit no-underline hover:no-underline"
+                  >
+                    <span className="inline-block rounded-lg pb-3">
+                      <div className="inline-flex align-middle justify-center items-center select-none text-white">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="1em"
+                          height="1em"
+                          viewBox="0 0 24 24"
+                          className="w-[32px] h-[32px] group-hover:text-slate-950"
+                        >
+                          <g
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            strokeWidth="1.5"
+                            color="currentColor"
+                          >
+                            <path d="m12.88 7.017l4.774 1.271m-5.796 2.525l2.386.636m-2.267 6.517l.954.255c2.7.72 4.05 1.079 5.114.468c1.063-.61 1.425-1.953 2.148-4.637l1.023-3.797c.724-2.685 1.085-4.027.471-5.085s-1.963-1.417-4.664-2.136l-.954-.255c-2.7-.72-4.05-1.079-5.113-.468c-1.064.61-1.426 1.953-2.15 4.637l-1.022 3.797c-.724 2.685-1.086 4.027-.471 5.085c.614 1.057 1.964 1.417 4.664 2.136" />
+                            <path d="m12 20.946l-.952.26c-2.694.733-4.04 1.1-5.102.477c-1.06-.622-1.422-1.99-2.143-4.728l-1.021-3.872c-.722-2.737-1.083-4.106-.47-5.184C2.842 6.966 4 7 5.5 7" />
+                          </g>
+                        </svg>
+                      </div>
+                    </span>
+
+                    <h2 className="mt-2 font-[300] text-xl text-neutral-100 group-hover:text-neutral-950">
+                      todo.aldred.dev
+                    </h2>
+                    <p className="sm:mt-1 block font-[200] text-sm text-neutral-200 group-hover:text-neutral-950">
+                      A public web app for taking notes, written using
+                      Typescript, React and Firebase.
+                    </p>
+                  </a>
+                </div>
+
+                <div className="group block rounded-xl bg-neutral-700  p-4 ">
+                  <span className="inline-block rounded-lg pb-3">
+                    <div className="inline-flex align-middle justify-center items-center select-none text-white">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="1em"
+                        height="1em"
+                        viewBox="0 0 24 24"
+                        className="w-[32px] h-[32px]"
+                      >
+                        <g
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          strokeWidth="2"
+                        >
+                          <circle cx="12" cy="12" r="10" />
+                          <path d="m15 16l-2.414-2.414A2 2 0 0 1 12 12.172V6" />
+                        </g>
+                      </svg>
                     </div>
-                  </div>
+                  </span>
+
+                  <h2 className="mt-2 font-[300] text-xl text-neutral-100">
+                    Coming soon
+                  </h2>
+                  <p className="sm:mt-1 block font-[200] text-sm text-neutral-200">
+                    More portfolio projects in develpoment.
+                  </p>
                 </div>
               </div>
+
+              <br className="block sm:hidden" />
 
               <Link
                 href="/"
                 scroll={false}
-                className="mt-auto w-full p-2 bg-[#39b4ff] text-center font-medium rounded-md shadow-sm hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-300"
+                className="mt-auto w-full p-2 bg-[#39b4ff] text-white text-center font-medium rounded-md shadow-sm hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-300"
               >
                 Close
               </Link>
