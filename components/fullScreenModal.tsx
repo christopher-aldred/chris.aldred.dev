@@ -33,7 +33,7 @@ export default function FullScreenModal() {
   return (
     <Transition as="div" show={true} appear={true}>
       <FadeIn delay="delay-[100ms]">
-        <div className="z-50 fixed inset-0 bg-slate-950/80 overflow-y-auto h-full w-full flex items-center justify-center">
+        <div className="z-50 fixed inset-0 bg-slate-950/80 h-full w-full flex items-center justify-center">
           <FadeAndSlide delay="delay-[300ms]">
             <div className="p-4 border border-neutral-700 shadow-lg rounded-lg bg-slate-100 flex flex-col max-h-[90vh] w-[90vw] lg:w-[50vw]">
               <div className="flex flex-col">
@@ -42,117 +42,148 @@ export default function FullScreenModal() {
                 </div>
               </div>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pb-4">
-                <div className="block rounded-xl bg-neutral-700 p-4">
-                  <span className="inline-block rounded-lg pb-3">
-                    <div className="inline-flex align-middle justify-center items-center select-none text-white">
-                      <svg
-                        className="w-[32px] h-[32px] fill-green-500"
-                        viewBox="0 0 448 512"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path d="M210.6 5.9L62 169.4c-3.9 4.2-6 9.8-6 15.5C56 197.7 66.3 208 79.1 208H104L30.6 281.4c-4.2 4.2-6.6 10-6.6 16C24 309.9 34.1 320 46.6 320H80L5.4 409.5C1.9 413.7 0 419 0 424.5c0 13 10.5 23.5 23.5 23.5H192v32c0 17.7 14.3 32 32 32s32-14.3 32-32V448H424.5c13 0 23.5-10.5 23.5-23.5c0-5.5-1.9-10.8-5.4-15L368 320h33.4c12.5 0 22.6-10.1 22.6-22.6c0-6-2.4-11.8-6.6-16L344 208h24.9c12.7 0 23.1-10.3 23.1-23.1c0-5.7-2.1-11.3-6-15.5L237.4 5.9C234 2.1 229.1 0 224 0s-10 2.1-13.4 5.9z"></path>
-                      </svg>
-                    </div>
-                  </span>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pb-4 overflow-y-auto rounded-lg">
+                <div className="group block rounded-xl bg-neutral-700 hover:bg-[#fede59] p-4 cursor-pointer">
+                  <a
+                    href="http://atherton-arboriculture.co.uk"
+                    className="block text-inherit no-underline hover:no-underline"
+                  >
+                    <span className="inline-block rounded-lg pb-3">
+                      <div className="inline-flex align-middle justify-center items-center select-none text-white">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="1em"
+                          height="1em"
+                          viewBox="0 0 24 24"
+                          className="w-[32px] h-[32px] group-hover:text-slate-950"
+                        >
+                          <path
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            strokeWidth="1.5"
+                            d="M12 17h7l-4.5-6.5h3L12 3l-5.5 7.5h3L5 17zm0 0v4"
+                          />
+                        </svg>
+                      </div>
+                    </span>
 
-                  <h2 className="mt-2 font-[150] text-xl text-neutral-100">
-                    atherton-arboriculture.co.uk
-                  </h2>
-                  <p className="sm:mt-1 block font-[200] text-sm text-neutral-100">
-                    A static mobile responsive site for a small arboriculture
-                    business.
-                  </p>
+                    <h2 className="mt-2 font-[300] text-xl text-neutral-100 group-hover:text-neutral-950">
+                      atherton-arboriculture.co.uk
+                    </h2>
+                    <p className="sm:mt-1 block font-[200] text-sm text-neutral-200 group-hover:text-neutral-950">
+                      A static mobile responsive site for a small arboriculture
+                      business.
+                    </p>
+                  </a>
                 </div>
 
-                <div className="block rounded-xl bg-neutral-700 p-4">
+                <div className="group block rounded-xl bg-neutral-700 hover:bg-[#fede59] p-4 cursor-pointer">
+                  <a
+                    href="https://leaderboard.aldred.dev"
+                    className="block text-inherit no-underline hover:no-underline"
+                  >
+                    <span className="inline-block rounded-lg pb-3">
+                      <div className="inline-flex align-middle justify-center items-center select-none text-white">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="1em"
+                          height="1em"
+                          viewBox="0 0 32 32"
+                          className="w-[32px] h-[32px] group-hover:text-slate-950"
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M26 7h-2V6a2 2 0 0 0-2-2H10a2 2 0 0 0-2 2v1H6a2 2 0 0 0-2 2v3a4.005 4.005 0 0 0 4 4h.322A8.17 8.17 0 0 0 15 21.934V26h-5v2h12v-2h-5v-4.069A7.97 7.97 0 0 0 23.74 16H24a4.005 4.005 0 0 0 4-4V9a2 2 0 0 0-2-2M8 14a2 2 0 0 1-2-2V9h2Zm14 0a6 6 0 0 1-6.185 5.997A6.2 6.2 0 0 1 10 13.707V6h12Zm4-2a2 2 0 0 1-2 2V9h2Z"
+                          />
+                        </svg>
+                      </div>
+                    </span>
+
+                    <h2 className="mt-2 font-[300] text-xl text-neutral-100 group-hover:text-neutral-950">
+                      leaderboard.aldred.dev
+                    </h2>
+                    <p className="sm:mt-1 block font-[200] text-sm text-neutral-200 group-hover:text-neutral-950">
+                      A public leaderboard web app written using Typescript,
+                      React & Firebase backend.
+                    </p>
+                  </a>
+                </div>
+
+                <div className="group block rounded-xl bg-neutral-700 hover:bg-[#fede59] p-4 cursor-pointer">
+                  <a
+                    href="#"
+                    className="block text-inherit no-underline hover:no-underline"
+                  >
+                    <span className="inline-block rounded-lg pb-3">
+                      <div className="inline-flex align-middle justify-center items-center select-none text-white">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="1em"
+                          height="1em"
+                          viewBox="0 0 24 24"
+                          className="w-[32px] h-[32px] group-hover:text-slate-950"
+                        >
+                          <g
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            strokeWidth="1.5"
+                            color="currentColor"
+                          >
+                            <path d="m12.88 7.017l4.774 1.271m-5.796 2.525l2.386.636m-2.267 6.517l.954.255c2.7.72 4.05 1.079 5.114.468c1.063-.61 1.425-1.953 2.148-4.637l1.023-3.797c.724-2.685 1.085-4.027.471-5.085s-1.963-1.417-4.664-2.136l-.954-.255c-2.7-.72-4.05-1.079-5.113-.468c-1.064.61-1.426 1.953-2.15 4.637l-1.022 3.797c-.724 2.685-1.086 4.027-.471 5.085c.614 1.057 1.964 1.417 4.664 2.136" />
+                            <path d="m12 20.946l-.952.26c-2.694.733-4.04 1.1-5.102.477c-1.06-.622-1.422-1.99-2.143-4.728l-1.021-3.872c-.722-2.737-1.083-4.106-.47-5.184C2.842 6.966 4 7 5.5 7" />
+                          </g>
+                        </svg>
+                      </div>
+                    </span>
+
+                    <h2 className="mt-2 font-[300] text-xl text-neutral-100 group-hover:text-neutral-950">
+                      todo.aldred.dev
+                    </h2>
+                    <p className="sm:mt-1 block font-[200] text-sm text-neutral-200 group-hover:text-neutral-950">
+                      A public web app for taking notes, written using
+                      Typescript, React and Firebase.
+                    </p>
+                  </a>
+                </div>
+
+                <div className="group block rounded-xl bg-neutral-700  p-4 ">
                   <span className="inline-block rounded-lg pb-3">
                     <div className="inline-flex align-middle justify-center items-center select-none text-white">
                       <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="1em"
+                        height="1em"
                         viewBox="0 0 24 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                        height="32"
-                        width="32"
+                        className="w-[32px] h-[32px]"
                       >
-                        <path
-                          d="M7.55556 4.22222C7.55556 2.99492 8.55048 2 9.77778 2C11.0051 2 12 2.99492 12 4.22222V5.44444C12 5.99673 12.4477 6.44444 13 6.44444H16.5556C17.1078 6.44444 17.5556 6.89216 17.5556 7.44444V11C17.5556 11.5523 18.0033 12 18.5556 12H19.7778C21.0051 12 22 12.9949 22 14.2222C22 15.4496 21.0051 16.4444 19.7778 16.4444H18.5556C18.0033 16.4444 17.5556 16.8922 17.5556 17.4444V21C17.5556 21.5523 17.1078 22 16.5556 22H13C12.4477 22 12 21.5523 12 21V19.7778C12 18.5504 11.0051 17.5556 9.77778 17.5556C8.55048 17.5556 7.55556 18.5504 7.55556 19.7778V21C7.55556 21.5523 7.10784 22 6.55556 22H3C2.44772 22 2 21.5523 2 21V17.4444C2 16.8922 2.44772 16.4444 3 16.4444H4.22222C5.44952 16.4444 6.44444 15.4496 6.44444 14.2222C6.44444 12.9949 5.44952 12 4.22222 12H3C2.44772 12 2 11.5523 2 11V7.44444C2 6.89216 2.44772 6.44444 3 6.44444H6.55556C7.10784 6.44444 7.55556 5.99673 7.55556 5.44444V4.22222Z"
+                        <g
+                          fill="none"
                           stroke="currentColor"
-                          stroke-width="1.5"
-                          stroke-linecap="square"
-                        ></path>
-                      </svg>
-                    </div>
-                  </span>
-                  <h2 className="mt-2 font-semibold text-base sm:text-lg text-white">
-                    Content creators
-                  </h2>
-                  <p className="sm:mt-1 block text-sm sm:text-base text-gray-300">
-                    Deliver high-quality, engaging blogs, articles, and video
-                    tutorials to your audience.
-                  </p>
-                </div>
-
-                <div className="block rounded-xl bg-neutral-700 p-4">
-                  <span className="inline-block rounded-lg pb-3">
-                    <div className="inline-flex align-middle justify-center items-center select-none text-white">
-                      <svg
-                        viewBox="0 0 25 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                        height="32"
-                        width="32"
-                      >
-                        <path
-                          d="M12.6586 11.62C12.6286 11.62 12.6086 11.62 12.5786 11.62C12.5286 11.61 12.4586 11.61 12.3986 11.62C9.49859 11.53 7.30859 9.25 7.30859 6.44C7.30859 3.58 9.63859 1.25 12.4986 1.25C15.3586 1.25 17.6886 3.58 17.6886 6.44C17.6786 9.25 15.4786 11.53 12.6886 11.62C12.6786 11.62 12.6686 11.62 12.6586 11.62ZM12.4986 2.75C10.4686 2.75 8.80859 4.41 8.80859 6.44C8.80859 8.44 10.3686 10.05 12.3586 10.12C12.4086 10.11 12.5486 10.11 12.6786 10.12C14.6386 10.03 16.1786 8.42 16.1886 6.44C16.1886 4.41 14.5286 2.75 12.4986 2.75Z"
-                          fill="currentColor"
-                        ></path>
-                        <path
-                          d="M12.6716 22.55C10.7116 22.55 8.74156 22.05 7.25156 21.05C5.86156 20.13 5.10156 18.87 5.10156 17.5C5.10156 16.13 5.86156 14.86 7.25156 13.93C10.2516 11.94 15.1116 11.94 18.0916 13.93C19.4716 14.85 20.2416 16.11 20.2416 17.48C20.2416 18.85 19.4816 20.12 18.0916 21.05C16.5916 22.05 14.6316 22.55 12.6716 22.55ZM8.08156 15.19C7.12156 15.83 6.60156 16.65 6.60156 17.51C6.60156 18.36 7.13156 19.18 8.08156 19.81C10.5716 21.48 14.7716 21.48 17.2616 19.81C18.2216 19.17 18.7416 18.35 18.7416 17.49C18.7416 16.64 18.2116 15.82 17.2616 15.19C14.7716 13.53 10.5716 13.53 8.08156 15.19Z"
-                          fill="currentColor"
-                        ></path>
-                      </svg>
-                    </div>
-                  </span>
-
-                  <h2 className="mt-2 font-semibold text-base sm:text-lg text-white">
-                    Educators teaching PHP
-                  </h2>
-                  <p className="sm:mt-1 block text-sm sm:text-base text-gray-300">
-                    Easily create and share coding assignments and projects with
-                    your students
-                  </p>
-                </div>
-
-                <div className="block rounded-xl border bg-neutral-700 p-4">
-                  <span className="inline-block rounded-lg pb-3">
-                    <div className="inline-flex align-middle justify-center items-center select-none text-white">
-                      <svg
-                        viewBox="0 0 25 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                        height="32"
-                        width="32"
-                      >
-                        <path
-                          d="M15.2013 6.29998C15.0181 6.48691 14.9155 6.73823 14.9155 6.99998C14.9155 7.26173 15.0181 7.51305 15.2013 7.69998L16.8013 9.29998C16.9882 9.48321 17.2396 9.58584 17.5013 9.58584C17.7631 9.58584 18.0144 9.48321 18.2013 9.29998L21.4602 6.04107C21.7073 5.79397 22.1242 5.87146 22.229 6.20485C22.52 7.13078 22.583 8.11721 22.4078 9.07913C22.1892 10.279 21.61 11.3838 20.7476 12.2463C19.8852 13.1087 18.7804 13.6878 17.5805 13.9064C16.4942 14.1044 15.3767 13.9983 14.3504 13.6034C14.1561 13.5287 13.9339 13.5674 13.7867 13.7146L7.12132 20.38C6.7235 20.7778 6.18393 21.0013 5.62132 21.0013C5.05871 21.0013 4.51914 20.7778 4.12132 20.38C3.7235 19.9822 3.5 19.4426 3.5 18.88C3.5 18.3174 3.7235 17.7778 4.12132 17.38L10.7867 10.7146C10.9339 10.5674 10.9726 10.3452 10.8979 10.1509C10.503 9.12458 10.3969 8.00708 10.5949 6.92083C10.8135 5.72092 11.3926 4.61614 12.255 3.7537C13.1175 2.89127 14.2223 2.31215 15.4222 2.09352C16.3841 1.91826 17.3705 1.98134 18.2965 2.27232C18.6298 2.37708 18.7073 2.79397 18.4602 3.04107L15.2113 6.28998L15.2013 6.29998Z"
-                          stroke="currentColor"
-                          stroke-width="1.2"
                           stroke-linecap="round"
                           stroke-linejoin="round"
-                        ></path>
+                          strokeWidth="2"
+                        >
+                          <circle cx="12" cy="12" r="10" />
+                          <path d="m15 16l-2.414-2.414A2 2 0 0 1 12 12.172V6" />
+                        </g>
                       </svg>
                     </div>
                   </span>
-                  <h2 className="mt-2 font-semibold text-base sm:text-lg text-white">
-                    Open source maintainers{" "}
+
+                  <h2 className="mt-2 font-[300] text-xl text-neutral-100">
+                    Coming soon
                   </h2>
-                  <p className="sm:mt-1 block text-sm sm:text-base text-gray-300">
-                    For issue reproduction while letting your users try your
-                    work without installing it
+                  <p className="sm:mt-1 block font-[200] text-sm text-neutral-200">
+                    More portfolio projects in develpoment.
                   </p>
                 </div>
               </div>
+
+              <br className="block sm:hidden" />
 
               <Link
                 href="/"
