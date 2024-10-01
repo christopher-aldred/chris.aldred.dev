@@ -2118,12 +2118,12 @@
     yup "^0.32.9"
     zod "^3.14.3"
 
-"@tinacms/datalayer@^1.3.2":
-  version "1.3.2"
-  resolved "https://registry.yarnpkg.com/@tinacms/datalayer/-/datalayer-1.3.2.tgz#2f9de9b4ab07a012b5d604ff5c4c1b13c6858684"
-  integrity sha512-sDSDLL3yuhmDeyVctG62gfgyZuZKdHwBku5PoCW9w6sB+U33rk819nJptyMk3NzP2+IpAv/Fkc3fjG9JIE67xg==
+"@tinacms/datalayer@^1.3.3":
+  version "1.3.3"
+  resolved "https://registry.yarnpkg.com/@tinacms/datalayer/-/datalayer-1.3.3.tgz#65212a7739251220f5ef952b69f2ea64d6730f5e"
+  integrity sha512-LLq3Be6LTG0Q2BwJk8ccRZic2UixmPlW3hwnAS/v4CuDPLyYOR6Khi6q5Cw+Vfoed/jbLkOe/m7Ip9WyMu7XbA==
   dependencies:
-    "@tinacms/graphql" "1.5.2"
+    "@tinacms/graphql" "1.5.3"
 
 "@tinacms/graphql@1.5.2":
   version "1.5.2"
@@ -2154,12 +2154,77 @@
     scmp "^2.1.0"
     yup "^0.32.11"
 
+"@tinacms/graphql@1.5.3":
+  version "1.5.3"
+  resolved "https://registry.yarnpkg.com/@tinacms/graphql/-/graphql-1.5.3.tgz#7d5b7cca29af60f84ae4ca24fe96235bcbf98f8c"
+  integrity sha512-e9LLHwue7p1sZ7bDYCvCaKmYe8Z4hPKAPz+QMbH0QNGAVR1B74di+HtgJ8oePPx8rngdPmqGd6g8q+R0Yizr2Q==
+  dependencies:
+    "@iarna/toml" "^2.2.5"
+    "@tinacms/mdx" "1.4.3"
+    "@tinacms/schema-tools" "1.6.3"
+    abstract-level "^1.0.4"
+    date-fns "^2.30.0"
+    fast-glob "^3.3.2"
+    fs-extra "^9.1.0"
+    glob-parent "^6.0.2"
+    graphql "15.8.0"
+    gray-matter "^4.0.3"
+    isomorphic-git "^1.27.1"
+    js-sha1 "^0.6.0"
+    js-yaml "^3.14.1"
+    jsonpath-plus "^6.0.1"
+    lodash.clonedeep "^4.5.0"
+    lodash.set "^4.3.2"
+    lodash.uniqby "^4.7.0"
+    many-level "^2.0.0"
+    micromatch "4.0.8"
+    normalize-path "^3.0.0"
+    readable-stream "^4.5.2"
+    scmp "^2.1.0"
+    yup "^0.32.11"
+
 "@tinacms/mdx@1.4.2":
   version "1.4.2"
   resolved "https://registry.yarnpkg.com/@tinacms/mdx/-/mdx-1.4.2.tgz#932a9f78201e0e01515d208da841b7080fd1c885"
   integrity sha512-UsJJNAD8uKtjtJV/hFeDwXRVHVd7PowcIV3dhq/fLDzXY3dvOJnRuIHpNX3IxanUApzHjX9kBVNp/UQBOjHhvA==
   dependencies:
     "@tinacms/schema-tools" "1.6.2"
+    acorn "8.8.2"
+    ccount "2.0.1"
+    estree-util-is-identifier-name "2.1.0"
+    lodash.flatten "4.4.0"
+    mdast-util-compact "4.1.1"
+    mdast-util-directive "2.2.4"
+    mdast-util-from-markdown "1.3.0"
+    mdast-util-gfm "2.0.2"
+    mdast-util-mdx-jsx "2.1.2"
+    mdast-util-to-markdown "1.5.0"
+    micromark-extension-gfm "2.0.3"
+    micromark-factory-mdx-expression "1.0.7"
+    micromark-factory-space "1.0.0"
+    micromark-factory-whitespace "1.0.0"
+    micromark-util-character "1.1.0"
+    micromark-util-symbol "1.0.1"
+    micromark-util-types "1.0.2"
+    parse-entities "4.0.1"
+    prettier "^2.7.1"
+    remark "14.0.2"
+    remark-gfm "^2.0.0"
+    remark-mdx "2.3.0"
+    stringify-entities "4.0.3"
+    typedoc "^0.26.3"
+    unist-util-source "4.0.2"
+    unist-util-stringify-position "3.0.3"
+    unist-util-visit "4.1.2"
+    uvu "0.5.6"
+    vfile-message "3.1.4"
+
+"@tinacms/mdx@1.4.3":
+  version "1.4.3"
+  resolved "https://registry.yarnpkg.com/@tinacms/mdx/-/mdx-1.4.3.tgz#ef3dc792fcea59b3c784ea960bb5da1a209f8d15"
+  integrity sha512-kQqnQMp8NcmtLypXfI7A8mNp4HvbtAANeSQSUSfgaW6aAmIdZq2LHiBeXK/WC29/TsfHILShubZM1TDgvHZVxA==
+  dependencies:
+    "@tinacms/schema-tools" "1.6.3"
     acorn "8.8.2"
     ccount "2.0.1"
     estree-util-is-identifier-name "2.1.0"
@@ -2210,6 +2275,15 @@
   version "1.6.2"
   resolved "https://registry.yarnpkg.com/@tinacms/schema-tools/-/schema-tools-1.6.2.tgz#7075550676d17e94156349c660c6b6d699a03b9e"
   integrity sha512-9AUbQX2NSIY+Tv6orBdsuZFvtfWfmGnajYDiuBbpX4H/cMZXKHtx4PpjIGBjgdqYcl3ztN1Y8KSQjs/X6fjdHA==
+  dependencies:
+    picomatch-browser "2.2.6"
+    url-pattern "^1.0.3"
+    zod "^3.14.3"
+
+"@tinacms/schema-tools@1.6.3":
+  version "1.6.3"
+  resolved "https://registry.yarnpkg.com/@tinacms/schema-tools/-/schema-tools-1.6.3.tgz#9abb149ad984ed60af4ada079c0b0db554d8bf90"
+  integrity sha512-qGjBsudbhs0nWSkMOgPZ7VdSxVVA8VMpGlfKDI+qyxJXZ/HVZUOc6Xj0dhmAf36x2oTCAhtbniymSBIlkaSNWQ==
   dependencies:
     picomatch-browser "2.2.6"
     url-pattern "^1.0.3"
@@ -6809,7 +6883,7 @@ micromatch@4.0.5:
     braces "^3.0.2"
     picomatch "^2.3.1"
 
-micromatch@^4.0.4, micromatch@^4.0.5:
+micromatch@4.0.8, micromatch@^4.0.4, micromatch@^4.0.5:
   version "4.0.8"
   resolved "https://registry.yarnpkg.com/micromatch/-/micromatch-4.0.8.tgz#d66fa18f3a47076789320b9b1af32bd86d9fa202"
   integrity sha512-PXwfBhYu0hBCPw8Dn0E+WDYb7af3dSLVWKi3HGv84IdF4TyFoC0ysxFd0Goxw7nSv4T/PzEJQxsYsEiFCKo2BA==
@@ -8793,14 +8867,14 @@ tinacms-authjs@^5.0.1:
   dependencies:
     "@tinacms/schema-tools" "1.6.1"
 
-tinacms-gitprovider-github@^2.0.2:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/tinacms-gitprovider-github/-/tinacms-gitprovider-github-2.0.2.tgz#657ff6b1ed0806b4612d68a5eece555d390919fd"
-  integrity sha512-SN8hyM3YM5zIqm1QwNu0PmAUVkT0Lj5NRKHsR/pYyvFBk/UzfX9QZCpX3/uITIEujX0O1AUvL2O/3UJNEaC9kQ==
+tinacms-gitprovider-github@^2.0.3:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/tinacms-gitprovider-github/-/tinacms-gitprovider-github-2.0.3.tgz#66902b1d21a50bcf9f63a57c273aa4f48d7bd59f"
+  integrity sha512-Ump7Yo4zH8fwG4SJC5GojzS/IPptZlPnqY2h5TddR4OSzmii1ON7pbhkIZCwlLjV4gPisyZRiFnvOeN/7KGirQ==
   dependencies:
     "@octokit/rest" "^19.0.7"
     js-base64 "^3.7.4"
-    typescript "4.7.4"
+    typescript "^5.6.2"
 
 tinacms@2.2.5, tinacms@^2.2.5:
   version "2.2.5"
@@ -9094,15 +9168,10 @@ typedoc@^0.26.3:
     shiki "^1.9.1"
     yaml "^2.4.5"
 
-typescript@4.7.4:
-  version "4.7.4"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.7.4.tgz#1a88596d1cf47d59507a1bcdfb5b9dfe4d488235"
-  integrity sha512-C0WQT0gezHuw6AdY1M2jxUO83Rjf0HP7Sk1DtXj6j1EwkQNZrHAg2XPWlq62oqEhYvONq5pkC2Y9oPljWToLmQ==
-
-typescript@^5.5.4:
-  version "5.5.4"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.5.4.tgz#d9852d6c82bad2d2eda4fd74a5762a8f5909e9ba"
-  integrity sha512-Mtq29sKDAEYP7aljRgtPOpTvOfbwRWlS6dPRzwjdE+C0R4brX/GUyhHSecbHMFLNBLcJIPt9nl9yG5TZ1weH+Q==
+typescript@^5.5.4, typescript@^5.6.2:
+  version "5.6.2"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.6.2.tgz#d1de67b6bef77c41823f822df8f0b3bcff60a5a0"
+  integrity sha512-NW8ByodCSNCwZeghjN3o+JX5OFH0Ojg6sadjEKY4huZ52TqbJTJnDo5+Tw98lSy63NZvi4n+ez5m2u5d4PkZyw==
 
 ua-parser-js@^1.0.35:
   version "1.0.38"
