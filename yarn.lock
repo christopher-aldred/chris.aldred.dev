@@ -950,15 +950,7 @@
   resolved "https://registry.yarnpkg.com/@graphql-typed-document-node/core/-/core-3.2.0.tgz#5f3d96ec6b2354ad6d8a28bf216a1d97b5426861"
   integrity sha512-mB9oAsNCm9aM3/SOv4YtBMqZbYj10R7dkq8byBqxGY/ncFwhf2oQzMV+LCRlWoDSEBJ3COiR1yeDvMtsoOsuFQ==
 
-"@headlessui/react@^1.7.15":
-  version "1.7.19"
-  resolved "https://registry.yarnpkg.com/@headlessui/react/-/react-1.7.19.tgz#91c78cf5fcb254f4a0ebe96936d48421caf75f40"
-  integrity sha512-Ll+8q3OlMJfJbAKM/+/Y2q6PPYbryqNTXDbryx7SXLIDamkF6iQFbriYHga0dY44PvDhvvBWCx1Xj4U5+G4hOw==
-  dependencies:
-    "@tanstack/react-virtual" "^3.0.0-beta.60"
-    client-only "^0.0.1"
-
-"@headlessui/react@^2.1.3", "@headlessui/react@^2.1.8":
+"@headlessui/react@2.1.8", "@headlessui/react@^2.1.3", "@headlessui/react@^2.1.8":
   version "2.1.8"
   resolved "https://registry.yarnpkg.com/@headlessui/react/-/react-2.1.8.tgz#b0e254fdf8b1f65dbf28de444f70d0a9b61705dd"
   integrity sha512-uajqVkAcVG/wHwG9Fh5PFMcFpf2VxM4vNRNKxRjuK009kePVur8LkuuygHfIE+2uZ7z7GnlTtYsyUe6glPpTLg==
@@ -967,6 +959,14 @@
     "@react-aria/focus" "^3.17.1"
     "@react-aria/interactions" "^3.21.3"
     "@tanstack/react-virtual" "^3.8.1"
+
+"@headlessui/react@^1.7.15":
+  version "1.7.19"
+  resolved "https://registry.yarnpkg.com/@headlessui/react/-/react-1.7.19.tgz#91c78cf5fcb254f4a0ebe96936d48421caf75f40"
+  integrity sha512-Ll+8q3OlMJfJbAKM/+/Y2q6PPYbryqNTXDbryx7SXLIDamkF6iQFbriYHga0dY44PvDhvvBWCx1Xj4U5+G4hOw==
+  dependencies:
+    "@tanstack/react-virtual" "^3.0.0-beta.60"
+    client-only "^0.0.1"
 
 "@heroicons/react@^1.0.4", "@heroicons/react@^1.0.6":
   version "1.0.6"
@@ -2154,12 +2154,77 @@
     scmp "^2.1.0"
     yup "^0.32.11"
 
+"@tinacms/graphql@1.5.3":
+  version "1.5.3"
+  resolved "https://registry.yarnpkg.com/@tinacms/graphql/-/graphql-1.5.3.tgz#7d5b7cca29af60f84ae4ca24fe96235bcbf98f8c"
+  integrity sha512-e9LLHwue7p1sZ7bDYCvCaKmYe8Z4hPKAPz+QMbH0QNGAVR1B74di+HtgJ8oePPx8rngdPmqGd6g8q+R0Yizr2Q==
+  dependencies:
+    "@iarna/toml" "^2.2.5"
+    "@tinacms/mdx" "1.4.3"
+    "@tinacms/schema-tools" "1.6.3"
+    abstract-level "^1.0.4"
+    date-fns "^2.30.0"
+    fast-glob "^3.3.2"
+    fs-extra "^9.1.0"
+    glob-parent "^6.0.2"
+    graphql "15.8.0"
+    gray-matter "^4.0.3"
+    isomorphic-git "^1.27.1"
+    js-sha1 "^0.6.0"
+    js-yaml "^3.14.1"
+    jsonpath-plus "^6.0.1"
+    lodash.clonedeep "^4.5.0"
+    lodash.set "^4.3.2"
+    lodash.uniqby "^4.7.0"
+    many-level "^2.0.0"
+    micromatch "4.0.8"
+    normalize-path "^3.0.0"
+    readable-stream "^4.5.2"
+    scmp "^2.1.0"
+    yup "^0.32.11"
+
 "@tinacms/mdx@1.4.2":
   version "1.4.2"
   resolved "https://registry.yarnpkg.com/@tinacms/mdx/-/mdx-1.4.2.tgz#932a9f78201e0e01515d208da841b7080fd1c885"
   integrity sha512-UsJJNAD8uKtjtJV/hFeDwXRVHVd7PowcIV3dhq/fLDzXY3dvOJnRuIHpNX3IxanUApzHjX9kBVNp/UQBOjHhvA==
   dependencies:
     "@tinacms/schema-tools" "1.6.2"
+    acorn "8.8.2"
+    ccount "2.0.1"
+    estree-util-is-identifier-name "2.1.0"
+    lodash.flatten "4.4.0"
+    mdast-util-compact "4.1.1"
+    mdast-util-directive "2.2.4"
+    mdast-util-from-markdown "1.3.0"
+    mdast-util-gfm "2.0.2"
+    mdast-util-mdx-jsx "2.1.2"
+    mdast-util-to-markdown "1.5.0"
+    micromark-extension-gfm "2.0.3"
+    micromark-factory-mdx-expression "1.0.7"
+    micromark-factory-space "1.0.0"
+    micromark-factory-whitespace "1.0.0"
+    micromark-util-character "1.1.0"
+    micromark-util-symbol "1.0.1"
+    micromark-util-types "1.0.2"
+    parse-entities "4.0.1"
+    prettier "^2.7.1"
+    remark "14.0.2"
+    remark-gfm "^2.0.0"
+    remark-mdx "2.3.0"
+    stringify-entities "4.0.3"
+    typedoc "^0.26.3"
+    unist-util-source "4.0.2"
+    unist-util-stringify-position "3.0.3"
+    unist-util-visit "4.1.2"
+    uvu "0.5.6"
+    vfile-message "3.1.4"
+
+"@tinacms/mdx@1.4.3":
+  version "1.4.3"
+  resolved "https://registry.yarnpkg.com/@tinacms/mdx/-/mdx-1.4.3.tgz#ef3dc792fcea59b3c784ea960bb5da1a209f8d15"
+  integrity sha512-kQqnQMp8NcmtLypXfI7A8mNp4HvbtAANeSQSUSfgaW6aAmIdZq2LHiBeXK/WC29/TsfHILShubZM1TDgvHZVxA==
+  dependencies:
+    "@tinacms/schema-tools" "1.6.3"
     acorn "8.8.2"
     ccount "2.0.1"
     estree-util-is-identifier-name "2.1.0"
@@ -2215,6 +2280,15 @@
     url-pattern "^1.0.3"
     zod "^3.14.3"
 
+"@tinacms/schema-tools@1.6.3":
+  version "1.6.3"
+  resolved "https://registry.yarnpkg.com/@tinacms/schema-tools/-/schema-tools-1.6.3.tgz#9abb149ad984ed60af4ada079c0b0db554d8bf90"
+  integrity sha512-qGjBsudbhs0nWSkMOgPZ7VdSxVVA8VMpGlfKDI+qyxJXZ/HVZUOc6Xj0dhmAf36x2oTCAhtbniymSBIlkaSNWQ==
+  dependencies:
+    picomatch-browser "2.2.6"
+    url-pattern "^1.0.3"
+    zod "^3.14.3"
+
 "@tinacms/search@1.0.29":
   version "1.0.29"
   resolved "https://registry.yarnpkg.com/@tinacms/search/-/search-1.0.29.tgz#8a241cc2a555593afd8f0c840a37639308442879"
@@ -2224,6 +2298,18 @@
     "@tinacms/schema-tools" "1.6.2"
     memory-level "^1.0.0"
     node-fetch "2"
+    search-index "4.0.0"
+    sqlite-level "^1.2.0"
+    stopword "^3.1.1"
+
+"@tinacms/search@1.0.30":
+  version "1.0.30"
+  resolved "https://registry.yarnpkg.com/@tinacms/search/-/search-1.0.30.tgz#169fc301f8beef48773b19b5d83c237cb99c6462"
+  integrity sha512-HzkI0lxZFcminIQWxwugvzoQc+sSa7oWQx8MbZgedoSI34yX8N9Qa0bCzi/zzFHazoaTyV6yft0diu/LRRtocA==
+  dependencies:
+    "@tinacms/graphql" "1.5.3"
+    "@tinacms/schema-tools" "1.6.3"
+    memory-level "^1.0.0"
     search-index "4.0.0"
     sqlite-level "^1.2.0"
     stopword "^3.1.1"
@@ -6809,7 +6895,7 @@ micromatch@4.0.5:
     braces "^3.0.2"
     picomatch "^2.3.1"
 
-micromatch@^4.0.4, micromatch@^4.0.5:
+micromatch@4.0.8, micromatch@^4.0.4, micromatch@^4.0.5:
   version "4.0.8"
   resolved "https://registry.yarnpkg.com/micromatch/-/micromatch-4.0.8.tgz#d66fa18f3a47076789320b9b1af32bd86d9fa202"
   integrity sha512-PXwfBhYu0hBCPw8Dn0E+WDYb7af3dSLVWKi3HGv84IdF4TyFoC0ysxFd0Goxw7nSv4T/PzEJQxsYsEiFCKo2BA==
@@ -8802,7 +8888,7 @@ tinacms-gitprovider-github@^2.0.2:
     js-base64 "^3.7.4"
     typescript "4.7.4"
 
-tinacms@2.2.5, tinacms@^2.2.5:
+tinacms@2.2.5:
   version "2.2.5"
   resolved "https://registry.yarnpkg.com/tinacms/-/tinacms-2.2.5.tgz#9d6c1b9042a4d66089f7eaea6e501db74e8e9ffa"
   integrity sha512-lqiOeFAp3lHXTS4PTK0Bd+ZUWbUUlUL6QsXlpDBOdBmn8qLsCxKa+Chzf2Ko8oqBek9+RnSCqqCIcVFaND1XQw==
@@ -8826,6 +8912,82 @@ tinacms@2.2.5, tinacms@^2.2.5:
     "@tinacms/mdx" "1.4.2"
     "@tinacms/schema-tools" "1.6.2"
     "@tinacms/search" "1.0.29"
+    "@udecode/cn" "^33.0.0"
+    "@udecode/plate" "^36.3.6"
+    "@udecode/plate-autoformat" "^36.0.0"
+    "@udecode/plate-block-quote" "^36.0.0"
+    "@udecode/plate-code-block" "^36.0.0"
+    "@udecode/plate-combobox" "^36.0.0"
+    "@udecode/plate-common" "^36.3.4"
+    "@udecode/plate-floating" "^36.3.2"
+    "@udecode/plate-heading" "^36.0.12"
+    "@udecode/plate-indent" "^36.0.0"
+    "@udecode/plate-indent-list" "^36.3.3"
+    "@udecode/plate-link" "^36.3.2"
+    "@udecode/plate-list" "^36.0.0"
+    "@udecode/plate-paragraph" "^36.0.0"
+    "@udecode/plate-slash-command" "^36.0.0"
+    class-variance-authority "^0.7.0"
+    clsx "^2.1.1"
+    cmdk "^1.0.0"
+    color-string "^1.9.1"
+    crypto-js "^4.2.0"
+    date-fns "2.30.0"
+    fetch-ponyfill "^7.1.0"
+    final-form "4.20.10"
+    final-form-arrays "^3.1.0"
+    final-form-set-field-data "^1.0.2"
+    graphql "15.8.0"
+    graphql-tag "^2.12.6"
+    is-hotkey "^0.2.0"
+    lodash.get "^4.4.2"
+    lodash.set "^4.3.2"
+    lucide-react "^0.424.0"
+    moment "2.29.4"
+    monaco-editor "0.31.0"
+    prism-react-renderer "^2.3.1"
+    prop-types "15.7.2"
+    react-beautiful-dnd "^13.1.1"
+    react-color "^2.19.3"
+    react-datetime "^3.2.0"
+    react-dropzone "14.2.3"
+    react-final-form "^6.5.9"
+    react-icons "^5.2.1"
+    react-onclickoutside "^6.13.1"
+    react-router-dom "6.3.0"
+    slate "^0.103.0"
+    slate-history "^0.100.0"
+    slate-hyperscript "^0.100.0"
+    slate-react "^0.107.1"
+    tailwind-merge "^2.4.0"
+    webfontloader "1.6.28"
+    yup "^1.4.0"
+    zod "^3.23.8"
+
+tinacms@^2.2.6:
+  version "2.2.6"
+  resolved "https://registry.yarnpkg.com/tinacms/-/tinacms-2.2.6.tgz#2f11a5ed7f6ee63368e683484dc2f3022f4176d6"
+  integrity sha512-E43rq/J+kqZ45ZFRQq4D1wIF78ldvfuiksdNXtEZmEDKM/AvzSRY0iX534TaQ2ANwScxQIyOkgTQI2d+V7ioww==
+  dependencies:
+    "@ariakit/react" "^0.4.7"
+    "@floating-ui/dom" "^1.6.9"
+    "@floating-ui/react-dom" "^2.1.1"
+    "@graphql-inspector/core" "^6.1.0"
+    "@headlessui/react" "2.1.8"
+    "@heroicons/react" "^1.0.4"
+    "@monaco-editor/react" "4.4.5"
+    "@radix-ui/react-checkbox" "^1.1.1"
+    "@radix-ui/react-dialog" "^1.1.1"
+    "@radix-ui/react-dropdown-menu" "^2.1.1"
+    "@radix-ui/react-popover" "^1.1.1"
+    "@radix-ui/react-separator" "^1.1.0"
+    "@radix-ui/react-slot" "^1.1.0"
+    "@radix-ui/react-toolbar" "^1.1.0"
+    "@radix-ui/react-tooltip" "^1.1.2"
+    "@react-hook/window-size" "^3.1.1"
+    "@tinacms/mdx" "1.4.3"
+    "@tinacms/schema-tools" "1.6.3"
+    "@tinacms/search" "1.0.30"
     "@udecode/cn" "^33.0.0"
     "@udecode/plate" "^36.3.6"
     "@udecode/plate-autoformat" "^36.0.0"
