@@ -6,7 +6,7 @@ export default function Contact() {
       <div
         className={`text-[16px]  font-[200] col-span-2 lg:col-span-1 lg:row-span-4 lg:col-start-1 lg:row-start-4 p-4 lg:p-6 custom-box-style`}
       >
-        <div className="text-2xl lg:text-3xl font-[150]">
+        <div className="text-xl lg:text-3xl font-[150]">
           Let's start working together!
         </div>
         <br />
