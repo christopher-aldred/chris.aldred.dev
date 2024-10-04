@@ -23,14 +23,14 @@ export default function MainComponent() {
               className="relative mr-4"
               href="https://koalendar.com/e/meet-with-chris-aldred"
             >
-              <span className="h-10 w-[115px] lg:h-12 lg:w-32 absolute top-0 left-0 mt-1 ml-2  rounded-lg bg-white"></span>
-              <span className="h-10 w-[115px] lg:h-12 lg:w-32 text-md lg:text-lg flex flex-col justify-center items-center fold-bold relative  rounded-lg border border-white bg-neutral-900 px-3 py-1 font-[200] text-white transition duration-100 hover:bg-[#fede59] hover:text-gray-900 hover:border-[#fede59] hover:font-[500] ml-1 mb-1">
+              <span className="h-10 w-[106px] lg:h-12 lg:w-32 absolute top-0 left-0 mt-1 ml-2  rounded-lg bg-white"></span>
+              <span className="h-10 w-[106px] lg:h-12 lg:w-32 text-md lg:text-lg flex flex-col justify-center items-center fold-bold relative  rounded-lg border border-white bg-neutral-900 px-3 py-1 font-[200] text-white transition duration-100 hover:bg-[#fede59] hover:text-gray-900 hover:border-[#fede59] hover:font-[500] ml-1 mb-1">
                 Book a call
               </span>
             </Link>
             <a className="group relative mr-4" href="mailto: chris@aldred.dev">
-              <span className="h-10 w-12 lg:h-12 lg:w-14 absolute top-0 left-0 mt-1 ml-2  rounded-lg bg-white"></span>
-              <span className="h-10 w-12 lg:h-12 lg:w-14 text-md lg:text-lg flex flex-col justify-center items-center fold-bold relative  rounded-lg border border-white bg-neutral-900 px-3 py-1 font-bold text-whit transition duration-100 group-hover:bg-[#fede59] group-hover:text-gray-900 group-hover:border-[#fede59] ml-1 mb-1">
+              <span className="h-10 w-11 lg:h-12 lg:w-14 absolute top-0 left-0 mt-1 ml-2  rounded-lg bg-white"></span>
+              <span className="h-10 w-11 lg:h-12 lg:w-14 text-md lg:text-lg flex flex-col justify-center items-center fold-bold relative  rounded-lg border border-white bg-neutral-900 px-3 py-1 font-bold text-whit transition duration-100 group-hover:bg-[#fede59] group-hover:text-gray-900 group-hover:border-[#fede59] ml-1 mb-1">
                 <svg
                   className="h-4 w-4 lg:h-6 lg:w-6 ease-in-out group-hover:scale-110"
                   xmlns="http://www.w3.org/2000/svg"
@@ -45,8 +45,8 @@ export default function MainComponent() {
               className="group relative mr-4 mt-4"
               href="https://github.com/christopher-aldred"
             >
-              <span className="h-10 w-12 lg:h-12 lg:w-14 absolute top-0 left-0 mt-1 ml-2  rounded-lg bg-white"></span>
-              <span className="h-10 w-12 lg:h-12 lg:w-14 text-md lg:text-lg flex flex-col justify-center items-center fold-bold relative  rounded-lg border border-white bg-black px-3 py-1 font-bold text-white transition duration-100 group-hover:bg-[#fede59] group-hover:text-gray-900 group-hover:border-[#fede59] ml-1 mb-1">
+              <span className="h-10 w-11 lg:h-12 lg:w-14 absolute top-0 left-0 mt-1 ml-2  rounded-lg bg-white"></span>
+              <span className="h-10 w-11 lg:h-12 lg:w-14 text-md lg:text-lg flex flex-col justify-center items-center fold-bold relative  rounded-lg border border-white bg-black px-3 py-1 font-bold text-white transition duration-100 group-hover:bg-[#fede59] group-hover:text-gray-900 group-hover:border-[#fede59] ml-1 mb-1">
                 <svg
                   className="h-4 w-4 lg:h-6 lg:w-6 ease-in-out  group-hover:scale-110"
                   xmlns="http://www.w3.org/2000/svg"
@@ -61,8 +61,8 @@ export default function MainComponent() {
               className="group relative mr-4 mt-4"
               href="https://www.linkedin.com/in/christopher-aldred-584609163/"
             >
-              <span className="h-10 w-12 lg:h-12 lg:w-14 absolute top-0 left-0 mt-1 ml-2  rounded-lg bg-white"></span>
-              <span className="h-10 w-12 lg:h-12 lg:w-14 text-md lg:text-lg flex flex-col justify-center items-center fold-bold relative rounded-lg border border-white bg-black px-3 py-1 font-bold text-white transition duration-100 group-hover:bg-[#fede59] group-hover:text-gray-900 group-hover:border-[#fede59] ml-1 mb-1">
+              <span className="h-10 w-11 lg:h-12 lg:w-14 absolute top-0 left-0 mt-1 ml-2  rounded-lg bg-white"></span>
+              <span className="h-10 w-11 lg:h-12 lg:w-14 text-md lg:text-lg flex flex-col justify-center items-center fold-bold relative rounded-lg border border-white bg-black px-3 py-1 font-bold text-white transition duration-100 group-hover:bg-[#fede59] group-hover:text-gray-900 group-hover:border-[#fede59] ml-1 mb-1">
                 <svg
                   className="h-4 w-4 lg:h-6 lg:w-6 ease-in-out  group-hover:scale-110"
                   xmlns="http://www.w3.org/2000/svg"
@@ -77,8 +77,8 @@ export default function MainComponent() {
               className="group relative mt-4"
               href="https://wa.me/+447504924583"
             >
-              <span className="h-10 w-12 lg:h-12 lg:w-14 absolute top-0 left-0 mt-1 ml-2  rounded-lg bg-white"></span>
-              <span className="h-10 w-12 lg:h-12 lg:w-14 text-md lg:text-lg flex flex-col justify-center items-center fold-bold relative  rounded-lg border border-white bg-black px-3 py-1 font-bold text-white transition duration-100 group-hover:bg-[#fede59] group-hover:text-gray-900 group-hover:border-[#fede59] ml-1 mb-1">
+              <span className="h-10 w-11 lg:h-12 lg:w-14 absolute top-0 left-0 mt-1 ml-2  rounded-lg bg-white"></span>
+              <span className="h-10 w-11 lg:h-12 lg:w-14 text-md lg:text-lg flex flex-col justify-center items-center fold-bold relative  rounded-lg border border-white bg-black px-3 py-1 font-bold text-white transition duration-100 group-hover:bg-[#fede59] group-hover:text-gray-900 group-hover:border-[#fede59] ml-1 mb-1">
                 <svg
                   className="h-4 w-4 lg:h-6 lg:w-6 ease-in-out  group-hover:scale-110"
                   xmlns="http://www.w3.org/2000/svg"
