@@ -34,7 +34,7 @@ export default async function Blog() {
               </header>
             </FadeAndSlide>
 
-            <div className="space-y-8">
+            <div className="space-y-4 lg:space-y-8">
               {[1, 2, 3].map((index) => (
                 <FadeAndSlide key={index} delay={`delay-[${index * 300}ms]`}>
                   <article className="custom-box-style p-6">
@@ -56,7 +56,7 @@ export default async function Blog() {
               ))}
             </div>
 
-            <footer className="h-8"></footer>
+            <footer className="h-4 lg:h-8"></footer>
           </Transition>
         </main>
       </div>
