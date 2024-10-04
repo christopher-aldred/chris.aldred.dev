@@ -20,16 +20,17 @@ export default async function Blog() {
               <header className="flex items-end w-full mb-8 mt-8">
                 <Link
                   href="/"
-                  className="text-white hover:text-gray-300 transition-colors duration-200"
+                  className=" text-white text-opacity-50 hover:text-white transition-colors duration-200"
                 >
-                  &larr; Back
+                  ⬅ Back
                 </Link>
                 <div className="flex-grow text-center">
-                  <h1 className="text-4xl font-bold text-white drop-shadow-[5px_5px_10px_rgba(0,0,0,0.99)]">
-                    My Blog
+                  <h1 className="lg:gap-4 lg:p-4 xl:px-28 font-[150] lg:font-[100] text-2xl lg:text-4xl drop-shadow-[5px_5px_7px_rgba(0,0,0,0.99)] lg:drop-shadow-[5px_5px_10px_rgba(0,0,0,0.99)] text-transparent bg-clip-text bg-white">
+                    <div className="font-[300] lg:font-[250]">Blog</div>
+                    chris.aldred.dev
                   </h1>
                 </div>
-                <span className="invisible">&larr; Back</span>
+                <span className="invisible">⬅ Back</span>
                 {/* Invisible copy for spacing */}
               </header>
             </FadeAndSlide>
