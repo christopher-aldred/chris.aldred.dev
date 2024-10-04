@@ -24,7 +24,7 @@ export default function PorfolioButton() {
               "linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1))",
           }}
         />
-        <div className="text-xl lg:text-2xl font-[100] absolute inset-y-0 left-0 z-30 w-full rounded-lg flex hover-bold-text">
+        <div className="text-xl lg:text-2xl font-[150] absolute inset-y-0 left-0 z-30 w-full rounded-lg flex hover-bold-text">
           <div className="m-auto flex justify-center items-center drop-shadow-[1px_1px_1px_rgba(0,0,0,0.99)]">
             Portfolio&nbsp;
             <svg

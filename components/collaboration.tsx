@@ -6,7 +6,7 @@ export default function Collaboration() {
       <div
         className={`text-sm font-[200] col-span-2 lg:col-span-1 lg:row-span-2 lg:col-start-2 lg:row-start-5 p-4 custom-box-style h-full flex flex-col`}
       >
-        <div className="text-xl lg:text-2xl font-[100] text-center">
+        <div className="text-2xl lg:text-2xl font-[150] text-center">
           Past collaboration
         </div>
         <div className="flex justify-center items-center flex-grow mt-4">

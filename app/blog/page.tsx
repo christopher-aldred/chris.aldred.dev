@@ -14,7 +14,7 @@ export default async function Blog() {
       </div>
 
       <div className="z-10 flex items-center justify-center min-h-screen">
-        <main className="justify-between overflow-hidden w-full max-w-4xl mx-auto px-2">
+        <main className="justify-between overflow-hidden w-full max-w-4xl mx-auto px-4">
           <Transition show={true} appear={true}>
             <FadeAndSlide delay="delay-[0ms]">
               <header className="flex items-end w-full mb-8 mt-8">
@@ -34,7 +34,7 @@ export default async function Blog() {
               </header>
             </FadeAndSlide>
 
-            <div className="space-y-2 lg:space-y-8">
+            <div className="space-y-4 lg:space-y-8">
               {[1, 2, 3].map((index) => (
                 <FadeAndSlide key={index} delay={`delay-[${index * 300}ms]`}>
                   <article className="custom-box-style p-6">
@@ -56,7 +56,7 @@ export default async function Blog() {
               ))}
             </div>
 
-            <footer className="h-2 lg:h-8"></footer>
+            <footer className="h-4 lg:h-8"></footer>
           </Transition>
         </main>
       </div>
