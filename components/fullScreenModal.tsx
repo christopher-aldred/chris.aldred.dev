@@ -106,7 +106,7 @@ export default function FullScreenModal() {
                     </h2>
                     <p className="sm:mt-1 block font-[200] text-sm text-neutral-200 group-hover:text-neutral-950">
                       A public leaderboard web app written using Typescript,
-                      React & Firebase backend.
+                      React & Firebase.
                     </p>
                   </a>
                 </div>
