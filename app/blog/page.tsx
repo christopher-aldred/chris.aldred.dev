@@ -20,7 +20,7 @@ export default async function Blog() {
               <header className="flex items-end w-full mb-8 mt-8">
                 <Link
                   href="/"
-                  className=" text-white text-opacity-50 hover:text-white transition-colors duration-200"
+                  className="text-white text-opacity-50 hover:text-white transition-colors duration-200"
                 >
                   ⬅ Back
                 </Link>
