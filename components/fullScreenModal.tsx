@@ -1,12 +1,9 @@
-// Server-side Modal
-
 import { Transition, TransitionChild } from "@headlessui/react";
 import Link from "next/link";
-import Image from "next/image";
 
 const FadeIn = ({ delay, children }) => (
   <TransitionChild
-    enter={`transition-all ease-in-out duration-200 ${delay}`}
+    enter={`transition-all ease-in-out duration-300 ${delay}`}
     enterFrom="opacity-0 translate-y-0"
     enterTo="opacity-100 translate-y-0"
     leave="transition-all ease-in-out duration-300"
@@ -34,7 +31,7 @@ export default function FullScreenModal() {
     <Transition as="div" show={true} appear={true}>
       <FadeIn delay="delay-[100ms]">
         <div className="z-50 fixed inset-0 bg-black/70 h-full w-full flex items-center justify-center">
-          <FadeAndSlide delay="delay-[300ms]">
+          <FadeAndSlide delay="delay-[0ms]">
             <div className="p-4 border border-neutral-700 shadow-lg rounded-lg bg-neutral-500/50 backdrop-blur-lg flex flex-col max-h-[90dvh] w-[90vw] lg:w-[50vw]">
               <div className="flex flex-col">
                 <div className="text-center text-neutral-100 font-[200] text-2xl lg:text-4xl mb-4">
