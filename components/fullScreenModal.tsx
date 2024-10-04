@@ -35,15 +35,15 @@ export default function FullScreenModal() {
       <FadeIn delay="delay-[100ms]">
         <div className="z-50 fixed inset-0 bg-black/70 h-full w-full flex items-center justify-center">
           <FadeAndSlide delay="delay-[300ms]">
-            <div className="p-4 border border-neutral-700 shadow-lg rounded-lg bg-slate-100 flex flex-col max-h-[90dvh] w-[90vw] lg:w-[50vw]">
+            <div className="p-4 border border-neutral-700 shadow-lg rounded-lg bg-neutral-500/50 backdrop-blur-lg flex flex-col max-h-[90dvh] w-[90vw] lg:w-[50vw]">
               <div className="flex flex-col">
-                <div className="text-center text-neutral-700 font-[150] text-2xl lg:text-4xl mb-4">
+                <div className="text-center text-neutral-100 font-[200] text-2xl lg:text-4xl mb-4">
                   Portfolio
                 </div>
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pb-4 overflow-y-auto rounded-lg">
-                <div className="group block rounded-xl bg-neutral-700 hover:bg-[#fede59] p-4 cursor-pointer">
+                <div className="group block rounded-xl bg-black/40 hover:bg-[#fede59] p-4 cursor-pointer">
                   <a
                     href="http://atherton-arboriculture.co.uk"
                     className="block text-inherit no-underline hover:no-underline"
@@ -79,7 +79,7 @@ export default function FullScreenModal() {
                   </a>
                 </div>
 
-                <div className="group block rounded-xl bg-neutral-700 hover:bg-[#fede59] p-4 cursor-pointer">
+                <div className="group block rounded-xl bg-black/40 hover:bg-[#fede59] p-4 cursor-pointer">
                   <a
                     href="https://leaderboard.aldred.dev/view/310OmMvkUeH7Yp7W27kl"
                     className="block text-inherit no-underline hover:no-underline"
@@ -111,7 +111,7 @@ export default function FullScreenModal() {
                   </a>
                 </div>
 
-                <div className="group block rounded-xl bg-neutral-700 hover:bg-[#fede59] p-4 cursor-pointer">
+                <div className="group block rounded-xl bg-black/40 hover:bg-[#fede59] p-4 cursor-pointer">
                   <a
                     href="#"
                     className="block text-inherit no-underline hover:no-underline"
@@ -150,7 +150,7 @@ export default function FullScreenModal() {
                   </a>
                 </div>
 
-                <div className="group block rounded-xl bg-neutral-700  p-4 ">
+                <div className="group block rounded-xl bg-black/40  p-4 ">
                   <span className="inline-block rounded-lg pb-3">
                     <div className="inline-flex align-middle justify-center items-center select-none text-white">
                       <svg
@@ -188,7 +188,7 @@ export default function FullScreenModal() {
               <Link
                 href="/"
                 scroll={false}
-                className="mt-auto w-full p-2 bg-[#39b4ff] text-white text-center font-medium rounded-md shadow-sm hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-300"
+                className="mt-auto w-full p-2  text-white text-center font-medium rounded-md shadow-sm bg-gray-400  hover:bg-[#39b4ff] focus:outline-none focus:ring-2 focus:ring-gray-300"
               >
                 Close
               </Link>
