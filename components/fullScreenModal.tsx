@@ -33,9 +33,9 @@ export default function FullScreenModal() {
   return (
     <Transition as="div" show={true} appear={true}>
       <FadeIn delay="delay-[100ms]">
-        <div className="z-50 fixed inset-0 bg-slate-950/80 h-full w-full flex items-center justify-center">
+        <div className="z-50 fixed inset-0 bg-black/70 h-full w-full flex items-center justify-center">
           <FadeAndSlide delay="delay-[300ms]">
-            <div className="p-4 border border-neutral-700 shadow-lg rounded-lg bg-slate-100 flex flex-col max-h-[90vh] w-[90vw] lg:w-[50vw]">
+            <div className="p-4 border border-neutral-700 shadow-lg rounded-lg bg-slate-100 flex flex-col max-h-[80svh] w-[90vw] lg:w-[50vw]">
               <div className="flex flex-col">
                 <div className="text-center text-neutral-700 font-[150] text-2xl lg:text-4xl mb-4">
                   Portfolio
@@ -106,7 +106,7 @@ export default function FullScreenModal() {
                     </h2>
                     <p className="sm:mt-1 block font-[200] text-sm text-neutral-200 group-hover:text-neutral-950">
                       A public leaderboard web app written using Typescript,
-                      React & Firebase backend.
+                      React & Firebase.
                     </p>
                   </a>
                 </div>
