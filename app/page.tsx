@@ -1,4 +1,4 @@
-"use client";
+'use client'
 
 import { Transition } from "@headlessui/react";
 import { BgAnimated, FadeAndSlide } from "../utils/animations";
