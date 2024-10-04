@@ -22,15 +22,15 @@ export default async function Blog() {
                   href="/"
                   className="text-white text-opacity-50 hover:text-white transition-colors duration-200"
                 >
-                  ⬅ Back
+                  ← Back
                 </Link>
                 <div className="flex-grow text-center">
-                  <h1 className="lg:gap-4 lg:p-4 xl:px-28 font-[150] lg:font-[100] text-2xl lg:text-4xl drop-shadow-[5px_5px_7px_rgba(0,0,0,0.99)] lg:drop-shadow-[5px_5px_10px_rgba(0,0,0,0.99)] text-transparent bg-clip-text bg-white">
+                  <h1 className="font-[150] lg:font-[100] text-2xl lg:text-4xl drop-shadow-[5px_5px_7px_rgba(0,0,0,0.99)] lg:drop-shadow-[5px_5px_10px_rgba(0,0,0,0.99)] text-transparent bg-clip-text bg-white">
                     <div className="font-[300] lg:font-[250]">Blog</div>
                     chris.aldred.dev
                   </h1>
                 </div>
-                <span className="invisible">⬅ Back</span>
+                <span className="invisible">← Back</span>
                 {/* Invisible copy for spacing */}
               </header>
             </FadeAndSlide>
@@ -39,17 +39,17 @@ export default async function Blog() {
               {[1, 2, 3].map((index) => (
                 <FadeAndSlide key={index} delay={`delay-[${index * 300}ms]`}>
                   <article className="custom-box-style p-6">
-                    <h2 className="text-2xl font-semibold mb-4 text-white">
+                    <h2 className="font-[200] text-2xl mb-4 text-white">
                       Blog Post {index}
                     </h2>
-                    <p className="text-gray-200">
+                    <p className="text-neutral-100 text-[16px] font-[200]">
                       This is a temporary blog entry. Lorem ipsum dolor sit
                       amet, consectetur adipiscing elit. Sed do eiusmod tempor
                       incididunt ut labore et dolore magna aliqua. Ut enim ad
                       minim veniam, quis nostrud exercitation ullamco laboris
                       nisi ut aliquip ex ea commodo consequat.
                     </p>
-                    <div className="mt-4 text-sm text-neutral-400">
+                    <div className="mt-4 text-sm font-[200] text-neutral-400">
                       Posted on {new Date().toLocaleDateString()}
                     </div>
                   </article>
