@@ -1,5 +1,5 @@
 ---
-header: Blog
+header: Blog / News
 posts:
   - title: TinaCMS
     body: >-
