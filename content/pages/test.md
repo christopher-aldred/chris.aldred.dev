@@ -1,6 +1,0 @@
----
-header: Test
-links:
-  - {}
----
-
