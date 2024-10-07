@@ -55,6 +55,7 @@ jobs:
         uses: flameddd/screenshots-ci-action@master
         with:
           url: http://localhost:3000
+          noDesktop: true
           devices: iPhone 6,Nexus 7,Galaxy S III
           waitUntil: networkidle0
           noCommitHashFileName: true

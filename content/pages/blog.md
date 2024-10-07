@@ -1,7 +1,7 @@
 ---
-header: Blog
+header: Blog / News
 posts:
-  - title: TinaCMS
+  - title: TinaCMS post
     body: >-
       For developers looking to streamline content management without
       compromising control or flexibility, TinaCMS stands out as an ideal
@@ -24,6 +24,6 @@ posts:
       quality standards. The Rise of Specialized Niches As businesses seek to
       digitalize and innovate rapidly, the demand for specialized skills is
       soaring. 
-    date: 2024-10-05T23:00:00.000Z
+    date: 2024-09-30T23:00:00.000Z
 ---
 
