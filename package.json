@@ -36,6 +36,7 @@
     "tinacms-authjs": "^5.0.1",
     "tinacms-gitprovider-github": "^2.0.4",
     "typescript": "^5.5.4",
-    "upstash-redis-level": "^1.1.1"
+    "upstash-redis-level": "^1.1.1",
+    "nextjs-toploader": "^3.7.15"
   }
 }
