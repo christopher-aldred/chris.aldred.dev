@@ -19,7 +19,7 @@
 
 @layer components {
   .custom-box-style {
-    @apply z-20 text-gray-100 ease-in-out border border-neutral-500/10 hover:border-slate-100 bg-black bg-opacity-60 backdrop-blur-lg rounded-lg shadow-lg;
+    @apply z-20 text-gray-100 ease-in-out border border-neutral-500/10 hover:border-slate-100 bg-black bg-opacity-70 rounded-lg shadow-lg;
   }
 
   .custom-box-style .hover-bold-text:hover {

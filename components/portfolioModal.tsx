@@ -28,7 +28,7 @@ const FadeAndSlide = ({ delay, children }) => (
   </TransitionChild>
 );
 
-export default function FullScreenModal() {
+export default function PortfolioModal() {
   return (
     <Transition as="div" show={true} appear={true}>
       <FadeIn delay="delay-[100ms]">
