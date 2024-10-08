@@ -10,7 +10,7 @@ import Contact from "../components/contact";
 import BlogButton from "../components/blogButton";
 import Collaboration from "../components/collaboration";
 import PorfolioButton from "../components/portfolioButton";
-import FullScreenModal from "../components/fullScreenModal";
+import PortfolioModal from "../components/portfolioModal";
 
 type SearchParamProps = {
   searchParams: Record<string, string> | null | undefined;
@@ -71,7 +71,7 @@ export default function Portfolio({ searchParams }: SearchParamProps) {
           </Transition>
         </main>
 
-        {show && <FullScreenModal />}
+        {show && <PortfolioModal />}
       </div>
     </>
   );
